@@ -1,0 +1,28 @@
+.theme-koach .ut-plan{display:grid;gap:22px}
+.theme-koach .ut-plan h4{margin:0;font-size:14px;font-weight:700;line-height:1.7;letter-spacing:-.3px;color:#463950}
+.theme-koach .ut-process{display:flex;align-items:baseline;gap:28px;padding-bottom:18px;border-bottom:1px solid #f3eff7}
+.theme-koach .ut-sequence{display:flex;flex-wrap:wrap;gap:8px 14px;list-style:none;margin:0;padding:0;color:#81718f;font-size:12px;line-height:1.8}
+.theme-koach .ut-sequence li{display:flex;align-items:baseline;gap:14px}
+.theme-koach .ut-sequence li:not(:last-child)::after{content:'→';color:#b6a4cb}
+.theme-koach .ut-task-list{margin:10px 0 0}
+.theme-koach .ut-task-list>div{display:grid;grid-template-columns:120px 1fr;gap:22px;padding:12px 0;border-bottom:1px solid #f5f3f9}
+.theme-koach .ut-task-list dt{font-size:13px;font-weight:650;line-height:1.7;color:var(--project-accent)}
+.theme-koach .ut-task-list dd{margin:0;font-size:13px;line-height:1.7;color:#796a85;word-break:keep-all}
+.theme-koach .ut-scope-note{margin:10px 0 0;font-size:11px;line-height:1.8;color:#9a8da7}
+.theme-koach .ut-measure{display:flex;align-items:baseline;gap:28px}
+.theme-koach .ut-measure ul{display:flex;flex-wrap:wrap;list-style:none;margin:0;padding:0;gap:8px 20px;font-size:12px;line-height:1.8;color:#81718f}
+.theme-koach .ut-measure li+li{position:relative}
+.theme-koach .ut-measure li+li::before{content:'·';position:absolute;left:-12px;color:#b7a8c5}
+.theme-koach .ut-figma{display:grid;gap:12px}
+.theme-koach .ut-figma iframe{display:block;width:100%;height:600px;border:1px solid #efebf5;border-radius:10px;background:#fdfcfe}
+@media(max-width:600px){
+  .theme-koach .ut-plan{gap:20px}
+  .theme-koach .ut-process,.theme-koach .ut-measure{display:grid;gap:8px}
+  .theme-koach .ut-sequence{column-gap:8px;font-size:11px}
+  .theme-koach .ut-sequence li{gap:8px}
+  .theme-koach .ut-task-list>div{grid-template-columns:85px 1fr;gap:12px;padding:10px 0}
+  .theme-koach .ut-task-list dt,.theme-koach .ut-task-list dd{font-size:12px}
+  .theme-koach .ut-measure ul{font-size:11px;column-gap:16px}
+  .theme-koach .ut-measure li+li::before{left:-10px}
+  .theme-koach .ut-figma iframe{height:460px}
+}

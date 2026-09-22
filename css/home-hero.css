@@ -1,0 +1,52 @@
+.home-portfolio .site-nav{background:linear-gradient(110deg,#ffffff45,#ffffff1f);border:0;backdrop-filter:blur(24px) saturate(125%);-webkit-backdrop-filter:blur(24px) saturate(125%);box-shadow:0 10px 36px #46618a0a}
+.home-portfolio .site-nav .brand,.home-portfolio .nav-links a,.home-portfolio .nav-cta{color:#49617f}
+.home-portfolio .site-nav .brand-star{color:#eef5ff}
+.home-portfolio .nav-cta{background:#ffffff29;border:0}
+.signature-hero{padding-top:142px;background:linear-gradient(180deg,#8cbce2 0%,#aac7e8 28%,#b8b2e2 53%,#dac9e8 79%,#f3e1ee 100%);color:#fff;border-radius:30px}
+.signature-hero .hero-glow{background:radial-gradient(ellipse at 15% 65%,#fcecf480,transparent 32%),radial-gradient(ellipse at 88% 70%,#eadffd80,transparent 35%),radial-gradient(ellipse at 50% 15%,#cce8ff33,transparent 45%)}
+.signature-hero::before,.signature-hero::after{content:'';position:absolute;z-index:0;pointer-events:none;width:65%;height:240px;top:40%;filter:blur(7px);opacity:.88;background:radial-gradient(ellipse,#fffefbe8 25%,#f6eef8bf 54%,transparent 73%) 0 65% / 29% 58%,radial-gradient(ellipse,#fffefdf0 25%,#f7ecf9c9 56%,transparent 73%) 20% 20% / 33% 78%,radial-gradient(ellipse,#fffefdf0 25%,#f7ecf9d9 56%,transparent 73%) 49% 45% / 36% 92%,radial-gradient(ellipse,#fffafcf0 25%,#f6e8f7c9 55%,transparent 73%) 74% 72% / 30% 66%,radial-gradient(ellipse,#fffafbe0 25%,#f6e8f7bb 55%,transparent 73%) 100% 77% / 25% 50%,radial-gradient(ellipse,#f8eefbc4 20%,#eddcf2aa 52%,transparent 73%) 50% 100% / 100% 55%;background-repeat:no-repeat}
+.signature-hero::before{left:-17%;transform:rotate(-12deg)}
+.signature-hero::after{right:-18%;top:37%;transform:rotate(14deg)}
+.signature-hero .hero-layout{display:flex;flex-direction:column;min-height:0;position:relative;z-index:2;padding-bottom:0}
+.signature-hero .hero-copy{text-align:center;width:100%;max-width:820px}
+.hero-greeting{font-family:Georgia,'Times New Roman',serif;font-style:italic;font-size:34px;font-weight:600;line-height:1.2;letter-spacing:-.6px;color:#fff;text-shadow:0 2px 16px #547cad24}
+.signature-hero h1.hero-signature{margin:0;font-family:Georgia,'Times New Roman',serif;font-size:clamp(76px,9.4vw,132px);font-weight:400;line-height:1.15;letter-spacing:-6px;color:#fff;text-shadow:0 5px 35px #6552a415}
+.hero-signature>span{display:inline-block;font-family:inherit;font-size:.38em;vertical-align:top;margin:17px 0 0 9px;color:#eee4ff}
+.signature-hero .hero-description{margin-top:10px;font-size:17px;line-height:1.8;color:#fff;letter-spacing:-.4px}
+.signature-hero .hero-copy>.button{margin-top:19px;padding:12px 22px;border:0;border-radius:30px;background:#16151c;box-shadow:0 6px 20px #16151c1a;font-size:12px;color:#fff;gap:24px}
+.signature-hero .hero-copy>.button:hover{background:#000;box-shadow:0 9px 25px #16151c29}
+.signature-hero .hero-art{isolation:isolate;width:min(470px,62vw);aspect-ratio:1/1;margin:12px 0 24px}
+.signature-hero .hero-illustration{filter:drop-shadow(0 20px 28px #5944a429)}
+.signature-hero .art-halo{background:#f3e7ff;opacity:.7;inset:20%;filter:blur(65px)}
+.signature-hero .floating-label{background:#fff9;color:#655586;border:1px solid #ffffff9c;backdrop-filter:blur(9px);border-radius:30px}
+.signature-hero .label-code{left:-12%;top:25%}
+.signature-hero .label-startup{right:-14%;top:38%}
+.signature-hero .label-flow{left:9%;bottom:9%}
+.hero-marquee{position:absolute;z-index:1;top:51%;left:0;width:100%;overflow:hidden;pointer-events:none;mask-image:linear-gradient(90deg,transparent,#000 5%,#000 95%,transparent)}
+.hero-marquee-track{display:flex;width:max-content;animation:hero-type-drift 65s linear infinite;will-change:transform}
+.hero-marquee-track>span{flex-shrink:0;font-family:Impact,'Arial Narrow',sans-serif;font-size:clamp(100px,14vw,210px);font-weight:800;line-height:1.2;letter-spacing:-4px;color:#ffffff59;white-space:nowrap}
+.signature-hero .interest-strip{position:relative;z-index:3;max-width:900px;width:calc(100% - 80px);border-color:#ffffff77;margin:0 auto;padding:24px 0 28px;gap:45px}
+.signature-hero .interest-caption,.signature-hero .interest-caption span,.signature-hero .interest-list li{color:#75658f}
+.signature-hero .interest-list .icon{color:#8c76ac}
+.hero-motion-toggle{position:absolute;right:24px;bottom:24px;z-index:4;display:flex;align-items:center;gap:6px;font-size:9px;color:#78648f;border:1px solid #ffffff88;background:#ffffff50;padding:7px 10px;border-radius:20px}
+.signature-hero.is-motion-paused .hero-marquee-track,.signature-hero.is-motion-paused .hero-illustration,.signature-hero.is-motion-paused .floating-label{animation-play-state:paused}
+@keyframes hero-type-drift{from{transform:translateX(-50%)}to{transform:translateX(0)}}
+@media(max-width:800px){.signature-hero{padding-top:125px}.signature-hero h1.hero-signature{font-size:94px}.signature-hero .hero-art{width:420px;max-width:75vw}.signature-hero .hero-description{font-size:15px}.signature-hero .interest-strip{gap:24px}}
+@media(max-width:600px){
+  .signature-hero{padding-top:120px;margin:9px 9px 0;border-radius:24px}
+  .hero-greeting{font-size:26px}
+  .signature-hero h1.hero-signature{font-size:clamp(58px,16vw,86px);letter-spacing:-3px}
+  .hero-signature>span{margin:10px 0 0 4px}
+  .signature-hero .hero-description{font-size:12px;margin-top:12px}
+  .signature-hero::before,.signature-hero::after{width:110%;height:155px;top:44%;filter:blur(5px)}
+  .signature-hero::before{left:-60%}.signature-hero::after{right:-60%;top:41%}
+  .signature-hero .hero-copy>.button{font-size:10px;padding:9px 14px;margin-top:17px}
+  .signature-hero .hero-art{width:88%;max-width:360px;margin:28px 0 25px;aspect-ratio:1/1}
+  .signature-hero .floating-label{font-size:7px;padding:7px 9px}
+  .signature-hero .label-code{left:-3%;top:26%}.signature-hero .label-startup{right:-3%;top:42%}
+  .hero-marquee{top:53%}.hero-marquee-track>span{font-size:115px;letter-spacing:-3px}
+  .signature-hero .interest-strip{width:calc(100% - 40px);padding:20px 0 24px;gap:14px}
+  .signature-hero .interest-list{gap:12px 17px}.signature-hero .interest-list li{font-size:9px}
+  .hero-motion-toggle{bottom:16px;right:16px;font-size:8px}
+}
+@media(prefers-reduced-motion:reduce){.hero-marquee-track{animation:none;transform:translateX(-20%)}.hero-motion-toggle{display:none}}

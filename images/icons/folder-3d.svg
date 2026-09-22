@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"><defs>
+  <linearGradient id="fdb" x1="0.15" y1="0" x2="0.85" y2="1">
+    <stop offset="0" stop-color="#ffffff"/><stop offset="0.5" stop-color="#dfe5ff"/><stop offset="1" stop-color="#a4b2f4"/>
+  </linearGradient>
+  <radialGradient id="fds" cx="0.3" cy="0.22" r="0.6">
+    <stop offset="0" stop-color="#fff" stop-opacity="0.95"/><stop offset="1" stop-color="#fff" stop-opacity="0"/>
+  </radialGradient>
+  <filter id="fdd" x="-40%" y="-40%" width="180%" height="190%">
+    <feDropShadow dx="0" dy="14" stdDeviation="11" flood-color="#1e2a8a" flood-opacity="0.32"/>
+  </filter>
+  <filter id="fdg"><feGaussianBlur stdDeviation="3.5"/></filter></defs>
+  <g filter="url(#fdd)">
+    <path d="M34 58a14 14 0 0 1 14-14h34l14 14h56a14 14 0 0 1 14 14v74a14 14 0 0 1-14 14H48a14 14 0 0 1-14-14z" fill="#7f8ff5"/>
+    <rect x="52" y="60" width="96" height="40" rx="6" fill="#fff" transform="rotate(-6 100 80)"/>
+    <path d="M30 86a12 12 0 0 1 12-12h118a12 12 0 0 1 12 12l-6 62a14 14 0 0 1-14 12H48a14 14 0 0 1-14-12z" fill="url(#fdb)"/><path d="M30 86a12 12 0 0 1 12-12h118a12 12 0 0 1 12 12l-6 62a14 14 0 0 1-14 12H48a14 14 0 0 1-14-12z" fill="url(#fds)"/>
+    <path d="M46 90h108" stroke="#fff" stroke-width="6" stroke-linecap="round" filter="url(#fdg)"/>
+  </g></svg>

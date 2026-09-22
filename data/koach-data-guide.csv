@@ -1,0 +1,154 @@
+﻿페이지,이벤트명,태그,트리거,매개변수,반영 여부,매개변수 값,type,목적,인사이트
+로그인,view_login,페이지 방문,로그인 페이지 진입 시,자동 수집,No,,,로그인 페이지 유입량 파악,
+,,,,,No,,,,
+,"success_login
+→ login","버튼 클릭, 전환",로그인 완료 시,user_id,Yes,uuid,string,로그인 및 재방문율 분석,
+,,,,date,Yes,"로그인 한 날짜
+(YYYY-MM-DD)",string,,
+,,,,"method
+→ 추가했습니다!",No,"로그인 방법
+(email / google : 추후 확장)",,,
+,,,,,No,,,,
+,fail_login,버튼 클릭,login 버튼 클릭 시,user_id,Yes,uuid,string,사용자 식별,
+,,,,error_type,Yes,"에러 타입
+(wrong_email / wrong_password)
+둘 다일 경우⇒ both?",string,실패 원인별 비율 분석,이메일에서 많이들 막힌다면 회원가입 할 때 이메일 형식만 옳게 하면 가입할 수 있어서 그런 것인지? (막 적은 이메일이라 기억을 못해서 그런건지?) → 실제 유효한 이메일 검증 필요
+,,,,,No,,,,
+회원가입,"view_sign_in
+→ page_view 로 통일?","버튼 클릭, 페이지 방문","sign in 버튼 클릭 시
+(회원가입 페이지 진입 시)",user_pseudo_id,Yes,"비로그인 사용자 고유ID ",string,가입 클릭율 측정,여기서 이탈률이 높다면 자사 서비스 가입이라 그런 것인지? (간편 로그인이 없기 때문인건지?
+,,,,"entry_timestamp
+
+",No,"회원가입 페이지 진입 시점
+(UNIX time)",number,,아님 시간이 오래 걸려서인지? (complete_timestamp - entry_timestamp → 평균 회원가입 시간 분석)
+,,,,,No,,,,
+,"sign_up
+","버튼 클릭, 전환","sign up 버튼 클릭 시
+(회원가입 완료 시)",user_pseudo_id,Yes,비로그인 사용자 고유ID,string,가입 전환율 측정,
+,,,,complete_timestamp,No,"가입 완료 시점
+(UNIX time)",number,,
+,,,,,No,,,,
+,,,,"user_id
+→ 회원가입 처리 시 바로 유저아이디가 생성된다면 추가부탁드려요!",No,유저 아이디 (uuid),string,,
+,,,,"method
+→ 추가했습니다!",Yes,"회원가입 방법
+(email / google : 추후 확장)",,,
+,,,,,No,,,,
+메인,"veiw_chatroom_list
+→ view_main 으로 변경 부탁드립니다!",페이지 방문,"메인(채팅목록) 진입 시 ","user_id
+",Yes,uuid,string,사용자 식별,
+,,,,"entry_timestamp
+",Yes,"메인(채팅목록) 페이지 진입 시점
+(UNIX time)",number,활성 사용자 수,"사용자가 로그인 후 실제 메인에 도달했는지? → 세션 유지율 파악
+"
+,,,,,No,,,,
+,enter_chatroom,버튼 클릭,채팅방 카드 클릭 시,user_id,Yes,uuid,string,사용자 식별,
+,,,,chatroom_id,No,uuid,string,,→ 여기서 수집 불가능(프론트)
+,,,,concept,Yes,"채팅방 컨셉 (friend, honey, senior, coworker)",string,활성 채팅방 파악,어떤 관계 유형의 채팅방이 가장 많이 이용되는지 확인 → 인기 및 비인기 콘텐츠 구조 개선에 활용
+,,,,entry_timestamp,No,"채팅방 카드 클릭 시점
+(UNIX time)",number,-,
+,,,,,No,,,,
+,"open_side_menu
+→ 이벤트 지워주세요!","버튼 클릭, 페이지 방문","햄버거 메뉴 클릭 시
+(사이드 메뉴 오픈 시)",user_id,No,uuid,string,사용자 식별,
+,,,,entry_timestamp,No,"햄버거 버튼 클릭 시점
+(UNIX time)",string,"메뉴 오픈 빈도 ","메인에서 추가 기능(About, Terms, Logout 등)으로의 이동률 파악 → 메뉴 접근성, UX 개선 지표 등
+"
+,,,,메뉴 목록별 내용 추가 필요 - 어바웃 어스 부분도 필요한가?,No,,,,
+,,,,,No,,,,
+,"click_contact_us
+→ 이벤트 지워주세요!","버튼 클릭, 페이지 방문","사이드 메뉴에서 contact us 클릭
+(외부 링크 이동)
+","user_id
+",No,uuid,string,사용자 식별,"
+"
+,,,,"destination_url
+",No,"destination_url
+(https://forms.gle/dRBuvgKjwK7enscy6)","string
+",외부 링크 이동 기록,사용자 문의 진입률 → 고객 지원 접근성 및 개선 여부 확인
+,,,,,No,,,,
+,"click_logout
+",버튼 클릭,"사이드 메뉴에서 logout 버튼 클릭 시
+→ 모달창 > 로그아웃 버튼 클릭 시","user_id
+→ 로그아웃 완료 시점에 유저아이디가 있을 수 있나요?",No,uuid,string,사용자 식별,
+,,,,,No,,,,
+,confirm_logout,"버튼 클릭, 전환","사이드 메뉴에서 logout 버튼 클릭 시
+(로그아웃 완료 시)",user_id,Yes,uuid,string,사용자 식별,
+,,,,complete_timestamp,No,"로그아웃 완료 시점
+(UNIX time)",number,세션 유지율,"어느 시점에서 로그아웃을 하고, 세션을 얼마나 지속하는지? → 로그아웃 시도 빈도, 사용자 세션 지속시간 분석"
+,,,,,No,,,,
+,"click_delete_account
+",버튼 클릭,"사이드 메뉴에서 delete 버튼 클릭 시
+→ 모달창 > 계정 삭제 버튼 클릭 시
+","user_id
+→ 탈퇴 완료 시점에 유저아이디가 있을 수 있나요?",No,uuid,string,사용자 식별,
+,,,,,Yes,,,,
+,"confirm_delete_account
+","버튼 클릭, 전환","사이드 메뉴에서 delete 버튼 클릭 시
+(계정삭제 완료 시)",user_id,Yes,uuid,string,사용자 식별,"실제 탈퇴율, 사유별 데이터 분석을 통한 이탈 원인 분류 → 탈퇴 이유를 어떻게 분석하면 좋을지,,?
+"
+,,,,complete_timestamp,No,"계정삭제 완료 시점
+(UNIX time)",number,탈퇴율 측정,
+,,,,,No,,,,
+친밀도 설정,set_intimacy_level,버튼 클릭,거리감 슬라이더 설정 시,chatroom_id,No,uuid,string,채팅별 유지율 분석,
+,,,,user_id,No,uuid,string,사용자 식별,
+,,,,concept,No,"대화 컨셉 (friend, honey, senior, coworker)",string,유저별 대화 컨셉 설정 확인,"컨셉 설정 후 채팅방 이탈률이 높다면, 컨셉 용어가 낯설거나 헷갈려서인가? (예: senior → 직장 상사인지, 학교 선배인지 혼란)"
+,,,,intimacy_level,No,"친밀도 단계 (1,3)",int,친밀도 분포 확인,
+,,,,changed_intimacy_level_timestamp,No,친밀도 레벨 변경 시점 (UNIX time),number,친밀도 변경 분석,"사용자가 대화 종료 후 동일 컨셉의 새 채팅방에 진입해 친밀도 레벨을 다르게 설정한다면, 이전 톤이 기대와 맞지 않는 것인가?"
+,,,,,No,,,,
+채팅방,view_chatroom,"버튼 클릭, 전환",채팅방 진입 후 친밀도 설정 시,chatroom_id,Yes,uuid,string,채팅방 진입률 및 재방문율 측정,
+,,,,,No,,,,
+,,,,,No,,,,
+,,,,user_id,Yes,uuid,string,사용자 식별,
+,,,,date,Yes,채팅방 진입 날짜 (YYYY-MM-DD),string,채팅방 이용 집중도 분석,
+,,,,,No,,,,
+,send_greeting_message,버튼 클릭,첫 메시지 발송 시,chatroom_id,Yes,uuid,string,채팅별 유지율 분석,
+,,,,user_id,Yes,uuid,string,사용자 식별,
+,,,,bot_message,Yes,챗봇 인사 메시지 내용 (텍스트),string,봇 메시지 후 응답률 분석,"봇 메시지 후 응답률이 낮다면, 해당 내용이 부자연스러운가?"
+,,,,guide_message,Yes,시스템 가이드 문구 (텍스트),string,가이드 문구 노출 점검,봇 메시지와의 맥락 연결성이 부족한가?
+,,,,,No,,,,
+,send_user_message,버튼 클릭,사용자가 메시지 전송 시,chatroom_id,No,uuid,string,채팅별 유지율 분석,
+,,,,user_id,No,uuid,string,사용자 식별,
+,,,,user_message,No,사용자 메시지 내용 (텍스트),string,사용자 입력 내용 점검,"여기서 이탈률이 높다면, 메시지 형식/길이 제한이 몰입에 영향을 주는건가?"
+,,,,,No,,,,
+,send_ai_reply,버튼 클릭,답장 메시지 발송 시,chatroom_id,No,uuid,string,채팅별 유지율 분석,
+,,,,user_id,No,uuid,string,사용자 식별,
+,,,,intimacy_message,No,"AI 답장 메시지 (텍스트)
+→ 매개변수값은 있는데 유저메시지 값이 들어가요",string,AI 응답 내용 파악,사용자 메시지와의 맥락 연결성이 부족한가?
+,,,,,No,,,,
+,send_ai_intimacy,버튼 클릭,교정 수행 시,chatroom_id,No,uuid,string,채팅별 유지율 분석,
+,,,,user_id,No,uuid,string,사용자 식별,
+,,,,ai_message,No,교정된 문장 내용 (텍스트),string,교정 문장 내용 파악,교정 결과가 어색해서 이탈이 발생하는가?
+,,,,,No,,,,
+,"click_privious
+→ leave_chatroom",버튼 클릭,채팅방에서 이전 → 떠나기 버튼 클릭 시,chatroom_id,No,uuid,string,채팅별 유지율 분석,
+,,,,user_id,No,uuid,string,사용자 식별,
+,,,,previous_button,No,"이전 버튼 클릭
+→ 빼주세요!",string,이전 버튼 클릭률 분석,
+,,,,leave_timestamp,No,"이전 버튼 클릭 완료 시점
+(UNIX time)",number,,사용자가 채팅방 시작 후 얼마나 시간이 경과했을 때 '이전 버튼'을 클릭하는가?
+,,,,,No,,,,
+보관함,"view_store
+",페이지 방문,보관함 화면 진입 시,user_id,Yes,uuid,string,사용자 식별,
+,,,,entry_point,Yes,"보관함 유입 경로
+(chatroom_list / chatroom_id)",string,보관함 진입 경로,"사용자들은 메인홈에서 진입하는지 아니면 채팅방에서 진입하는지 "
+,,,,entry_timestamp,No,"보관함 페이지 진입 시점
+(UNIX time)",number,활성 사용자 수 및 이용 주기 분석,보관함을 자주 사용하는가
+,,,,,No,,,,
+,click_home_store,버튼 클릭,메인 홈 > 보관함 > 채팅방별 탭 클릭 시,user_id,No,uuid,string,사용자 식별,
+,,,,total_saved_count,No,보관된 총 표현 개수,number,사용자 보관 규모 파악,
+,,,,concept,No,"friend, honey, senior, coworker(chatroom_id)",string,컨셉별 보관함 저장 빈도,채팅방 선호도와 일치하는가
+,,,,intimacy_level,No,"Polite – Friendly (1, 3)",int,친밀도별 보관함 저장 빈도,친밀도 선호도와 일치하는가
+,,,,ment_explanation_saved,No,사용자 교정 메시지 저장 개수,number,교정 메시지 저장수  파악,"어느 콘텐츠(교정, 단어, 챗봇 메시지)를 더 복습하고 싶어하고 선호하는가"
+,,,,bot_message_saved,No,AI 답장 메시지 저장 개수,number,챗봇 메시지 저장수 파악,-
+,,,,,No,,,,
+,click_store_delete,버튼 클릭,보관된 항목의 삭제 버튼 클릭 시,user_id,Yes,uuid,string,사용자 식별,
+,,,,chatroom_id,Yes,uuid,string,어느 채팅방의 보관 내용을 삭제하는지 파악,
+,,,,"concept
+",No,"friend, honey, senior, coworker(chatroom_id)",string,,
+,,,,content_type,Yes,"bot_message
+ment_explanation
+",string,삭제되는 콘텐츠 파악,
+,,,,time_saved,Yes,"보관 후 삭제까지 경과 시간
+",number,보관된 내용이 유지되는 시간 분석,"보관함 이용 주기와 함께 분석하여, 사용자들이 실제로 보관함을 학습의 목적으로 이용하는가"
+,,,,,No,,,,

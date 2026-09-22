@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"><defs>
+  <linearGradient id="htb" x1="0.15" y1="0" x2="0.85" y2="1">
+    <stop offset="0" stop-color="#ffb0c6"/><stop offset="0.5" stop-color="#ff4f7e"/><stop offset="1" stop-color="#d01f52"/>
+  </linearGradient>
+  <radialGradient id="hts" cx="0.3" cy="0.22" r="0.6">
+    <stop offset="0" stop-color="#fff" stop-opacity="0.95"/><stop offset="1" stop-color="#fff" stop-opacity="0"/>
+  </radialGradient>
+  <filter id="htd" x="-40%" y="-40%" width="180%" height="190%">
+    <feDropShadow dx="0" dy="14" stdDeviation="11" flood-color="#7a0f2e" flood-opacity="0.32"/>
+  </filter>
+  <filter id="htg"><feGaussianBlur stdDeviation="3.5"/></filter></defs>
+  <g filter="url(#htd)">
+    <path d="M100 170c-4 0-8-1.6-11-4.4C58 137 28 111 28 78c0-25 19-44 43-44 12.6 0 23 5.4 29 14.6C106 39.4 116.4 34 129 34c24 0 43 19 43 44 0 33-30 59-61 87.6-3 2.8-7 4.4-11 4.4z" fill="url(#htb)"/><path d="M100 170c-4 0-8-1.6-11-4.4C58 137 28 111 28 78c0-25 19-44 43-44 12.6 0 23 5.4 29 14.6C106 39.4 116.4 34 129 34c24 0 43 19 43 44 0 33-30 59-61 87.6-3 2.8-7 4.4-11 4.4z" fill="url(#hts)"/>
+    <ellipse cx="64" cy="66" rx="17" ry="9" transform="rotate(-35 64 66)" fill="#fff" fill-opacity=".85" filter="url(#htg)"/>
+    <path d="M150 90c2 22-16 44-36 60" stroke="#8a1236" stroke-opacity=".35" stroke-width="9" stroke-linecap="round" fill="none" filter="url(#htg)"/>
+  </g></svg>

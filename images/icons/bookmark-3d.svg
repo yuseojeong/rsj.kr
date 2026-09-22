@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"><defs>
+  <linearGradient id="bkb" x1="0.15" y1="0" x2="0.85" y2="1">
+    <stop offset="0" stop-color="#ffffff"/><stop offset="0.5" stop-color="#e2e7ff"/><stop offset="1" stop-color="#aab6f5"/>
+  </linearGradient>
+  <radialGradient id="bks" cx="0.3" cy="0.22" r="0.6">
+    <stop offset="0" stop-color="#fff" stop-opacity="0.95"/><stop offset="1" stop-color="#fff" stop-opacity="0"/>
+  </radialGradient>
+  <filter id="bkd" x="-40%" y="-40%" width="180%" height="190%">
+    <feDropShadow dx="0" dy="14" stdDeviation="11" flood-color="#1e2a8a" flood-opacity="0.32"/>
+  </filter>
+  <filter id="bkg"><feGaussianBlur stdDeviation="3.5"/></filter></defs>
+  <g filter="url(#bkd)">
+    <path d="M60 30h80a18 18 0 0 1 18 18v122a8 8 0 0 1-12.6 6.5L100 145l-45.4 31.5A8 8 0 0 1 42 170V48a18 18 0 0 1 18-18z" fill="url(#bkb)"/><path d="M60 30h80a18 18 0 0 1 18 18v122a8 8 0 0 1-12.6 6.5L100 145l-45.4 31.5A8 8 0 0 1 42 170V48a18 18 0 0 1 18-18z" fill="url(#bks)"/>
+    <path d="M62 42h74" stroke="#fff" stroke-width="7" stroke-linecap="round" filter="url(#bkg)"/>
+    <path d="M150 58v104" stroke="#3a48b8" stroke-opacity=".25" stroke-width="9" stroke-linecap="round" filter="url(#bkg)"/>
+    <path d="M100 66l9.4 19 21 3-15.2 14.8 3.6 20.9L100 113.8l-18.8 9.9 3.6-20.9L69.6 88l21-3z" fill="#4f63f0"/>
+    <path d="M100 72l6 12" stroke="#fff" stroke-opacity=".6" stroke-width="4" stroke-linecap="round"/>
+  </g></svg>

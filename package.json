@@ -1,0 +1,11 @@
+{
+  "name": "seojeong-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "node server.js",
+    "start": "node server.js",
+    "check": "node --check js/main.js && node --check js/coffeechat.js && node --check js/landscape.js && node --check js/atmosphere.js && node --check js/project.js && node --check scripts/build-projects.js && node --check server.js",
+    "build": "node scripts/build-projects.js"
+  }
+}
