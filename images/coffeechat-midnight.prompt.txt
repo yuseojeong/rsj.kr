@@ -1,0 +1,5 @@
+Tool: built-in image_gen (edit)
+Source: images/hero-lavender-meadow.png
+Output: images/coffeechat-midnight.png
+
+Use case: lighting-weather. Asset type: website coffee-chat background, a matched nighttime variant for a dissolve transition. Image 1 is the edit target. Change ONLY the time of day of the sky: remove all pink/orange sunset illumination and turn the entire sky into calm deep midnight indigo-purple with subtle small stars and the existing crescent moon. Clouds should be subdued dark blue-violet, with NO sunset or glowing horizon. Reduce the brightness and visual busyness of the sky to help white chat UI be readable. Preserve EXACT framing 1536x1024, horizon, hills, grass, flowers, fireflies and especially the woman's identity, face, expression, hair, white shirt, body position, hands, laptop and their positions and proportions. Keep her softly lit and recognizable by laptop/firefly light. Do not relocate or redraw any objects. Preserve the bottom half as closely as possible. No text, no interface, no new objects. Output one edited image.

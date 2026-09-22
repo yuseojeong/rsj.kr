@@ -1,0 +1,293 @@
+[
+  {
+    "id": "01",
+    "category": "APP · 콘텐츠 아카이빙",
+    "title": "함께 모으고,\n필요할 때 쏙.",
+    "summary": "여럿이 콘텐츠를 저장하고 탐색하는 그룹 콘텐츠 아카이빙 앱",
+    "theme": "lavender",
+    "cover": "app",
+    "focus": "그룹 콘텐츠 아카이빙",
+    "overview": "쏙은 흩어진 링크를 그룹 안에서 함께 저장·분류·공유하고, 필요할 때 빠르게 다시 찾도록 설계한 콘텐츠 아카이빙 앱입니다. PM으로 사용자 조사부터 MVP 범위, UX/UI·기능 설계와 출시 관리까지 리딩했습니다.",
+    "problem": "단톡방과 SNS에 흩어진 링크는 저장한 뒤 다시 찾기 어렵고, 여러 사람이 함께 보는 콘텐츠일수록 맥락이 사라졌습니다.",
+    "hypothesis": "사용자에게 맞는 저장 구조와 그룹 단위의 공유 흐름을 제공하면, 콘텐츠를 다시 찾는 시간을 줄이고 재탐색 경험을 개선할 수 있다고 보았습니다.",
+    "direction": "설문 결과를 바탕으로 저장·카테고리·키워드·링크 탐색을 MVP로 우선순위화하고, 유저플로우·화면 설계·A/B 테스트로 검증했습니다.",
+    "journey": [
+      "그룹 선택",
+      "콘텐츠 저장",
+      "콘텐츠 탐색",
+      "다시 보기"
+    ],
+    "screens": [
+      "아카이브 홈",
+      "그룹 콘텐츠",
+      "링크 상세"
+    ],
+    "feature": "그룹 콘텐츠 저장·탐색",
+    "requirement": "그룹에서 콘텐츠를 함께 저장하고 탐색한다.",
+    "acceptance": "저장한 콘텐츠를 그룹에서 확인할 수 있다.",
+    "tools": "Figma",
+    "tags": [
+      "서비스 기획",
+      "그룹 아카이빙",
+      "MVP 출시"
+    ],
+    "period": "2025.05 – 2025.07",
+    "role": "PM",
+    "sourceUrls": {
+      "wireframes": "https://www.figma.com/design/NUVax28p8w21jtrBMaDyjz/Untitled?node-id=0-5623&m=dev"
+    },
+    "name": "쏙",
+    "slug": "ssok",
+    "contribution": "100%",
+    "result": "MVP 출시",
+    "resultDetail": "협업형 링크 아카이빙 MVP를 출시하고, A/B 테스트로 저장 과업 수행 시간을 평균 44% 단축하고 미스클릭률을 23% 개선했습니다.",
+    "workDetail": "유저 리서치 · MVP 기획 · UX/UI · A/B Test · ERD · SB/유저플로우 설계",
+    "retrospectiveImage": "images/projects/ssok-retrospective-source.png",
+    "images": [
+      {
+        "src": "images/projects/ssok-screens.png",
+        "alt": "쏙 아카이브 홈과 그룹 콘텐츠 화면"
+      }
+    ],
+    "stats": [
+      {
+        "value": "44%",
+        "label": "UT 과업 수행 시간 단축"
+      },
+      {
+        "value": "23%",
+        "label": "미스클릭률 개선"
+      }
+    ],
+    "learnings": [
+      {
+        "title": "예외까지 설계하는 유저플로우",
+        "text": "정상 흐름만으로는 개발 과정의 질문을 막기 어려웠습니다. 이후에는 조건 분기와 예외 상황까지 유저플로우에 포함해 개발 전 합의의 기준으로 삼았습니다."
+      },
+      {
+        "title": "근거를 공유하는 협업",
+        "text": "화면을 보는 관점이 다를 때 설문과 유저저니를 함께 보며 사용자 니즈를 기준으로 의사결정을 정리했습니다."
+      },
+      {
+        "title": "변경 이력을 남기는 기획",
+        "text": "변경 이유와 화면별 수정 이력을 Jira로 관리해 팀이 항상 최신 기획안을 기준으로 작업할 수 있도록 했습니다."
+      }
+    ],
+    "projectProfile": [
+      {
+        "label": "팀 구성",
+        "value": "PM 1명 · BE/FE 1명 · DE 1명"
+      },
+      {
+        "label": "담당 업무",
+        "value": "프로젝트 리딩 · E2E 제품 출시 관리 · 유저 리서치 · 상세 기획 · UX/UI 인터랙션 설계 · A/B 테스트"
+      },
+      {
+        "label": "사용한 툴",
+        "value": "Figma · Notion · Jira · GA4"
+      }
+    ],
+    "highlights": [
+      "설문 **n=50** 기반으로 협업형 링크 아카이빙의 핵심 가설 수립·검증",
+      "워킹 스켈레톤으로 MVP 범위를 정의하고 **MVP 출시**",
+      "A/B 테스트로 과업 수행 시간 **44% 단축** · 미스클릭률 **23% 개선**"
+    ]
+  },
+  {
+    "id": "02",
+    "category": "APP / WEB · AI 한국어 회화",
+    "title": "한국어를 넘어,\n자연스러운 대화로.",
+    "summary": "한국 사회·정서 문화를 학습한 챗봇과 실제 대화처럼 배우는 AI 한국어 회화 서비스",
+    "theme": "lavender",
+    "cover": "app",
+    "focus": "AI 회화 학습 · 기획 및 운영",
+    "overview": "koach는 한국 사회·정서 문화를 기반으로 자연스러운 회화 학습을 돕는 AI 챗봇 서비스입니다. 챗봇을 통해 실제 한국인과 대화하는 경험을 제공하고, 관계와 상황에 맞는 표현을 익히도록 기획했습니다. PL로서 서비스 기획·운영과 AI 품질 개선, 유저 행동 데이터 기반의 UX·퍼널 개선을 진행했습니다.",
+    "problem": "한국어 표현이 문법적으로 맞더라도 관계와 문화적 맥락에 따라 어색하게 전달될 수 있습니다.",
+    "hypothesis": "한국 문화와 관계·상황의 맥락을 반영한 챗봇을 통해 실제 한국인과 대화하듯 학습하면, 자연스러운 표현을 익히는 데 도움이 될 것이라고 보았습니다.",
+    "direction": "멀티 에이전트 파이프라인과 RAG로 대화 품질을 개선하고, GA4 지표 설계와 유저 행동 데이터 분석을 바탕으로 온보딩·채팅 전환 흐름을 개선했습니다.",
+    "journey": [
+      "대화 상대 선택",
+      "친밀도 설정",
+      "회화 연습",
+      "표현 교정 확인"
+    ],
+    "screens": [
+      "대화 설정",
+      "회화 채팅",
+      "교정 피드백"
+    ],
+    "feature": "맥락에 맞는 표현 교정",
+    "requirement": "대화 맥락과 친밀도를 반영한 표현 교정 피드백을 제공한다.",
+    "acceptance": "입력한 표현의 교정안과 설명을 확인할 수 있다.",
+    "tools": "Figma · Notion · GA4 · Spreadsheet",
+    "tags": [
+      "AI 서비스 기획",
+      "회화 학습",
+      "서비스 운영"
+    ],
+    "period": "2025.09 – 2026.04",
+    "role": "PM · PL",
+    "sourceUrls": {
+      "research": "https://app.notion.com/p/35c9b5c9498981afb903dc05d8421a0f?source=copy_link",
+      "requirements": "https://app.notion.com/p/PRD-35c9b5c9498981c4a679d9da6c30df00?source=copy_link",
+      "policy": "https://app.notion.com/p/35c9b5c949898170a855cd965eb727e6?v=35c9b5c9498981209d93000c6df64f4a&source=copy_link",
+      "wireframes": "https://www.figma.com/design/7KFfhEPvuk3Exz5M3AYU6B/%ED%94%BC%EA%B7%B8%EB%A7%88-%EC%A0%9C%EB%A1%9C%EB%B2%A0%EC%9D%B4%EC%8A%A4-%EB%B2%84%EC%A0%841?node-id=1152-3254&m=dev",
+      "ut": "https://www.figma.com/design/7KFfhEPvuk3Exz5M3AYU6B/%ED%94%BC%EA%B7%B8%EB%A7%88-%EC%A0%9C%EB%A1%9C%EB%B2%A0%EC%9D%B4%EC%8A%A4-%EB%B2%84%EC%A0%841?node-id=1948-14280&m=dev",
+      "validation": "https://app.notion.com/p/QA-35c9b5c9498981dab2c9c49f2947487e?source=copy_link"
+    },
+    "embedUrls": {
+      "policy": "https://melodic-weather-784.notion.site/ebd//35c9b5c9498981a98680c848dac166be"
+    },
+    "name": "koach",
+    "slug": "koach",
+    "contribution": "70%",
+    "result": "사용자 282명 획득",
+    "resultDetail": "사전 예약 2주간 354명을 모집하고 사용자 282명을 획득했습니다. 온보딩 개편, 앱 전환 유도·리텐션 푸시 설계, RAG 기반 품질 개선을 통해 가입부터 첫 대화까지의 흐름을 개선했습니다.",
+    "workDetail": "PM · PL · GA 지표 설계 및 분석 · AI 아키텍처 설계 · WBS 관리 · 어드민 기획 · 데이터 적재 가이드 작성",
+    "heroImages": [
+      {
+        "src": "images/projects/koach-closeness.png",
+        "alt": "동료와의 친밀도를 설정하는 koach 화면",
+        "label": "친밀도 설정"
+      },
+      {
+        "src": "images/projects/koach-conversation.png",
+        "alt": "동료와 대화하며 표현을 교정받는 koach 화면",
+        "label": "대화 · 표현 교정"
+      }
+    ],
+    "images": [
+      {
+        "src": "images/projects/koach-screens.png",
+        "alt": "koach 친밀도 설정과 한국어 회화 교정 화면"
+      }
+    ],
+    "stats": [
+      {
+        "value": "354명",
+        "label": "사전 예약 2주간 모집"
+      },
+      {
+        "value": "282명",
+        "label": "획득한 사용자"
+      }
+    ],
+    "learnings": [
+      {
+        "title": "분석을 고려한 데이터 구조화",
+        "text": "데이터 기반 의사결정을 위해 사용자 행동을 분석하기 좋은 형태로 구조화하는 역량을 쌓았습니다. GA 지표 설계와 데이터 적재 가이드 작성으로 수집할 행동과 분석 목적을 연결했습니다."
+      },
+      {
+        "title": "행동 데이터로 이어가는 개선",
+        "text": "유저 행동 데이터를 기반으로 가설을 세우고 검증·개선하는 스프린트 운영 방식을 익혔습니다. 회원가입과 채팅 전환, 첫 응답 이탈 지표를 살피며 서비스 경험을 개선했습니다."
+      },
+      {
+        "title": "운영 경험을 도구로 바꾸기",
+        "text": "운영자의 반복 업무를 관찰해 로그 조회와 문의 처리를 어드민으로 표준화했습니다. 운영 흐름을 제품으로 정리하면서 팀 전체의 운영 효율을 높일 수 있었습니다."
+      },
+      {
+        "title": "구조를 먼저 공유하는 기획",
+        "text": "아이디어 제안을 넘어 에이전트 구조와 데이터 흐름을 문서로 먼저 정의하고 시각화했습니다. 팀이 같은 그림을 보며 논의하니 개발·기획 간 소통 비용이 줄고 협업이 원활해졌습니다."
+      }
+    ],
+    "projectProfile": [
+      {
+        "label": "팀 구성",
+        "value": "PM 3명 · BE 2명 · DE 2명 · FE 2명 · CM 2명"
+      },
+      {
+        "label": "담당 업무",
+        "value": "GA 지표 설계 및 분석 · AI 아키텍처 설계 · WBS 관리 · 어드민 기획 · 데이터 적재 가이드 작성"
+      },
+      {
+        "label": "사용한 툴",
+        "value": "Figma · Notion · GA4 · Spreadsheet"
+      }
+    ],
+    "outcomes": [
+      {
+        "title": "회원가입 전환율",
+        "action": "온보딩 플로우 개편",
+        "before": "11.2%",
+        "after": "16.0%",
+        "change": "+4.8%p"
+      },
+      {
+        "title": "채팅 전환율",
+        "action": "앱 전환 유도 및 리텐션 푸시 설계",
+        "before": "18.5%",
+        "after": "42.5%",
+        "change": "+24.0%p"
+      },
+      {
+        "title": "첫 응답 이탈률",
+        "action": "RAG 기반 품질 개선",
+        "before": "62.1%",
+        "after": "20.0%",
+        "change": "−42.1%p"
+      }
+    ]
+  },
+  {
+    "id": "03",
+    "category": "APP · 바이브 코딩",
+    "title": "혼자 고민하던 연애,\n함께 나누는 O와 X.",
+    "summary": "연애 고민을 나누고 OX 투표로 서로의 생각을 듣는 커뮤니티 앱",
+    "theme": "peach",
+    "cover": "ai",
+    "focus": "연애 고민 커뮤니티 · 바이브 코딩",
+    "overview": "연OX는 연애 고민을 공유하고 OX 투표와 댓글로 다양한 생각을 나누는 커뮤니티 앱입니다. 바이브 코딩으로 구현해 앱 출시를 완료했습니다.",
+    "problem": "연애 고민에 대해 다른 사람의 생각을 듣고 자신의 상황을 이야기할 공간에 주목했습니다.",
+    "hypothesis": "OX 투표와 댓글이 고민을 나누는 참여의 문턱을 낮출 것이라는 방향으로 서비스를 구성했습니다.",
+    "direction": "커뮤니티 피드와 OX 투표, 댓글과 작성자 후기를 연결하고 바이브 코딩으로 앱을 구현·출시했습니다.",
+    "journey": [
+      "고민 탐색",
+      "OX 투표",
+      "댓글 나누기",
+      "작성자 후기"
+    ],
+    "screens": [
+      "커뮤니티 피드",
+      "OX 투표",
+      "작성자 후기"
+    ],
+    "feature": "고민 공유와 OX 투표",
+    "requirement": "연애 고민을 공유하고 OX 투표와 댓글로 의견을 나눈다.",
+    "acceptance": "고민과 투표 결과, 댓글을 확인할 수 있다.",
+    "tools": "바이브 코딩",
+    "tags": [
+      "바이브 코딩",
+      "커뮤니티",
+      "앱 출시"
+    ],
+    "period": "정리 중",
+    "role": "기획 · 구현",
+    "sourceUrls": {},
+    "name": "연OX",
+    "slug": "yeonox",
+    "result": "앱 출시 완료",
+    "resultDetail": "바이브 코딩으로 연애 고민 커뮤니티를 구현하고 앱 출시를 완료했습니다.",
+    "workDetail": "커뮤니티 피드 · OX 투표 · 댓글 · 작성자 후기",
+    "images": [
+      {
+        "src": "images/projects/yeonox-feed.png",
+        "alt": "연OX 연애 고민 커뮤니티와 OX 투표 화면"
+      },
+      {
+        "src": "images/projects/yeonox-review.png",
+        "alt": "연OX 작성자 후기와 댓글 화면"
+      }
+    ],
+    "stats": [
+      {
+        "value": "출시",
+        "label": "바이브 코딩으로 구현한 앱 출시"
+      },
+      {
+        "value": "4단계",
+        "label": "탐색 → OX 투표 → 댓글 → 후기"
+      }
+    ],
+    "learnings": []
+  }
+]

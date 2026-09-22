@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"><defs>
+  <linearGradient id="xxb" x1="0.15" y1="0" x2="0.85" y2="1">
+    <stop offset="0" stop-color="#ffc2d0"/><stop offset="0.5" stop-color="#ff5a7f"/><stop offset="1" stop-color="#d32753"/>
+  </linearGradient>
+  <radialGradient id="xxs" cx="0.3" cy="0.22" r="0.6">
+    <stop offset="0" stop-color="#fff" stop-opacity="0.95"/><stop offset="1" stop-color="#fff" stop-opacity="0"/>
+  </radialGradient>
+  <filter id="xxd" x="-40%" y="-40%" width="180%" height="190%">
+    <feDropShadow dx="0" dy="14" stdDeviation="11" flood-color="#7a0f2e" flood-opacity="0.32"/>
+  </filter>
+  <filter id="xxg"><feGaussianBlur stdDeviation="3.5"/></filter></defs>
+  <g filter="url(#xxd)">
+    <path d="M62 50l38 38 38-38a14 14 0 0 1 20 20l-38 38 38 38a14 14 0 0 1-20 20l-38-38-38 38a14 14 0 0 1-20-20l38-38-38-38a14 14 0 0 1 20-20z" fill="url(#xxb)"/>
+    <path d="M62 50l38 38 38-38a14 14 0 0 1 20 20l-38 38 38 38a14 14 0 0 1-20 20l-38-38-38 38a14 14 0 0 1-20-20l38-38-38-38a14 14 0 0 1 20-20z" fill="url(#xxs)"/>
+    <path d="M54 58l26 26" stroke="#fff" stroke-width="7" stroke-linecap="round" filter="url(#xxg)"/>
+  </g></svg>

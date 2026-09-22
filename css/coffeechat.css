@@ -1,0 +1,84 @@
+body.coffeechat-open{overflow:hidden}
+.coffeechat-dialog{position:fixed;inset:0;width:100%;height:100dvh;max-width:none;max-height:none;margin:0;padding:0;border:0;background:#51476f;color:#fff;overflow:auto;isolation:isolate}
+.coffeechat-dialog::backdrop{background:#30263f}
+.coffeechat-dialog .hero-scene{z-index:-1;min-height:100%;pointer-events:none}
+.coffeechat-dialog .meadow-image{object-position:50% 70%}
+.coffeechat-dialog .meadow-night-image{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 70%;opacity:0;transition:opacity 2.6s ease}
+.coffeechat-dialog.has-conversation .meadow-night-image{opacity:1}
+.coffeechat-dialog .sky-cloud{transition:opacity 2.6s ease}
+.coffeechat-dialog.has-conversation .sky-cloud{opacity:.05}
+.coffeechat-header{position:relative;display:flex;align-items:center;justify-content:space-between;gap:20px;padding:30px 44px}
+.coffeechat-brand{display:flex;align-items:center;gap:9px;font-size:24px;font-weight:650;letter-spacing:-1px}
+.coffeechat-brand>span{color:#d0bfee;font-size:30px}
+.coffeechat-brand small{margin-left:16px;font-size:10px;font-weight:500;letter-spacing:1.5px;color:#e4dcec}
+.coffeechat-close{display:flex;align-items:center;gap:14px;padding:10px 16px;border:1px solid #ffffff40;border-radius:24px;background:#352d4933;color:#fff;backdrop-filter:blur(12px);font-size:12px}
+.coffeechat-close span{font-size:23px;line-height:1}
+.coffeechat-content{width:min(680px,calc(100% - 48px));margin:clamp(36px,9vh,110px) auto 140px;text-align:center}
+.coffeechat-eyebrow{font-size:12px;color:#eadff3;letter-spacing:.3px}
+.coffeechat-content h2{margin-top:16px;font-size:clamp(32px,3.6vw,48px);font-weight:550;letter-spacing:-1.8px;line-height:1.4;text-shadow:0 2px 24px #22193020}
+.coffeechat-dialog:not(.has-conversation) .coffeechat-content h2{font-size:clamp(26px,3.2vw,42px)}
+.coffeechat-introduction{display:block;min-height:2.8em;white-space:pre-line;transition:opacity .25s ease,transform .25s ease}
+.coffeechat-introduction.is-changing{opacity:0;transform:translateY(-8px)}
+.coffeechat-content>p:not(.coffeechat-eyebrow){margin-top:16px;font-size:13px;line-height:1.8;color:#f0e7f7}
+.coffeechat-composer{margin-top:32px;padding:22px 24px 16px;border:1px solid #e8def34d;border-radius:22px;text-align:left;background:#211c394f;box-shadow:0 16px 45px #140f231a;backdrop-filter:blur(5px);-webkit-backdrop-filter:blur(5px)}
+.coffeechat-content>.coffeechat-eyebrow,.coffeechat-content>h2,.coffeechat-content>#dialog-description{opacity:0;transform:translateY(14px);transition:opacity .85s ease,transform .85s ease}
+.coffeechat-dialog.intro-visible .coffeechat-content>.coffeechat-eyebrow,.coffeechat-dialog.intro-visible .coffeechat-content>h2,.coffeechat-dialog.intro-visible .coffeechat-content>#dialog-description{opacity:1;transform:none}
+.coffeechat-composer,.coffeechat-email{opacity:0;visibility:hidden;transform:translateY(28px) scale(.98);transition:opacity 1s ease,transform 1s cubic-bezier(.16,1,.3,1),visibility 1s}
+.coffeechat-dialog.chat-ready .coffeechat-composer,.coffeechat-dialog.chat-ready .coffeechat-email{opacity:1;visibility:visible;transform:none}
+.coffeechat-dialog.chat-ready .coffeechat-email{transition-delay:.2s}
+.coffeechat-composer textarea{display:block;resize:none;width:100%;min-height:76px;background:none;border:0;font:inherit;font-size:14px;line-height:1.7;color:#fff;opacity:1;-webkit-text-fill-color:#d2c8de}
+.coffeechat-composer textarea::placeholder{color:#d2c8de;opacity:1}
+.coffeechat-composer-footer{display:flex;align-items:center;justify-content:space-between;gap:18px;color:#c8bcd5;font-size:11px}
+.coffeechat-composer-footer button{flex-shrink:0;width:38px;height:38px;border:0;border-radius:50%;background:#bda7e5;color:#2d2340;font-size:24px;opacity:.7}
+.coffeechat-composer-footer button:enabled{opacity:1;cursor:pointer;transition:background .2s,transform .2s}
+.coffeechat-composer-footer button:enabled:hover{background:#d1bcf6;transform:translateY(-2px)}
+.coffeechat-composer-footer button:disabled{opacity:.4;cursor:default}
+.coffeechat-composer textarea{max-height:140px;overflow-y:auto;-webkit-text-fill-color:#fff}
+.coffeechat-composer textarea::placeholder{-webkit-text-fill-color:#d2c8de}
+.coffeechat-input-wrap{position:relative}
+.coffeechat-input-wrap textarea{padding:0}
+.coffeechat-guide{position:absolute;left:0;top:0;right:0;pointer-events:none;font-size:14px;line-height:1.7;color:#d2c8de;white-space:pre-wrap;transition:opacity .18s ease,transform .18s ease}
+.coffeechat-guide[hidden]{display:none}
+.coffeechat-guide.is-changing{opacity:0;transform:translateY(-6px)}
+.coffeechat-composer.has-rotating-guide textarea::placeholder{color:transparent;-webkit-text-fill-color:transparent}
+.coffeechat-composer:focus-within{border-color:#e6d5ff91}
+.coffeechat-messages{display:grid;gap:14px;max-height:min(38dvh,360px);margin-top:26px;overflow-y:auto;padding:4px 6px 4px 0;text-align:left;overscroll-behavior:contain;scrollbar-width:thin;scrollbar-color:#ba9fda66 transparent}
+.coffeechat-messages[hidden]{display:none}
+.coffeechat-message{justify-self:end;max-width:88%;padding:13px 18px;border:1px solid #d8c6f84d;border-radius:18px 18px 4px 18px;background:#76629e66;backdrop-filter:blur(5px);color:#fff;font-size:14px;line-height:1.8;white-space:pre-wrap;overflow-wrap:anywhere;animation:message-arrive .3s ease-out}
+.coffeechat-dialog.has-conversation[open]{display:flex;flex-direction:column;overflow:hidden;top:var(--coffeechat-offset,0px);bottom:auto;height:var(--coffeechat-height,100dvh)}
+.coffeechat-dialog.has-conversation .coffeechat-header{flex-shrink:0}
+.coffeechat-dialog.has-conversation .coffeechat-content{flex:1;min-height:0;display:grid;grid-template-rows:auto minmax(0,1fr) auto auto;margin:0 auto;padding:8px 0 calc(22px + env(safe-area-inset-bottom,0px));text-align:left}
+.coffeechat-dialog.has-conversation .coffeechat-eyebrow,.coffeechat-dialog.has-conversation #dialog-description{display:none}
+.coffeechat-dialog.has-conversation .coffeechat-content h2{grid-row:1;font-size:20px;letter-spacing:-.5px;margin-top:0}
+.coffeechat-dialog.has-conversation .coffeechat-messages{grid-row:2;align-content:start;min-height:0;max-height:none;margin-top:18px;padding-bottom:16px}
+.coffeechat-dialog.has-conversation .coffeechat-composer{grid-row:3;min-width:0;margin-top:12px}
+.coffeechat-dialog.has-conversation .coffeechat-composer textarea{min-height:48px}
+.coffeechat-dialog.has-conversation .coffeechat-email{grid-row:4;justify-self:center;font-size:11px;margin-top:12px}
+.coffeechat-dialog.has-conversation .scene-motion-toggle{top:116px;bottom:auto}
+@keyframes message-arrive{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+.coffeechat-email{display:inline-flex;align-items:center;gap:12px;margin-top:22px;color:#f2e9fa;font-size:12px;border-bottom:1px solid #ffffff40;padding-bottom:4px}
+.coffeechat-dialog .scene-motion-toggle{position:fixed;right:30px;bottom:26px;color:#f0e7fa;background:#27213270;border-color:#ffffff40;font-size:10px}
+.coffeechat-dialog.motion-paused .sky-cloud{animation-play-state:paused}
+.coffeechat-dialog.motion-paused .landscape-motion{opacity:0}
+.coffeechat-dialog :focus-visible{outline:2px solid #eadbff;outline-offset:5px}
+.coffeechat-dialog .coffeechat-composer textarea:focus-visible{outline:none}
+@media(max-width:600px){
+  .coffeechat-header{padding:22px 20px}
+  .coffeechat-brand{font-size:21px}
+  .coffeechat-brand small{display:none}
+  .coffeechat-content{margin-top:44px;width:calc(100% - 36px)}
+  .coffeechat-content h2{font-size:32px;letter-spacing:-1.3px}
+  .coffeechat-content>p:not(.coffeechat-eyebrow){font-size:12px;max-width:270px;margin-inline:auto}
+  .coffeechat-composer{padding:20px 18px 14px;margin-top:26px}
+  .coffeechat-composer textarea,.coffeechat-guide{font-size:16px}
+  .coffeechat-composer-footer{font-size:10px}
+  .coffeechat-message{font-size:13px;padding:11px 15px}
+  .coffeechat-dialog.has-conversation .coffeechat-header{padding:16px 20px}
+  .coffeechat-dialog.has-conversation .coffeechat-content{margin-top:0;padding-top:8px;padding-bottom:calc(12px + env(safe-area-inset-bottom,0px))}
+  .coffeechat-dialog.has-conversation .coffeechat-content h2{font-size:18px;padding-right:120px}
+  .coffeechat-dialog.has-conversation .coffeechat-composer{padding:14px 16px 10px}
+  .coffeechat-dialog.has-conversation .scene-motion-toggle{top:88px;bottom:auto}
+  .coffeechat-dialog .meadow-image,.coffeechat-dialog .meadow-night-image{object-position:65% 70%}
+  .coffeechat-dialog .scene-motion-toggle{right:18px;bottom:18px}
+}
+@media(prefers-reduced-motion:reduce){.coffeechat-dialog .meadow-night-image,.coffeechat-content>*,.coffeechat-introduction{transition:none!important}}

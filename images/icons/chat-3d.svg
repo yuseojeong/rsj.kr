@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"><defs>
+  <linearGradient id="chb" x1="0.15" y1="0" x2="0.85" y2="1">
+    <stop offset="0" stop-color="#ffffff"/><stop offset="0.5" stop-color="#e4defd"/><stop offset="1" stop-color="#b5a6f2"/>
+  </linearGradient>
+  <radialGradient id="chs" cx="0.3" cy="0.22" r="0.6">
+    <stop offset="0" stop-color="#fff" stop-opacity="0.95"/><stop offset="1" stop-color="#fff" stop-opacity="0"/>
+  </radialGradient>
+  <filter id="chd" x="-40%" y="-40%" width="180%" height="190%">
+    <feDropShadow dx="0" dy="14" stdDeviation="11" flood-color="#3b2780" flood-opacity="0.32"/>
+  </filter>
+  <filter id="chg"><feGaussianBlur stdDeviation="3.5"/></filter></defs>
+  <g filter="url(#chd)">
+    <path d="M100 36c40 0 70 24 70 56s-30 56-70 56c-8.6 0-17-1.1-24.6-3.2L46 162a6 6 0 0 1-8.4-6.8l7.2-26C35 118.6 30 106 30 92c0-32 30-56 70-56z" fill="url(#chb)"/><path d="M100 36c40 0 70 24 70 56s-30 56-70 56c-8.6 0-17-1.1-24.6-3.2L46 162a6 6 0 0 1-8.4-6.8l7.2-26C35 118.6 30 106 30 92c0-32 30-56 70-56z" fill="url(#chs)"/>
+    <path d="M64 58c14-10 32-13 50-10" stroke="#fff" stroke-width="7" stroke-linecap="round" fill="none" filter="url(#chg)"/>
+    <path d="M160 70c6 16 4 34-8 48" stroke="#6a55c9" stroke-opacity=".28" stroke-width="9" stroke-linecap="round" fill="none" filter="url(#chg)"/>
+    <circle cx="72" cy="94" r="10.5" fill="#7b5ce6"/><circle cx="69" cy="90.5" r="3.4" fill="#fff" fill-opacity=".7"/><circle cx="100" cy="94" r="10.5" fill="#7b5ce6"/><circle cx="97" cy="90.5" r="3.4" fill="#fff" fill-opacity=".7"/><circle cx="128" cy="94" r="10.5" fill="#7b5ce6"/><circle cx="125" cy="90.5" r="3.4" fill="#fff" fill-opacity=".7"/>
+  </g></svg>
