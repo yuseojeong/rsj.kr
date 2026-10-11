@@ -1,7 +1,7 @@
 /* Survey evidence reads as one editorial canvas, rather than nested cards. */
 .theme-koach #doc-research{background:radial-gradient(ellipse at 95% 0%,#fbf8ff 0,transparent 33%),#ffffff}
 .theme-koach #doc-research .doc-step-head{padding-top:38px;padding-bottom:26px;border-bottom:0}
-.theme-koach #doc-research .doc-step-head h3{max-width:660px;font-size:clamp(26px,2.4vw,34px);line-height:1.5;letter-spacing:-1.25px;text-wrap:balance}
+.theme-koach #doc-research .doc-step-head h3{max-width:660px;font-size:clamp(17px,1.5vw,22px);line-height:1.45;letter-spacing:-.7px;text-wrap:balance}
 .theme-koach #doc-research .doc-subtitle{max-width:830px;font-size:14px;line-height:1.9}
 .theme-koach #doc-research .document-canvas{padding-top:0;padding-bottom:0}
 .theme-koach .research-editorial{color:#393244}
@@ -75,7 +75,7 @@
 }
 @media(max-width:760px){
  .theme-koach #doc-research .doc-step-head{padding-top:28px}
- .theme-koach #doc-research .doc-step-head h3{font-size:25px;letter-spacing:-.8px}
+ .theme-koach #doc-research .doc-step-head h3{font-size:16px;letter-spacing:-.7px;white-space:normal}
  .theme-koach .study-meta{gap:8px;margin-bottom:32px}
  .theme-koach .study-meta>div{padding:12px;gap:8px;border-radius:18px;align-items:flex-start;flex-direction:column}
  .theme-koach .study-meta>div:last-child{flex-direction:row;align-items:baseline}

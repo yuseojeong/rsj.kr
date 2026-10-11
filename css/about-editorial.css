@@ -26,6 +26,18 @@
 .about-evidence-result strong.about-result-word{font-size:27px;letter-spacing:-1px}
 .about-evidence-arrow{font-size:18px;color:#b4a7c5;transition:transform .2s}
 .about-evidence-row:hover .about-evidence-arrow{transform:translate(2px,-2px);color:#806696}
+.about-skills{margin-top:44px}
+.about-skills>h3{margin:0 0 18px;font-size:20px;line-height:1.5;font-weight:600;letter-spacing:-.4px;color:#393345}
+.about-skills-list{margin:0;border-top:1px solid #e7e5ed}
+.about-skills-list>div{display:grid;grid-template-columns:205px minmax(0,1fr);gap:28px;padding:19px 0;border-bottom:1px solid #ebe8ef}
+.about-skills-list dt{font-size:13px;line-height:1.9;font-weight:600;color:#79668f}
+.about-skills-list dd{margin:0;font-size:13px;line-height:1.9;color:#716a80;word-break:keep-all;overflow-wrap:anywhere}
+@media(max-width:600px){
+  .about-skills{margin-top:32px}
+  .about-skills>h3{font-size:18px;margin-bottom:14px}
+  .about-skills-list>div{grid-template-columns:minmax(0,1fr);gap:7px;padding:16px 0}
+  .about-skills-list dt,.about-skills-list dd{font-size:12px}
+}
 .about-depth{margin-top:28px;border-block:1px solid #e7e5ed}
 .about-depth summary{display:flex;align-items:center;gap:20px;padding:22px 0;list-style:none;cursor:pointer;font-size:12px;color:#716a80}
 .about-depth summary::-webkit-details-marker{display:none}

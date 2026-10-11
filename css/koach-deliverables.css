@@ -41,8 +41,8 @@ body.theme-koach .project-facts dd{margin:0;font-size:15px;font-weight:700;color
 .theme-koach .document-stream{display:grid;gap:32px}
 .theme-koach .document-viewer{border:1px solid #efedf3;border-radius:20px;box-shadow:none;overflow:hidden}
 .theme-koach .doc-step-head{margin:0 32px;padding:32px 0 24px;border-left:0;border-bottom:1px solid #f2f0f5}
-.theme-koach .deliv-num{font-size:11px;font-weight:750;letter-spacing:.2px;color:var(--project-accent)}
-.theme-koach .doc-step-head h3{max-width:800px;margin:12px 0 0;font-size:clamp(23px,2.1vw,30px);line-height:1.45;letter-spacing:-1px;word-break:keep-all}
+.theme-koach .deliv-num{font-size:18px;font-weight:750;letter-spacing:.2px;color:var(--project-accent)}
+.theme-koach .doc-step-head h3{max-width:800px;margin:8px 0 0;font-size:clamp(17px,1.5vw,22px);line-height:1.45;letter-spacing:-.7px;word-break:keep-all}
 .theme-koach .doc-step-head .doc-subtitle{max-width:800px;margin:16px 0 0;color:#6d687b;font-size:14px;line-height:1.85;font-weight:400;word-break:keep-all}
 .theme-koach .doc-step .document-canvas{padding:28px 32px 32px}
 .theme-koach .research-opportunity{grid-template-columns:minmax(0,1.2fr) minmax(270px,.85fr);gap:28px}
@@ -128,7 +128,7 @@ body.theme-koach .project-facts dd{margin:0;font-size:15px;font-weight:700;color
   .theme-koach .document-stream{gap:22px}
   .theme-koach .doc-step-head{margin:0 20px;padding:24px 0 20px}
   .theme-koach .doc-step .document-canvas{padding:22px 20px}
-  .theme-koach .doc-step-head h3{font-size:23px}
+  .theme-koach .doc-step-head h3{font-size:19px}
   .theme-koach .research-meta{grid-template-columns:1fr 1fr}
   .theme-koach .research-meta>div:last-child{grid-column:1/-1}
   .theme-koach .koach-process{padding:18px}

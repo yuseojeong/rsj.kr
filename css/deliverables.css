@@ -65,9 +65,9 @@
 .document-stream{display:grid;gap:28px;min-width:0}
 .doc-step{scroll-margin-top:84px}
 .doc-step-head{padding:30px 32px 24px}
-.deliv-num{font-size:13px;font-weight:750;letter-spacing:.2px;color:var(--project-accent)}
+.deliv-num{font-size:18px;font-weight:750;letter-spacing:.2px;color:var(--project-accent)}
 .deliv-num span{margin-left:6px;font-weight:600;opacity:.55}
-.doc-step-head h3{margin-top:10px;font-size:28px;line-height:1.35;letter-spacing:-1px;font-weight:750;color:#17151f}
+.doc-step-head h3{margin-top:8px;font-size:clamp(17px,1.5vw,22px);line-height:1.45;letter-spacing:-.7px;font-weight:750;color:#17151f}
 .doc-step-head p{margin-top:10px;font-size:15px;line-height:1.8;color:#6d6880}
 .doc-step .document-canvas{min-height:0;background:color-mix(in srgb,var(--project-accent) 6%,#f7f6fb)}
 .doc-step .document-paper.dv-paper{box-shadow:0 10px 30px color-mix(in srgb,var(--project-accent) 8%,#0000)}
@@ -77,19 +77,19 @@
 .project-page .document-choice b{font-size:14px}
 .project-page .document-choice small{font-size:11px}
 .project-page .document-choice.is-selected{border-color:color-mix(in srgb,var(--project-accent) 35%,#fff);box-shadow:0 6px 18px color-mix(in srgb,var(--project-accent) 12%,#0000)}
-@media(max-width:1100px){.doc-step-head h3{font-size:24px}}
-@media(max-width:760px){.doc-step-head{padding:22px 20px 18px}.doc-step-head h3{font-size:22px}.doc-step-head p{font-size:14px}.project-page .documents-heading h2{font-size:26px}}
+@media(max-width:1100px){.doc-step-head h3{font-size:19px}}
+@media(max-width:760px){.doc-step-head{padding:22px 20px 18px}.doc-step-head h3{font-size:19px}.doc-step-head p{font-size:14px}.project-page .documents-heading h2{font-size:26px}}
 
 /* Compact steps: one card, a two-line header, the document body right below. */
 .doc-step-head{padding:26px 32px 4px}
-.doc-step-head h3{margin-top:6px;font-size:24px}
+.doc-step-head h3{margin-top:8px;font-size:clamp(17px,1.5vw,22px)}
 .doc-step .document-canvas{background:none;padding:14px 32px 32px}
 .doc-step .dv-paper{padding:0;border:0;box-shadow:none;background:none}
 .doc-step .dv-paper>:first-child{margin-top:0}
 .doc-step .dv-shots{padding:28px 20px}
 .document-stream{gap:22px}
-@media(max-width:1100px){.doc-step-head h3{font-size:22px}}
-@media(max-width:760px){.doc-step-head{padding:20px 20px 2px}.doc-step-head h3{font-size:20px}.doc-step .document-canvas{padding:12px 20px 22px}}
+@media(max-width:1100px){.doc-step-head h3{font-size:19px}}
+@media(max-width:760px){.doc-step-head{padding:20px 20px 2px}.doc-step-head h3{font-size:19px}.doc-step .document-canvas{padding:12px 20px 22px}}
 .result-cards .result-value{font-size:30px;line-height:1.2;font-weight:800;letter-spacing:-1px;color:var(--project-accent)}
 
 /* One-line section titles; retrospective = title + compact results, then learnings. */
@@ -128,7 +128,7 @@
 .project-page .paper-empty{border-color:var(--g-line)}
 .project-page .paper-table-wrap{border-color:var(--g-line)}
 .project-page .paper-table thead{background:var(--g-bg);color:var(--g-text)}
-.project-page .paper-table th,.project-page .paper-table td{border-color:var(--g-line)}
+.project-page .paper-table th,.project-page .paper-table td{border-color:var(--g-line);vertical-align:top}
 .project-page .paper-table tbody th{color:#2d2a3a}
 .project-page .paper-table td{color:var(--g-text)}
 .project-page .ia-tree{background:var(--g-bg)}
@@ -178,6 +178,7 @@
 .research-tags{display:flex;flex-wrap:wrap;gap:8px}
 .research-tags span{padding:8px 10px;border:1px solid var(--g-line);border-radius:99px;background:var(--g-bg);font-size:12px;color:#5f5e6d}
 .case-subsection{display:grid;gap:12px}.case-subsection h4{margin:0!important;font-size:16px!important;color:#292733}
+.case-subsection:has(>h4+.case-table-wrap):not(:has(>:nth-child(3)))>h4{display:none}
 .insight-grid,.concept-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
 .insight-grid article,.concept-grid article{padding:18px;border:1px solid color-mix(in srgb,var(--project-accent) 24%,#fff);border-radius:12px;background:color-mix(in srgb,var(--project-accent) 5%,#fff)}
 .insight-grid span{display:block;font-size:10px;font-weight:800;color:var(--project-accent)}
@@ -227,4 +228,60 @@
   .document-index{display:grid;place-items:center;min-width:28px;height:28px;border-radius:9px;text-align:center;color:#9f9daa;font-size:10px}
   .document-choice.is-selected .document-index{background:var(--project-accent);color:#fff;font-weight:800;box-shadow:0 5px 12px color-mix(in srgb,var(--project-accent) 24%,transparent)}
   .document-menu-note{display:none}
+}
+
+/* Shared project reading layout: overrides theme-specific header sizing. */
+.project-edge-nav{position:fixed;inset:0;z-index:12;pointer-events:none}
+.project-edge-link{position:absolute;top:50%;transform:translateY(-50%);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:5px;width:48px;min-height:72px;border:1px solid var(--g-line);border-radius:16px;background:#ffffffed;box-shadow:0 4px 18px #24223b0d;color:#686d7b;pointer-events:auto;transition:color .18s,border-color .18s,box-shadow .18s;backdrop-filter:blur(12px)}
+.project-edge-prev{left:8px}
+.project-edge-next{right:8px}
+.project-edge-link svg{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.project-edge-link>span:not(.project-edge-name){font-size:10px;font-weight:650;line-height:1.4}
+.project-edge-link:hover,.project-edge-link:focus-visible{color:var(--project-accent);border-color:var(--project-accent);box-shadow:0 5px 20px #24223b14}
+.project-edge-link:focus-visible,.project-back-top:focus-visible{outline:2px solid var(--project-accent);outline-offset:4px}
+.project-edge-name{position:absolute;top:50%;transform:translateY(-50%);padding:8px 12px;border:1px solid var(--g-line);border-radius:10px;background:#fff;color:var(--project-accent);font-size:12px;font-weight:700;white-space:nowrap;opacity:0;visibility:hidden;pointer-events:none;transition:opacity .18s}
+.project-edge-prev .project-edge-name{left:calc(100% + 8px)}
+.project-edge-next .project-edge-name{right:calc(100% + 8px)}
+.project-edge-link:hover .project-edge-name,.project-edge-link:focus-visible .project-edge-name{opacity:1;visibility:visible}
+.project-page .project-bottom-nav{justify-content:center;padding-block:32px;border-bottom:0}
+.project-page .project-bottom-nav .project-back-top{display:inline-flex;align-items:center;gap:12px;padding:12px 20px;border:1px solid var(--g-line);border-radius:999px;font-size:13px;font-weight:650;color:#686d7b;background:#fff}
+.project-page .project-back-top:hover{color:var(--project-accent);border-color:var(--project-accent)}
+@media(max-width:760px){
+  .project-edge-link{top:auto;bottom:calc(16px + env(safe-area-inset-bottom));transform:none;flex-direction:row;gap:8px;width:auto;min-width:88px;min-height:44px;padding:10px 14px;border-radius:999px}
+  .project-edge-prev{left:16px}
+  .project-edge-next{right:16px}
+  .project-edge-link>span:not(.project-edge-name){font-size:12px}
+  .project-edge-name{display:none}
+  .project-page .site-footer{padding-bottom:calc(88px + env(safe-area-inset-bottom))}
+}
+#deliverables .document-stream{gap:32px}
+#deliverables .document-stream .doc-step{border:1px solid var(--g-line);border-radius:20px;box-shadow:none;background:#fff}
+#deliverables .document-stream .doc-step .doc-step-head{margin:0 32px;padding:32px 0 24px;border-left:0;border-bottom:1px solid var(--g-line)}
+#deliverables .doc-step .doc-step-head .deliv-num{font-size:18px;font-weight:750;line-height:1.5;letter-spacing:.2px;color:var(--project-accent)}
+#deliverables .document-stream .doc-step .doc-step-head h3{max-width:none;margin:8px 0 0;font-size:clamp(17px,1.5vw,22px);font-weight:750;line-height:1.45;letter-spacing:-.7px;color:#17151f;text-wrap:wrap;white-space:normal;word-break:keep-all;overflow-wrap:anywhere}
+#deliverables .document-stream .doc-step>.document-canvas{padding:28px 32px 32px;background:none;min-height:0}
+#deliverables .document-canvas :is(th,td){vertical-align:top;text-align:left}
+
+/* Overview uses the same introduction and three-card layout in every project. */
+#overview.project-section{padding-block:66px}
+#overview .overview-heading{display:block;margin-top:22px}
+#overview .overview-heading h2{margin:0;font-size:30px;line-height:1.5;font-weight:600;letter-spacing:-1.2px}
+#overview .overview-heading>p{max-width:860px;margin:14px 0 0;font-size:15px;line-height:1.85;color:#686d7b;word-break:keep-all}
+#overview .overview-cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;margin-top:32px;align-items:stretch}
+#overview .overview-cards article{padding:24px;border:1px solid var(--g-line);border-radius:14px;background:#fafbfc}
+#overview .overview-cards h3{display:flex;align-items:center;gap:10px;margin:0;font-size:17px;line-height:1.5;font-weight:700;color:#17151f;letter-spacing:-.4px}
+#overview .overview-cards .card-num{font-size:12px;font-weight:750;color:var(--project-accent)}
+#overview .overview-cards p{margin:12px 0 0;font-size:14px;line-height:1.85;color:#686d7b;word-break:keep-all}
+@media(min-width:761px){
+  #deliverables .document-stream .doc-step .doc-step-head h3{white-space:nowrap;text-wrap:nowrap}
+}
+@media(max-width:760px){
+  #deliverables .document-stream{gap:22px}
+  #deliverables .document-stream .doc-step .doc-step-head{margin:0 20px;padding:24px 0 20px}
+  #deliverables .document-stream .doc-step .doc-step-head h3{font-size:19px}
+  #deliverables .document-stream .doc-step>.document-canvas{padding:22px 20px}
+  #overview.project-section{padding-block:44px}
+  #overview .overview-heading h2{font-size:26px}
+  #overview .overview-cards{grid-template-columns:1fr;gap:14px;margin-top:24px}
+  #overview .overview-cards article{padding:22px}
 }

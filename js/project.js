@@ -1,6 +1,20 @@
 const sectionLinks = [...document.querySelectorAll('.project-tabs a')];
 const docLinks = [...document.querySelectorAll('.document-choice')];
 
+// pre-line preserves authored lists, but must not render HTML indentation as blank rows.
+document.querySelectorAll('.document-canvas th, .document-canvas td').forEach(cell => {
+  for (const edge of ['firstChild', 'lastChild']) {
+    while (cell[edge]?.nodeType === Node.TEXT_NODE) {
+      const node = cell[edge];
+      node.textContent = edge === 'firstChild'
+        ? node.textContent.trimStart()
+        : node.textContent.trimEnd();
+      if (node.textContent) break;
+      node.remove();
+    }
+  }
+});
+
 if (document.body.classList.contains('theme-koach')) {
   document.querySelectorAll('.case-table-wrap').forEach((wrap) => {
     const table = wrap.querySelector('table');
@@ -50,6 +64,7 @@ if (document.body.classList.contains('theme-koach')) {
     }
   });
 }
+
 
 function markDocument(id) {
   docLinks.forEach(link => {

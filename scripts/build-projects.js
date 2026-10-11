@@ -2,6 +2,11 @@ const fs = require('node:fs');
 const path = require('node:path');
 const root = path.join(__dirname, '..');
 const projects = JSON.parse(fs.readFileSync(path.join(root, 'data/projects.json'), 'utf8'));
+const selectedProject = process.argv.find(arg => arg.startsWith('--project='))?.split('=')[1];
+if (selectedProject && !projects.some(p => p.id === selectedProject || p.slug === selectedProject)) {
+  throw new Error(`Unknown project: ${selectedProject}`);
+}
+const shouldBuild = p => !selectedProject || [p.id, p.slug].includes(selectedProject);
 const parseCsv = text => {
   const rows = []; let row = []; let cell = ''; let quoted = false;
   for (let i = 0; i < text.length; i++) {
@@ -47,6 +52,9 @@ const koachUserFlow = require('./koach-user-flow');
 const renderKoachResearch = require('./koach-research');
 const renderKoachUt = require('./koach-ut');
 const ssokCase = require('./ssok-case');
+const yeonoxCase = require('./yeonox-case');
+const projectHeadlines = require('./project-headlines');
+const projectNavigation = require('./project-navigation');
 const icons = home.match(/<svg class="icon-definitions"[\s\S]*?<\/svg>/)[0];
 const serviceGallery = p => p.heroImages
   ? `<div class="service-gallery gallery-${p.slug} gallery-pair">${p.heroImages.map(img=>`<figure><a href="${esc(img.src)}" target="_blank" rel="noopener" aria-label="${esc(img.label)} 원본 크게 보기"><img src="${esc(img.src)}" alt="${esc(img.alt)}" fetchpriority="high"></a><figcaption>${esc(img.label)}</figcaption></figure>`).join('')}</div>`
@@ -71,13 +79,14 @@ const story = {
   validation:{en:'QA · QC',head:'출시 전 품질을 점검했습니다',desc:()=>'핵심 시나리오와 화면 상태를 확인하고, 발견한 이슈를 우선순위대로 개선했습니다.',points:()=>['QA — 기능이 정상 동작하는가','QC — 화면이 기준에 맞는가']}
 };
 function deliverables(p) {
+  if (p.slug === 'yeonox') return yeonoxCase.map(doc => ({...doc, visual: doc.render()}));
   const cut = src => { const alt = src.replace(/-screens\.png$/, '-screens-cut.png'); return fs.existsSync(path.join(root, alt)) ? alt : src; };
   const shots = `<div class="dv-shots">${p.images.map(img => `<img src="${esc(cut(img.src))}" alt="${esc(img.alt)}" loading="lazy">`).join('')}</div>`;
   if (p.slug === 'ssok') {
     return ssokCase.map(doc => {
       let visual = doc.render(), subtitle = doc.subtitle || '';
       if (doc.subtitleFromLead) visual = visual.replace(/<p class="opportunity-lead">([\s\S]*?)<\/p>/, (_, copy) => { subtitle = copy; return ''; });
-      return {subtitle, id: doc.id, type: doc.type, name: doc.name, head: doc.head, visual};
+      return {subtitle: '', id: doc.id, type: doc.type, name: doc.name, head: projectHeadlines[p.slug]?.[doc.id] || doc.head, visual};
     });
   }
   const allDocs = docs(p);
@@ -149,10 +158,11 @@ function deliverables(p) {
     if (p.slug === 'koach' && doc.id === 'research') {
       visual = visual.replace(/<p class="opportunity-lead">([\s\S]*?)<\/p>/, (_, copy) => { subtitle = copy; return ''; });
     }
-    return {subtitle,id:doc.id,en:s.en,type:custom?.type||doc.type,name:custom?.name||doc.name,head:custom?.head||doc.head||s.head,desc:s.desc(p),points:s.points(p),visual};
+    return {subtitle: '',id:doc.id,en:s.en,type:custom?.type||doc.type,name:custom?.name||doc.name,head:projectHeadlines[p.slug]?.[doc.id]||custom?.head||doc.head||s.head,desc:s.desc(p),points:s.points(p),visual};
   });
 }
 for (let index=0;index<projects.length;index++) {
+  if (!shouldBuild(projects[index])) continue;
   const p=projects[index], next=projects[(index+1)%projects.length], items=deliverables(p);
   const rich = ['koach', 'ssok'].includes(p.slug);
   const profileResults = p.highlights ? `<div class="profile-results"><dt>핵심 성과</dt><dd><ul>${p.highlights.map(item=>`<li>${esc(item).replace(/\*\*(.+?)\*\*/g,'<strong>$1</strong>')}</li>`).join('')}</ul></dd></div>` : p.slug === 'koach' ? `<div class="profile-results"><dt>핵심 성과</dt><dd><ul><li>사전 예약 2주간 <strong>354명</strong> 모집 · 사용자 <strong>282명</strong> 획득</li>${p.outcomes.map(item=>`<li>${esc(item.title)} <strong>${esc(item.before)} → ${esc(item.after)}</strong> <span>(${esc(item.change)})</span></li>`).join('')}</ul></dd></div>` : '';
@@ -160,23 +170,24 @@ for (let index=0;index<projects.length;index++) {
   const outcomeDetails = p.outcomes ? `<div class="outcome-comparisons" aria-label="핵심 성과 개선 전후">${p.outcomes.map(item=>`<article class="outcome-comparison"><div><h3>${esc(item.title)}</h3><p>${esc(item.action)}</p></div><div class="outcome-values"><div><small>개선 전</small><span>${esc(item.before)}</span></div><span class="outcome-arrow" aria-hidden="true">→</span><div><small>개선 후</small><strong>${esc(item.after)}</strong></div><b class="outcome-change">${esc(item.change)}</b></div></article>`).join('')}</div>` : '';
   for(const [key,url] of Object.entries(p.sourceUrls)) if(url && !/^https?:\/\//.test(url) && !/^documents\/[\w./-]+$/.test(url)) throw new Error(`Invalid source URL for ${p.id}/${key}`);
   const html=`<!doctype html>
-<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#f4f5ff"><meta name="description" content="${esc(p.summary)} — 프로젝트 소개와 기획 산출물"><title>${esc(p.name)} — 유서정 Portfolio</title><link rel="stylesheet" href="css/style.css"><link rel="stylesheet" href="css/project.css"><link rel="stylesheet" href="css/services.css"><link rel="stylesheet" href="css/deliverables.css">${p.slug === 'koach' ? '<link rel="stylesheet" href="css/koach-deliverables.css"><link rel="stylesheet" href="css/koach-research.css"><link rel="stylesheet" href="css/koach-ut.css">' : p.slug === 'ssok' ? '<link rel="stylesheet" href="css/ssok-case.css"><link rel="stylesheet" href="css/ssok-extra.css">' : ''}<script src="js/project.js" defer></script></head>
-<body class="project-page theme-${p.slug}"><a class="skip-link" href="#main">본문으로 건너뛰기</a>${icons}
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#f4f5ff"><meta name="description" content="${esc(p.summary)} — 프로젝트 소개와 기획 산출물"><title>${esc(p.name)} — 유서정 Portfolio</title><link rel="stylesheet" href="css/style.css"><link rel="stylesheet" href="css/project.css"><link rel="stylesheet" href="css/services.css"><link rel="stylesheet" href="css/deliverables.css">${p.slug === 'koach' ? '<link rel="stylesheet" href="css/koach-deliverables.css"><link rel="stylesheet" href="css/koach-research.css"><link rel="stylesheet" href="css/koach-ut.css">' : p.slug === 'ssok' ? '<link rel="stylesheet" href="css/ssok-case.css"><link rel="stylesheet" href="css/ssok-extra.css">' : p.slug === 'yeonox' ? '<link rel="stylesheet" href="css/yeonox-case.css">' : ''}<link rel="stylesheet" href="css/soft-ui.css"><script src="js/project.js" defer></script></head>
+<body id="page-top" class="project-page theme-${p.slug}"><a class="skip-link" href="#main">본문으로 건너뛰기</a>${icons}
 <header class="project-header"><nav class="wrap project-nav" aria-label="프로젝트 메뉴"><a class="brand" href="index.html">seojeong<span class="brand-star">✳</span></a><a class="return-link" href="index.html#work">← <span>전체 프로젝트</span></a></nav></header>
-<main id="main"><section class="project-hero wrap" aria-labelledby="project-title"><div class="project-heading"><div class="eyebrow"><span class="project-mark">—</span> PROJECT ${p.id}</div><div class="project-tags">${p.tags.map(tag=>`<span>${esc(tag)}</span>`).join('')}</div><div class="service-name">${esc(p.name)}</div><h1 id="project-title">${p.title.split('\n').map(esc).join('<br>')}</h1><p>${esc(p.summary)}</p><dl class="project-facts">${rich ? `<div><dt>기간</dt><dd>${esc(p.period)}</dd></div><div><dt>역할</dt><dd>${esc(p.role)}</dd></div><div><dt>기여도</dt><dd>${esc(p.contribution)}</dd></div>` : `<div><dt>ROLE</dt><dd>${esc(p.role)}</dd></div><div><dt>PERIOD</dt><dd>${esc(p.period)}</dd></div><div><dt>CONTRIBUTION</dt><dd>${esc(p.contribution||"정리 중")}</dd></div><div><dt>STATUS</dt><dd>${esc(p.result)}</dd></div>`}</dl>${rich ? projectProfile : ''}${rich ? '' : `<a class="project-deliverables-link" href="#deliverables">기획 산출물 보기 ${arrow}</a>`}</div><div class="project-art" aria-label="프로젝트 ${p.id} 대표 이미지">${serviceGallery(p)}${rich ? '' : `<span class="art-caption">${esc(p.name)} · SERVICE SCREENS / 이미지를 누르면 크게 볼 수 있어요</span>`}</div></section>
-<nav class="project-tabs" aria-label="상세 페이지 목차"><div class="wrap"><a href="#overview" aria-current="location">프로젝트 소개</a><a href="#deliverables">기획 산출물 <span>${String(items.length).padStart(2,'0')}</span></a><a href="#reflection">성과 · 회고</a></div></nav>
+<main id="main"><section class="project-hero wrap" aria-labelledby="project-title"><div class="project-heading"><div class="eyebrow"><span class="project-mark">—</span> PROJECT ${p.id}</div><div class="project-tags">${p.tags.map(tag=>`<span>${esc(tag)}</span>`).join('')}</div><div class="service-name">${esc(p.name)}</div><h1 id="project-title">${p.title.split('\n').map(esc).join('<br>')}</h1><p>${esc(p.summary)}</p><dl class="project-facts">${p.slug === 'yeonox' ? `<div><dt>역할</dt><dd>${esc(p.role)}</dd></div><div><dt>방식</dt><dd>바이브 코딩</dd></div><div><dt>현재</dt><dd>${esc(p.result)}</dd></div>` : rich ? `<div><dt>기간</dt><dd>${esc(p.period)}</dd></div><div><dt>역할</dt><dd>${esc(p.role)}</dd></div><div><dt>기여도</dt><dd>${esc(p.contribution)}</dd></div>` : `<div><dt>ROLE</dt><dd>${esc(p.role)}</dd></div><div><dt>PERIOD</dt><dd>${esc(p.period)}</dd></div><div><dt>CONTRIBUTION</dt><dd>${esc(p.contribution||"정리 중")}</dd></div><div><dt>STATUS</dt><dd>${esc(p.result)}</dd></div>`}</dl>${rich ? projectProfile : ''}${rich ? '' : `<a class="project-deliverables-link" href="#deliverables">기획 산출물 보기 ${arrow}</a>`}</div><div class="project-art" aria-label="프로젝트 ${p.id} 대표 이미지">${serviceGallery(p)}${rich ? '' : `<span class="art-caption">${esc(p.name)} · SERVICE SCREENS / 이미지를 누르면 크게 볼 수 있어요</span>`}</div></section>
+<nav class="project-tabs" aria-label="상세 페이지 목차"><div class="wrap"><a href="#overview" aria-current="location">프로젝트 소개</a><a href="#deliverables">기획 산출물 <span>${String(items.length).padStart(2,'0')}</span></a><a href="#reflection">${p.slug === 'yeonox' ? '현재 단계 · 회고' : '성과 · 회고'}</a></div></nav>
 <section class="project-section wrap" id="overview" aria-labelledby="overview-title"><div class="section-caption"><div class="eyebrow">01 / OVERVIEW</div></div><div class="overview-heading"><h2 id="overview-title">어떤 문제를, 어떻게 풀고자 했는지.</h2><p>${esc(p.overview)}</p></div>${rich ? '' : projectProfile}<div class="overview-cards"><article><h3><span class="card-num">01</span>발견한 문제</h3><p>${esc(p.problem)}</p></article><article><h3><span class="card-num">02</span>검증할 가설</h3><p>${esc(p.hypothesis)}</p></article><article><h3><span class="card-num">03</span>설계 방향</h3><p>${esc(p.direction)}</p></article></div></section>
-<section class="documents-section" id="deliverables" aria-labelledby="deliverables-title"><div class="wrap"><div class="documents-heading"><div><div class="eyebrow">02 / DELIVERABLES</div><h2 id="deliverables-title">서비스가 되기까지, 기획의 과정.</h2><p>문제 정의부터 출시까지, 서비스를 만들며 거친 순서대로 담았습니다.</p></div><span class="document-total">${items.length}개의 문서</span></div><div class="document-workspace"><nav class="document-menu" aria-label="기획 산출물 목차"><div class="document-menu-title">DOCUMENT INDEX</div>${items.map((d,i)=>`<a href="#doc-${d.id}" class="document-choice${i===0?' is-selected':''}" data-document="${d.id}"${i===0?' aria-current="true"':''}><span class="document-index">${String(i+1).padStart(2,'0')}</span><span><b>${esc(d.name)}</b><small>${esc(d.type)}</small></span><span class="document-choice-arrow" aria-hidden="true">↗</span></a>`).join('')}</nav><div class="document-stream">${items.map((d,i)=>`<article class="document-viewer doc-step" id="doc-${d.id}" aria-labelledby="doc-${d.id}-title"><div class="doc-step-head"><div class="deliv-num">${String(i+1).padStart(2,'0')} · ${esc(d.name)}</div><h3 id="doc-${d.id}-title">${esc(d.head)}</h3>${d.subtitle ? `<p class="doc-subtitle">${esc(d.subtitle)}</p>` : ''}</div><div class="document-canvas">${d.visual}</div></article>`).join('')}</div></div></div></section>
-<section class="project-section wrap retro-section" id="reflection" aria-labelledby="reflection-title"><div class="section-caption"><div class="eyebrow">03 / RETROSPECTIVE</div></div><div class="retro-top"><div class="retro-title"><h2 id="reflection-title">성과 및 회고</h2><p>${esc(p.resultDetail)}</p></div><div class="retro-stats">${p.stats.filter(s=>s.label!=='프로젝트 기여도').slice(0,2).map(s=>`<div class="retro-stat"><b>${esc(s.value)}</b><span>${esc(s.label)}</span></div>`).join('')}</div></div>${outcomeDetails}${p.retrospectiveImage?`<figure class="retro-original"><img src="${esc(p.retrospectiveImage)}" alt="${esc(p.name)} 프로젝트 회고 원문" loading="lazy"></figure>`:''}<div class="retro-learn"><h3>배운 점</h3>${(p.learnings||[]).length?`<div class="overview-cards">${p.learnings.map((l,i)=>`<article><h3><span class="card-num">${String(i+1).padStart(2,'0')}</span>${esc(l.title)}</h3><p>${esc(l.text)}</p></article>`).join('')}</div>`:`<p class="retro-empty">이 프로젝트에서 배운 점과 다음에 시도할 것을 정리하고 있어요.</p>`}</div></section>
-<div class="wrap project-bottom-nav"><a href="index.html#work">← 전체 프로젝트</a><a href="work-${next.id}.html" class="next-project"><span>다음 프로젝트 <b>${esc(next.name)} · ${esc(next.category)}</b></span>${arrow}</a></div></main>
-<footer class="site-footer wrap"><a class="brand" href="index.html">seojeong<span class="brand-star">✳</span></a><span>© 2026 Yu Seojeong</span><a class="back-to-top" href="#main">Back to top ↑</a></footer>
+<section class="documents-section" id="deliverables" aria-labelledby="deliverables-title"><div class="wrap"><div class="documents-heading"><div><div class="eyebrow">02 / DELIVERABLES</div><h2 id="deliverables-title">서비스가 되기까지, 기획의 과정.</h2><p>${esc(p.deliverablesIntro || '문제 정의부터 출시까지, 서비스를 만들며 거친 순서대로 담았습니다.')}</p></div><span class="document-total">${items.length}개의 문서</span></div><div class="document-workspace"><nav class="document-menu" aria-label="기획 산출물 목차"><div class="document-menu-title">DOCUMENT INDEX</div>${items.map((d,i)=>`<a href="#doc-${d.id}" class="document-choice${i===0?' is-selected':''}" data-document="${d.id}"${i===0?' aria-current="true"':''}><span class="document-index">${String(i+1).padStart(2,'0')}</span><span><b>${esc(d.name)}</b><small>${esc(d.type)}</small></span><span class="document-choice-arrow" aria-hidden="true">↗</span></a>`).join('')}</nav><div class="document-stream">${items.map((d,i)=>`<article class="document-viewer doc-step" id="doc-${d.id}" aria-labelledby="doc-${d.id}-title"><div class="doc-step-head"><div class="deliv-num">${String(i+1).padStart(2,'0')} · ${esc(d.name)}</div><h3 id="doc-${d.id}-title">${esc(d.head)}</h3>${d.subtitle ? `<p class="doc-subtitle">${esc(d.subtitle)}</p>` : ''}</div><div class="document-canvas">${d.visual}</div></article>`).join('')}</div></div></div></section>
+<section class="project-section wrap retro-section" id="reflection" aria-labelledby="reflection-title"><div class="section-caption"><div class="eyebrow">03 / RETROSPECTIVE</div></div><div class="retro-top"><div class="retro-title"><h2 id="reflection-title">${esc(p.reflectionTitle || '성과 및 회고')}</h2><p>${esc(p.resultDetail)}</p></div><div class="retro-stats">${p.stats.filter(s=>s.label!=='프로젝트 기여도').slice(0,2).map(s=>`<div class="retro-stat"><b>${esc(s.value)}</b><span>${esc(s.label)}</span></div>`).join('')}</div></div>${outcomeDetails}${p.retrospectiveImage?`<figure class="retro-original"><img src="${esc(p.retrospectiveImage)}" alt="${esc(p.name)} 프로젝트 회고 원문" loading="lazy"></figure>`:''}<div class="retro-learn"><h3>배운 점</h3>${(p.learnings||[]).length?`<div class="overview-cards">${p.learnings.map((l,i)=>`<article><h3><span class="card-num">${String(i+1).padStart(2,'0')}</span>${esc(l.title)}</h3><p>${esc(l.text)}</p></article>`).join('')}</div>`:`<p class="retro-empty">이 프로젝트에서 배운 점과 다음에 시도할 것을 정리하고 있어요.</p>`}</div></section>
+<div class="wrap project-bottom-nav"><a class="project-back-top" href="#page-top">상단으로 돌아가기 <span aria-hidden="true">↑</span></a></div></main>
+${projectNavigation(projects, index)}
+<footer class="site-footer wrap"><a class="brand" href="index.html">seojeong<span class="brand-star">✳</span></a><span>© 2026 Yu Seojeong</span></footer>
 </body></html>`;
   fs.writeFileSync(path.join(root,`work-${p.id}.html`),html);
 }
-console.log(`Generated ${projects.length} project pages.`);
+console.log(`Generated ${projects.filter(shouldBuild).length} project pages.`);
 
 // 쏙은 koach 산출물 레이아웃을 그대로 쓰되, 보라 계열 색을 쏙 블루 계열로 회전해 생성한다.
-{
+if (projects.some(p => p.slug === 'ssok' && shouldBuild(p))) {
   const rotate = hex => {
     const h = hex.slice(1), full = h.length <= 4 ? [...h].map(c => c + c).join('') : h;
     let [r, g, b] = [0, 2, 4].map(i => parseInt(full.slice(i, i + 2), 16) / 255);

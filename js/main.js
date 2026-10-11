@@ -1,18 +1,3 @@
-const filterButtons = [...document.querySelectorAll('.filter-tab')];
-const projects = [...document.querySelectorAll('.work-card')];
-filterButtons.forEach(button => {
-  button.addEventListener('click', () => {
-    const filter = button.dataset.filter;
-    filterButtons.forEach(tab => {
-      const selected = tab === button;
-      tab.classList.toggle('active', selected);
-      tab.setAttribute('aria-pressed', String(selected));
-    });
-    projects.forEach(card => { card.hidden = filter !== 'all' && !card.dataset.category.split(' ').includes(filter); });
-    document.querySelector('#filter-status').textContent = `${button.textContent.trim()} 프로젝트 ${projects.filter(card => !card.hidden).length}개`;
-  });
-});
-
 const dialog = document.querySelector('#info-dialog');
 let coffeechatSession = 0;
 let coffeechatTimers = [];
@@ -54,6 +39,21 @@ dialog.addEventListener('click', event => {
 });
 
 const navLinks = [...document.querySelectorAll('.nav-links a')];
+const siteHeader = document.querySelector('.resume-home .site-header');
+if (siteHeader && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+  let previousScrollY = window.scrollY;
+  let idleTimer;
+  window.addEventListener('scroll', () => {
+    const currentScrollY = window.scrollY;
+    const isNearTop = currentScrollY < 90;
+    const scrollingUp = currentScrollY < previousScrollY;
+    if (isNearTop || scrollingUp) siteHeader.classList.remove('is-nav-hidden');
+    else if (currentScrollY - previousScrollY > 6) siteHeader.classList.add('is-nav-hidden');
+    window.clearTimeout(idleTimer);
+    idleTimer = window.setTimeout(() => siteHeader.classList.remove('is-nav-hidden'), 360);
+    previousScrollY = currentScrollY;
+  }, { passive: true });
+}
 const signatureHero = document.querySelector('.signature-hero');
 const heroMotionButton = document.querySelector('.hero-motion-toggle');
 heroMotionButton?.addEventListener('click', () => {

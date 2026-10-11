@@ -1,0 +1,148 @@
+/* Shared soft editorial UI. Colour blooms belong to covers, not documents. */
+:root{
+ --soft-paper:#fff;
+ --soft-white:#fff;
+ --soft-surface:#f8f8fa;
+ --soft-ink:#282830;
+ --soft-copy:#62626c;
+ --soft-muted:#75757f;
+ --soft-line:#e9e9ef;
+ --soft-accent:#7056aa;
+ --soft-tint:#f3f3f6;
+ --soft-shadow:0 8px 28px #25253006;
+ --soft-glass:#ffffff99;
+ --soft-glass-shadow:inset 0 1px 0 #fff,inset 0 -1px 0 #ffffff80,0 8px 26px #25253008,0 0 0 1px #e9e9ed99;
+ --soft-contact-background:radial-gradient(ellipse at 94% 64%,#d2ddff82 0%,transparent 54%),radial-gradient(ellipse at 5% 100%,#e8dcfa82 0%,transparent 50%),linear-gradient(180deg,#fff 0%,#fefeff 14%,#fafbff 58%,#f8f4ff 100%);
+}
+@media screen{
+ body.home-portfolio,body.notes-page,body.project-page{background:var(--soft-paper);color:var(--soft-ink)}
+ .home-portfolio{
+  --folio-paper:var(--soft-paper);--folio-surface:var(--soft-surface);
+  --folio-ink:var(--soft-ink);--folio-copy:var(--soft-copy);
+  --folio-muted:var(--soft-muted);--folio-line:var(--soft-line);
+  --folio-violet:#7560b5;--folio-violet-hover:#5f499b;--folio-violet-tint:var(--soft-tint);
+ }
+ body.home-portfolio.resume-home{background:#fff}
+ .resume-home .site-header{position:sticky;top:0;z-index:30;padding-top:20px;transition:transform .28s ease}
+ .resume-home .site-header.is-nav-hidden{transform:translateY(-112%)}
+ .resume-home .site-nav{width:calc(100% - 96px);max-width:1160px;height:68px;padding:0;border:0;border-radius:0;background:transparent;box-shadow:none;display:grid;grid-template-columns:minmax(140px,1fr) auto minmax(140px,1fr);gap:22px;backdrop-filter:none;-webkit-backdrop-filter:none}
+ .resume-home .site-nav .brand{color:var(--soft-ink)}
+ .resume-home .nav-links a{color:var(--soft-copy);padding:9px 12px;border-radius:20px;transition:background .2s,color .2s}
+ .resume-home .nav-links{justify-self:center;margin:0;gap:5px;padding:7px;border:1px solid #ffffffdf;border-radius:999px;background:var(--soft-glass);box-shadow:var(--soft-glass-shadow);backdrop-filter:blur(22px);-webkit-backdrop-filter:blur(22px)}
+ .resume-home .nav-links a:hover{color:#fff;background:#24242a}
+ .resume-home .nav-links a.active,.resume-home .nav-links a[aria-current="page"]{color:#654b9e;background:var(--soft-tint)}
+ .resume-home .nav-links a.active:hover,.resume-home .nav-links a[aria-current="page"]:hover{color:#fff;background:#24242a}
+ .resume-home .resume-contact{justify-self:end;border-radius:999px;min-height:39px;padding:10px 16px;color:var(--soft-ink);background:#ffffffb3;border:1px solid #e9e9ed;box-shadow:inset 0 1px 0 #fff}
+ .resume-home .resume-contact:hover{color:#fff;background:#24242a;border-color:#24242a}
+ .home-portfolio .portfolio-cover{background:#fff}
+ .home-portfolio .portfolio-cover h1{color:var(--soft-ink)}
+ .home-portfolio .portfolio-edition{background:#f3f3f4;color:#777780;border-color:#f3f3f4;box-shadow:none}
+ .home-portfolio .portfolio-cover-bottom{background:var(--soft-paper);border-color:var(--soft-line);backdrop-filter:none;-webkit-backdrop-filter:none}
+ .home-portfolio .about-editorial{background:var(--soft-surface);border-block:1px solid #f0ecef}
+ .home-portfolio .about-portrait{border-radius:24px;background:#efedf0;border:1px solid #fff;box-shadow:var(--soft-shadow)}
+ .home-portfolio .about-introduction>h3,.home-portfolio .about-skills>h3{color:var(--soft-ink)}
+ .home-portfolio .about-approach h4,.home-portfolio .about-skills-list dt{color:#51465d}
+ .home-portfolio .about-outlook{color:#796c85}
+ .home-portfolio .resume-section-heading h2{color:#615769}
+ .home-portfolio .resume-project{padding-block:40px 44px;border-color:var(--soft-line)}
+ .home-portfolio .resume-service-photo{border-radius:25px;background:#f6f6f8;border:1px solid #eeeeF2}
+ .home-portfolio .resume-service-photo.is-empty{background:#fafafa;border-style:dashed}
+ .home-portfolio .resume-results{border:1px solid #ffffffdf;border-radius:18px;background:var(--soft-glass);padding:19px 22px;box-shadow:var(--soft-glass-shadow);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px)}
+ .home-portfolio .resume-results dd{color:#7156a8}
+ .home-portfolio .resume-results dt{color:#716778}
+ .home-portfolio .resume-category{color:#7c63a4}
+ .home-portfolio .resume-artifact-link{border-radius:22px;background:#fff;border-color:#e6dbef;color:#70539d;min-height:43px;transition:background .2s,border-color .2s}
+ .home-portfolio .resume-artifact-link:hover{background:#f3ecfa;border-color:#cfc0e1}
+ .home-portfolio .home-analysis{border-radius:28px;border-color:var(--soft-line);background:#fff;box-shadow:var(--soft-shadow)}
+ .home-portfolio .home-bottom{background:#fff}
+ .home-portfolio .home-analysis-header{border-color:var(--soft-line)}
+ .home-portfolio .home-analysis-list li+li{border-color:#f1edf3}
+ .home-portfolio .home-analysis-header h2{font-size:23px;font-weight:600}
+ .home-portfolio .home-analysis-list a{border-radius:15px;transition:background .2s}
+ .home-portfolio .home-analysis-list a:hover{background:#faf7fc}
+ .home-portfolio .home-analysis-service{color:#7559a0}
+ .home-portfolio .contact-section{margin-inline:0;width:100%;max-width:none;border-radius:0;border-inline:0}
+ .home-portfolio .contact-ending{background:var(--soft-contact-background);margin-top:72px;display:flow-root}
+ .home-portfolio .contact-ending .contact-section{background:transparent;margin-top:0;border:0;box-shadow:none}
+ .home-portfolio .contact-section:before,.home-portfolio .contact-section:after{display:none}
+ .home-portfolio .contact-actions .contact-button{border-radius:24px}
+ .home-portfolio .contact-actions .contact-button-email,.home-portfolio .contact-actions .contact-button-secondary,.home-portfolio .contact-actions .contact-button-ai{background:#ffffff99;border-color:#ffffffdf;box-shadow:var(--soft-glass-shadow);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px)}
+ .home-portfolio .contact-actions .contact-button-email{color:var(--soft-accent)}
+ .home-portfolio .contact-actions .contact-button:is(:hover,:focus-visible){color:#fff;background:#24242a;border-color:#24242a;box-shadow:none}
+ .home-portfolio .contact-actions .contact-button:is(:hover,:focus-visible) .ai-spark{color:inherit}
+ .resume-home .site-nav .nav-links a:is(:hover,:focus-visible),.resume-home .site-nav .resume-contact:is(:hover,:focus-visible){color:#fff;background:#24242a;border-color:#24242a}
+ .home-portfolio .site-footer{padding-top:30px;padding-bottom:30px;background:transparent}
+ .home-portfolio .site-footer .back-to-top{display:inline-flex;padding:9px 12px;border-radius:999px;transition:background .2s,color .2s}
+ .home-portfolio .site-footer .back-to-top:hover{background:#24242a;color:#fff}
+
+ /* The same small, rounded controls continue through the notebook. */
+ .notes-analysis-background{background:var(--soft-contact-background);margin-top:0;padding:56px 0 42px;border-block:0}
+ .notes-page .notes-intro h1,.notes-page .analysis-question{color:var(--soft-ink)}
+ .notes-page .notes-kicker,.notes-page .notes-tabs{color:#7a609d}
+ .notes-page .notes-tabs{border-color:var(--soft-line);gap:10px;padding-bottom:12px}
+ .notes-page .notes-tabs a{border-radius:20px;background:var(--soft-tint);padding:8px 14px;font-size:12px;transition:background .2s}
+ .notes-page .notes-tabs a:hover{background:#eaeaf0}
+ .notes-page .note-card-index{border-color:#e9e1ec}
+ .notes-page .personal-collection .note-cover{border-radius:0;padding:0;border:0;background:transparent;box-shadow:none}
+ .notes-page .personal-collection .note-cover img{border-radius:0}
+ .notes-page .personal-collection .resume-artifact-link{color:#76559d}
+ .notes-page .analysis-filters button{border-radius:18px;background:#fff;border-color:#eae3ee;padding:8px 13px;min-height:35px}
+ .notes-page .analysis-filters button[aria-pressed="true"]{color:var(--soft-accent);background:#f1f1f5;border-color:#dddde6}
+ .notes-page .analysis-filters button:hover{background:#f5f5f7}
+ .notes-page .analysis-search input{border-radius:19px;background:#fff;border-color:#eae3ee;padding:10px 15px}
+ .notes-page .analysis-card{border-radius:20px;background:#fff;border-color:#eae5ee;box-shadow:0 3px 12px #79668a04}
+ .notes-page .analysis-card>a{border-radius:20px;padding:19px 20px;transition:background .2s}
+ .notes-page .analysis-card>a:hover{background:#faf6fc}
+ .notes-page .analysis-category{color:#876eaa}
+ .notes-page .analysis-card h3{color:var(--soft-ink)}
+ .notes-page .analysis-card p{color:var(--soft-copy)}
+ .notes-page .analysis-study .analysis-section{border-color:var(--soft-line)}
+ .notes-page .analysis-why-what>div,.notes-page .analysis-validation{border-radius:17px;background:var(--soft-surface)}
+ .notes-page .analysis-diagram img{border-radius:16px;border-color:#eae3ef}
+ .notes-page .notes-footer{border-color:var(--soft-line);color:var(--soft-muted)}
+ .notes-analysis-background .notes-footer{margin-top:0;padding-block:28px 0;border:0;background:transparent}
+
+ /* Keep artifacts and tables plain; soften only their surrounding chrome. */
+ .project-page .project-header{background:var(--soft-glass);border-color:#ffffffcf;box-shadow:inset 0 1px 0 #fff,0 5px 20px #25253006;backdrop-filter:blur(22px);-webkit-backdrop-filter:blur(22px)}
+ .project-page .return-link{border:1px solid #e9e1ef;border-radius:24px;padding:10px 16px;background:#fff;color:#6b587f}
+ .project-page .project-heading .project-tags>span{border-radius:20px;background:#f5f5f7}
+ .project-page .project-tabs{background:#fffffff5;border-color:var(--soft-line)}
+ .project-page .project-deliverables-link{border-radius:22px}
+ .project-page .overview-cards article{border-radius:22px;border-color:#eae5ed;background:#fff}
+ .project-page #deliverables{background:var(--soft-surface)}
+ .project-page #deliverables .document-viewer{border-radius:24px;border-color:#e9e3ee;background:#fff}
+ .project-page .project-edge-link{border-radius:22px;border-color:#e8e0ef;background:#fffffff2;box-shadow:0 5px 22px #6d558611}
+ .project-page .study-cover img{border-radius:22px;border-color:#eae3ef}
+ .project-page .note-panel{border-radius:18px;background:var(--soft-surface);border-color:var(--soft-line)}
+}
+@media screen and (max-width:600px){
+ .resume-home .site-header{padding-top:12px}
+ .resume-home .site-nav{width:calc(100% - 40px);height:60px;padding:0;grid-template-columns:auto 1fr auto;gap:7px}
+ .resume-home .site-nav .brand{font-size:18px}
+ .resume-home .site-nav .brand-star{font-size:20px}
+ .resume-home .nav-links{gap:0;padding:5px}
+ .resume-home .nav-links a{padding:8px 7px;font-size:10px}
+ .resume-home .resume-contact{padding:8px 10px;min-height:34px;font-size:10px;gap:5px}
+ .home-portfolio .about-portrait{border-radius:18px}
+ .home-portfolio .resume-project{padding-block:28px 34px}
+ .home-portfolio .resume-results{padding:17px 18px}
+ .home-portfolio .resume-service-photo{border-radius:22px}
+ .home-portfolio .contact-section{width:100%;border-radius:0}
+ .home-portfolio .contact-ending{margin-top:44px}
+ .home-portfolio .home-analysis{border-radius:24px}
+ .notes-page .notes-tabs{gap:7px}
+ .notes-page .notes-tabs a{padding:7px 11px;font-size:11px}
+ .notes-page .personal-collection .note-cover{padding:0;border-radius:0}
+ .notes-page .analysis-card>a{padding:17px 18px}
+ .notes-analysis-background{margin-top:0;padding:44px 0 30px}
+}
+@media screen and (max-width:380px){
+ .resume-home .site-nav{height:auto;min-height:78px;padding:10px 0;gap:8px;display:flex;flex-wrap:wrap}
+ .resume-home .site-nav .nav-links{width:max-content;order:3;margin-inline:auto}
+}
+@media screen and (min-width:381px) and (max-width:480px){
+ .resume-home .site-nav{height:auto;grid-template-columns:1fr auto;row-gap:10px;padding-bottom:10px}
+ .resume-home .site-nav .nav-links{grid-column:1 / -1;grid-row:2}
+ .resume-home .site-nav .resume-contact{grid-column:2;grid-row:1}
+}
+@media(prefers-reduced-motion:reduce){.resume-home .nav-links a,.home-portfolio .resume-artifact-link,.home-portfolio .home-analysis-list a,.notes-page .notes-tabs a,.notes-page .analysis-card>a{transition:none}}

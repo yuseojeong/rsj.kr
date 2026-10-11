@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "node server.js",
     "start": "node server.js",
-    "check": "node --check js/main.js && node --check js/coffeechat.js && node --check js/landscape.js && node --check js/atmosphere.js && node --check js/project.js && node --check scripts/build-projects.js && node --check server.js",
-    "build": "node scripts/build-projects.js"
+    "check": "node --check js/main.js && node --check js/coffeechat.js && node --check js/landscape.js && node --check js/atmosphere.js && node --check js/project.js && node --check js/planning-notes.js && node --check scripts/build-projects.js && node --check scripts/build-notes.js && node --check scripts/study-layout.js && node --check scripts/service-analysis-pages.js && node --check scripts/read-public-notes.js && node --check server.js",
+    "build": "node scripts/build-projects.js && node scripts/build-notes.js",
+    "build:notes": "node scripts/build-notes.js"
   }
 }
