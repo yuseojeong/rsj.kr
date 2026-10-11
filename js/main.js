@@ -1,3 +1,4 @@
+
 const dialog = document.querySelector('#info-dialog');
 let coffeechatSession = 0;
 let coffeechatTimers = [];

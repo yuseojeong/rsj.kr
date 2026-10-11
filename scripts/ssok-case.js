@@ -50,6 +50,7 @@ function personas() {
     ['5. 링크 발견', '링크를 열어 내용 확인', '스트레스 → 지침, 피로', '겨우 찾은 뒤에도 필요한 부분을 찾으려 여러 번 읽어 시간이 더 걸림', 'AI 요약, 인사이트 제공']
   ];
   return `<div class="case-copy">
+
     <div class="ssok-personas">${people.map(p => `<article class="ssok-persona"><span class="ssok-persona-tag">${p.tag}</span><h4>${p.name}</h4><p class="ssok-persona-story">${p.story}</p><div class="ssok-persona-cols"><div><b>니즈</b><ul>${p.needs.map(n => `<li>${n}</li>`).join('')}</ul></div><div><b>페인포인트</b><ul>${p.pains.map(n => `<li>${n}</li>`).join('')}</ul></div></div></article>`).join('')}</div>
     ${section('유저저니맵 · 정보 수집형 사용자', `<p class="ssok-journey-goal">목표 — 정보를 효과적으로 분류해 저장하고, 나중에 쉽게 찾아 업무 흐름이 끊기지 않게 한다</p>${table('쏙 유저저니맵', ['단계', '행동', '감정', '페인포인트', '솔루션'], journey, 'ssok-journey-table')}`)}
     <div class="case-note"><b>결과</b><p>유저저니맵을 디자인 산출물의 기준으로 공유해, 기획과 디자인 사이의 UX/UI 의사결정 기준을 통일하고 협업 효율을 높였습니다.</p></div>
@@ -70,6 +71,7 @@ function requirements() {
     ['소통', '댓글', '<span class="ssok-scope mvp">MVP · 핵심</span>', '링크 단위로 구성원과 의견을 나눈다']
   ];
   return `<div class="case-copy">
+
     ${section('요구사항 정의 · MVP 범위', table('쏙 요구사항과 MVP 범위', ['사용자 흐름', '기능', '범위', '사용자 요구사항'], rows, 'ssok-req-table'))}
     ${evidence('images/projects/ssok-doc-walking-skeleton.webp', '쏙 워킹 스켈레톤 기반 MVP 보드', '워킹 스켈레톤 기반 MVP — 파일 생성 · 링크 저장 · 링크 탐색 · 소통 흐름별로 우선순위를 나누고 MVP 라인을 그었습니다')}
   </div>`;
