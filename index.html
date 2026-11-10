@@ -15,11 +15,12 @@
   <link rel="stylesheet" href="css/home-resume.css">
   <link rel="stylesheet" href="css/portfolio-cover.css">
   <link rel="stylesheet" href="css/soft-ui.css">
+  <link rel="stylesheet" href="css/home-reading.css">
   <script src="js/main.js" defer></script>
   <script src="js/coffeechat.js?v=intro-rolling-20260921-2" defer></script>
   <script src="js/landscape.js" defer></script>
   <script src="js/atmosphere.js" defer></script>
-</head>
+<link rel="stylesheet" href="css/site-shell.css"></head>
 <body class="home-portfolio resume-home" id="page-top">
   <a class="skip-link" href="#main">본문으로 건너뛰기</a>
   <svg class="icon-definitions" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs>
@@ -34,128 +35,97 @@
   </defs></svg>
 
 
-  <header class="site-header">
-    <nav class="site-nav" aria-label="주 메뉴">
-      <a class="brand" href="#page-top" aria-label="유서정 홈">seojeong<span class="brand-star">✳</span></a>
-      <div class="nav-links"><a href="#page-top">Home</a><a href="#about">About</a><a href="#work">Projects</a><a href="notes.html">Study</a></div>
-      <a class="resume-contact" href="#contact">Contact <span aria-hidden="true">↗</span></a>
-    </nav>
-  </header>
+  <header class="site-header shared-header"><nav class="site-nav" aria-label="주 메뉴"><a class="brand" href="#page-top" aria-label="유서정 홈">seojeong<span class="brand-star" aria-hidden="true">✳</span></a><div class="nav-links"><a href="#about">소개</a><a href="#work">프로젝트</a><a href="notes.html">스터디</a></div><a class="resume-contact" href="#contact">연락하기 <span aria-hidden="true">↗</span></a></nav></header>
 
   <main id="main">
 
-    <section class="portfolio-cover" aria-labelledby="portfolio-title">
-      <div class="portfolio-cover-heading">
-        <p class="portfolio-edition">2024 — 2026</p>
-        <h1 id="portfolio-title">Portfolio</h1>
-        <p class="portfolio-byline">유서정 · 서비스 기획의 기록</p>
-      </div>
-      <div class="portfolio-folder-stage">
-        <nav class="portfolio-folders" aria-label="프로젝트 바로가기">
-          <a class="portfolio-folder folder-pet" href="study-petfriends.html" aria-label="2024년 5월 시작, 펫프렌즈 개인 프로젝트 보기">
-            <span class="folder-back" aria-hidden="true"></span><span class="folder-sheet"><span class="folder-sheet-name">펫프렌즈</span><span>동네 돌봄 서비스 기획</span><span class="folder-start">2024.05</span></span><span class="folder-front"><span class="folder-year">2024</span><span class="folder-project">펫프렌즈 <span aria-hidden="true">↗</span></span></span>
-          </a>
-          <a class="portfolio-folder folder-irocom" href="study-irocom.html" aria-label="2025년 9월 시작, 이로콤 개인 프로젝트 보기">
-            <span class="folder-back" aria-hidden="true"></span><span class="folder-sheet"><span class="folder-sheet-name">이로콤</span><span>AI 신고 도우미 기획</span><span class="folder-start">2025.09</span></span><span class="folder-front"><span class="folder-year">2025</span><span class="folder-project">이로콤 <span aria-hidden="true">↗</span></span></span>
-          </a>
-          <a class="portfolio-folder folder-platform" href="#experience-platform" aria-label="2026년 6월 시작, 캐릭터 서비스 기획 및 AI 콘텐츠 업무 보기">
-            <span class="folder-back" aria-hidden="true"></span><span class="folder-sheet"><span class="folder-sheet-name">서비스 &amp; AI</span><span>리뉴얼 · 정책 · 프롬프트</span><span class="folder-start">2026.06</span></span><span class="folder-front"><span class="folder-year">2026</span><span class="folder-project">캐릭터 서비스 <span aria-hidden="true">↗</span></span></span>
-          </a>
-          <a class="portfolio-folder folder-koach" href="work-02.html" aria-label="2025년 9월 시작, koach 기획 산출물 보기">
-            <span class="folder-back" aria-hidden="true"></span><span class="folder-sheet"><span class="folder-sheet-name">koach</span><span>AI 한국어 회화 서비스</span><span class="folder-start">2025.09</span></span><span class="folder-front"><span class="folder-year">2025</span><span class="folder-project">koach <span aria-hidden="true">↗</span></span></span>
-          </a>
-          <a class="portfolio-folder folder-ssok" href="work-01.html" aria-label="2025년 5월 시작, 쏙 기획 산출물 보기">
-            <span class="folder-back" aria-hidden="true"></span><span class="folder-sheet"><span class="folder-sheet-name">쏙</span><span>협업형 콘텐츠 아카이빙</span><span class="folder-start">MVP 기획·출시 · 2025.05</span></span><span class="folder-front"><span class="folder-year">2025</span><span class="folder-project">쏙 <span aria-hidden="true">↗</span></span></span>
-          </a>
-        </nav>
-      </div>
-    </section>
-
-    <section class="section about-section about-editorial" id="about" aria-labelledby="about-section-title">
+    <section class="intro-section" id="about" aria-labelledby="intro-title">
       <div class="wrap">
-        <div class="resume-section-heading"><h2 id="about-section-title">About</h2></div>
-        <div class="about-editorial-layout">
-          <figure class="about-identity">
-            <div class="about-portrait"><span class="about-portrait-orbit" aria-hidden="true"></span><img src="images/profile.png" alt="유서정 프로필 사진" width="1086" height="1448" loading="lazy" decoding="async"></div>
-            <figcaption>
-              <div class="about-profile-heading"><h3 id="about-title">유서정</h3><span>서비스 기획 · PM / PL</span></div>
-              <div class="about-profile-contact"><a href="mailto:rsj01223@gmail.com">rsj01223@gmail.com</a><a href="tel:01034641539">010-3464-1539</a></div>
-            </figcaption>
-          </figure>
-          <div class="about-story">
-            <section class="about-introduction" aria-labelledby="about-approach-title">
-              <h3 id="about-approach-title">생각을 행동으로 옮기는 방식</h3>
-              <div class="about-approach"><h4>겪은 불편에서 시작합니다.</h4><p>복잡했던 중고거래 사기 신고 과정은 AI 신고 도우미 ‘이로콤’으로, 가까운 사람에게도 꺼내기 어려운 연애 고민은 익명 투표와 AI 상담을 결합한 ‘연OX’로 풀어봤습니다.</p></div>
-              <div class="about-approach"><h4>익숙한 서비스에도 질문합니다.</h4><p>왜 이 기능을 여기에 두었을까, 왜 이 순서일까. 서비스를 쓰면서 그 뒤의 이유를 짚어보고, 아쉬운 지점에서는 ‘나라면 어떻게 바꿀까’를 생각합니다.</p></div>
-              <div class="about-approach"><h4>배운 건 직접 써봅니다.</h4><p>새로운 서비스와 AI 도구는 일단 써보고, 제 업무에 적용할 방법을 찾습니다. 많이 아는 것보다 직접 만들고 결과를 확인할 때 더 재미를 느낍니다.</p></div>
-              <p class="about-outlook">10년 뒤에도 새로운 문제를 궁금해하고,<br>이 일을 좋아한다고 말할 수 있는 기획자이고 싶습니다.</p>
-            </section>
-            <section class="about-skills" aria-labelledby="about-skills-title">
-              <h3 id="about-skills-title">보유 역량</h3>
-              <dl class="about-skills-list">
-                <div><dt>서비스 기획</dt><dd>정책 설계 · 요구사항 정의 · IA · User Flow · 화면설계 · 프로토타이핑 · QA · A/B Test · KPI 설계 · 사용자 리서치 · Flow Chart</dd></div>
-                <div><dt>데이터 분석</dt><dd>GA4 · 퍼널 분석 · 사용자 행동 분석 · 이벤트 지표 설계 · 로그 분석</dd></div>
-                <div><dt>프로젝트·협업</dt><dd>Figma · Jira · Notion · Google Docs · WBS</dd></div>
-                <div><dt>AI·기술 활용</dt><dd>생성형 AI 활용 리서치·문서화 · LLM / Prompt · RAG 기초 · 업무 자동화 구축 · AI 기반 프로토타이핑 · Antigravity · Orca</dd></div>
-              </dl>
-            </section>
+        <div class="intro-top">
+          <div class="intro-copy">
+            <h1 id="intro-title">안녕하세요.<br><span class="intro-diamond">주니어 기획자,<br class="mobile-break"> 유서정</span>입니다.</h1>
+            <p>사용자 리서치와 데이터로 문제와 우선순위를 정하고,<br>정책·화면 설계부터 개발 협업, 출시 후 개선까지 이어갑니다.</p>
+            <a class="intro-contact" href="mailto:rsj01223@gmail.com">이메일로 이야기 나눠요 <span aria-hidden="true">↗</span></a><a class="intro-pdf" href="documents/seojeong-portfolio.pdf" target="_blank" rel="noopener" aria-label="포트폴리오 PDF 보기 (11쪽, 새 탭에서 열림)">포트폴리오 PDF <span class="intro-pdf-meta">11쪽</span> <span aria-hidden="true">↗</span></a>
           </div>
+          <figure class="intro-photo"><img src="images/profile.png" alt="유서정 프로필 사진" width="1086" height="1448" fetchpriority="high"></figure>
         </div>
+        <section class="intro-principles" aria-label="일하는 방식">
+          <div class="principles-list">
+            <article><h3>겪은 불편을 그냥 넘기지 않아요.</h3><p>복잡했던 사기 신고는 AI 신고 도우미로,<br>꺼내기 어려운 연애 고민은 익명 커뮤니티로 풀어봤어요.</p></article>
+            <article><h3>익숙한 서비스에도 질문해요.</h3><p>왜 이 기능을 여기에 두었을까?<br>서비스를 쓰며 그 뒤의 이유와 더 나은 방법을 생각해요.</p></article>
+            <article><h3>궁금한 건 직접 만들어봐요.</h3><p>새로운 AI 도구는 일단 써보고 업무에 적용해요.<br>직접 만들고 결과를 확인하는 과정이 즐거워요.</p></article>
+          </div>
+        </section>
+        <details class="intro-skills">
+          <summary>이런 도구와 방법으로 일해요 <span aria-hidden="true">＋</span></summary>
+          <dl>
+            <div><dt>서비스 기획</dt><dd>사용자 리서치 · 요구사항과 정책 정의 · 정보구조 · 유저플로우 · 화면설계 · 사용성 테스트</dd></div>
+            <div><dt>데이터 분석</dt><dd>GA4 · 퍼널 분석 · 사용자 행동 분석 · 이벤트와 지표 설계</dd></div>
+            <div><dt>프로젝트 협업</dt><dd>Figma · Jira · Notion · Google Docs · WBS</dd></div>
+            <div><dt>AI 활용</dt><dd>프롬프트 설계 · RAG 기초 · 업무 자동화 · AI 프로토타이핑 · Orca</dd></div>
+          </dl>
+        </details>
       </div>
     </section>
-
 
     <section class="section work-section resume-experience" id="work" aria-labelledby="work-title">
       <div class="wrap">
-        <div class="resume-section-heading"><div><h2 id="work-title">Projects</h2></div></div>
+        <div class="resume-section-heading"><div><h2 id="work-title">프로젝트</h2></div></div>
         <div class="resume-work-layout">
           <div class="resume-projects">
-          <article class="resume-project" id="experience-ssok" aria-labelledby="experience-title-ssok">
-            <aside class="resume-project-meta"><div class="resume-service-photo"><img src="images/projects/ssok-cutout.png" alt="쏙 링크 아카이브 서비스 화면" loading="lazy" decoding="async"></div><p class="resume-period">2025.05 ~ 2025.07</p><p class="resume-role">PM · 기여도 100%</p><p class="resume-tools"><b>사용 도구</b> Figma, Jira, Notion, GA4</p><a class="resume-artifact-link" href="work-01.html" aria-label="쏙 기획 산출물 보기">기획 산출물 보기 <span aria-hidden="true">↗</span></a></aside>
-            <div class="resume-project-main">
-              <header><p class="resume-category">서비스 기획 · MVP 출시</p><h3 id="experience-title-ssok">쏙<span>협업형 콘텐츠 아카이빙 앱 MVP 기획·출시</span></h3></header>
-              <dl class="resume-results" aria-label="쏙 주요 성과"><div><dt>핵심 기능 범위 정의부터 출시 관리</dt><dd>MVP 출시</dd></div><div><dt>평균 Task 수행 시간</dt><dd>44% 단축</dd></div><div><dt>미스클릭률</dt><dd>23% 감소</dd></div></dl>
-              <p class="resume-project-intro">협업형 링크 아카이빙 서비스의 사용자 조사·요구사항 정의·화면 및 정책 설계·개발 협업·MVP 출시 관리</p>
-              <div class="resume-responsibilities"><section aria-label="요구사항 분석 및 프로젝트 범위 정의"><h4>요구사항 분석 및 프로젝트 범위 정의</h4><ul><li>50명 대상 사용자 조사로 링크 재탐색·그룹 공유 과정의 문제 파악</li><li>조사 결과를 페르소나·유저저니맵으로 구조화, 디자인·개발팀 의사결정 기준 수립</li><li>핵심 사용자 흐름에 따른 저장·분류·탐색 중심 MVP 범위 및 구현 우선순위 정의</li></ul></section><section aria-label="화면·정책 및 산출물 관리"><h4>화면·정책 및 산출물 관리</h4><ul><li>Figma 기반 E2E 유저플로우·화면설계서 작성</li><li>UI 요소별 인터랙션·입력 조건·조건 분기·예외 케이스 상세 정의</li><li>기능 변경 날짜·이유·영향 범위 문서화, Jira 기반 일정·화면별 진행 상황 관리</li></ul></section><section aria-label="협업 및 사용성 개선"><h4>협업 및 사용성 개선</h4><ul><li>개발자·디자이너와 기능 범위·구현 우선순위·일정 조율</li><li>사용성 가설 검증을 위한 A/B 테스트 설계 및 2차 테스트 진행</li><li>UI 개선 후 평균 과업 수행 시간 44% 단축·미스클릭률 23% 감소</li></ul></section></div>
+          <article class="case-preview" id="experience-ssok" aria-labelledby="experience-title-ssok">
+            <aside class="case-preview-visual"><div class="case-preview-image"><img src="images/projects/ssok-cutout.png" alt="쏙 서비스 화면" loading="lazy" decoding="async"></div><dl class="case-meta"><div><dt>기간</dt><dd>2025.05 ~ 2025.07</dd></div><div><dt>역할</dt><dd>PM · 기여도 100%</dd></div><div><dt>담당 업무</dt><dd><ul><li>사용자 조사 · MVP 범위 정의</li><li>기능·화면 설계 · 개발 협업</li><li>사용성·A/B 테스트 · MVP 출시</li></ul></dd></div></dl></aside>
+            <div class="case-preview-copy">
+              <header><h3 id="experience-title-ssok">쏙</h3><p>함께 저장하고 찾아볼 수 있는 그룹 아카이빙 앱</p></header>
+              <dl class="case-narrative">
+                <div><dt>문제</dt><dd><p>단톡방과 SNS에 모은 링크는 대화에 묻혀 다시 찾기 어려웠습니다. 저장한 정보가 실제 활용으로 이어지도록 <strong>재탐색과 공동 활용의 불편</strong>을 풀고자 했습니다.</p></dd></div>
+                <div><dt>판단</dt><dd><p>50명 설문과 유저저니에서 저장 위치가 흩어지는 문제를 확인했습니다. 함께 모으는 파일과 카테고리, 다시 찾기 위한 검색·핀 기능을 연결하는 방향으로 MVP를 정했습니다.</p></dd></div>
+                <div><dt>실행</dt><dd><p>저장 화면의 필수 입력과 선택 입력을 나누고, 유저플로우·화면설계서를 작성했습니다. 개발 중 드러난 예외는 조건별 플로우차트로 보완하고 A/B 테스트로 UI를 개선했습니다.</p><details class="duty-home"><summary>담당 업무 자세히 보기<span class="duty-home-mark" aria-hidden="true">＋</span></summary><div class="duty-home-groups"><section><h4>요구사항 분석 및 프로젝트 범위 정의</h4><ul><li>50명 대상 사용자 조사로 링크 재탐색·그룹 공유 과정의 문제 파악</li><li>조사 결과를 페르소나·유저저니맵으로 구조화, 디자인·개발팀 의사결정 기준 수립</li><li>핵심 사용자 흐름에 따른 저장·분류·탐색 중심 MVP 범위 및 구현 우선순위 정의</li></ul></section><section><h4>화면·정책 및 산출물 관리</h4><ul><li>Figma 기반 E2E 유저플로우·화면설계서 작성</li><li>UI 요소별 인터랙션·입력 조건·조건 분기·예외 케이스 상세 정의</li><li>기능 변경 날짜·이유·영향 범위 문서화, Jira 기반 일정·화면별 진행 상황 관리</li></ul></section><section><h4>협업 및 사용성 개선</h4><ul><li>개발자·디자이너와 기능 범위·구현 우선순위·일정 조율</li><li>사용성 가설 검증을 위한 A/B 테스트 설계 및 2차 테스트 진행</li><li>UI 개선 후 평균 과업 수행 시간 44% 단축·미스클릭률 23% 감소</li></ul></section></div></details></dd></div>
+                <div class="case-result"><dt>결과</dt><dd><p>MVP 출시와 UI 개선을 거쳐 <strong>저장 과업 시간은 평균 44% 단축, 미스클릭률은 23% 감소</strong>했습니다.</p></dd></div>
+                <div><dt>회고</dt><dd><p>정상 흐름만으로는 개발 중 생기는 질문을 줄이지 못했습니다. <strong>다시 한다면 개발 전에 예외와 조건 분기를 함께 정의</strong>하고, 변경 이유와 이력까지 공유하겠습니다.</p></dd></div>
+              </dl>
+              <section class="artifact-links" aria-label="쏙 작성 산출물">
+                <a class="artifact-all" href="work-01.html#deliverables" aria-label="쏙 작성 산출물 전체 보기">작성 산출물 <span aria-hidden="true">→</span></a>
+                <ul><li><a href="work-01.html#doc-research">문제 정의 · 리서치<span aria-hidden="true">↗</span></a></li><li><a href="work-01.html#doc-persona">페르소나 · 유저저니맵<span aria-hidden="true">↗</span></a></li><li><a href="work-01.html#doc-requirements">요구사항 정의서<span aria-hidden="true">↗</span></a></li><li><a href="work-01.html#doc-policy">기능 명세서<span aria-hidden="true">↗</span></a></li><li><a href="work-01.html#doc-flow">정보구조 · 유저플로우<span aria-hidden="true">↗</span></a></li><li><a href="work-01.html#doc-wireframes">화면 설계서<span aria-hidden="true">↗</span></a></li><li><a href="work-01.html#doc-ut">사용성 · A/B 테스트<span aria-hidden="true">↗</span></a></li></ul>
+              </section>
             </div>
+            
           </article>
-          <article class="resume-project" id="experience-platform" aria-labelledby="experience-title-platform">
-            <aside class="resume-project-meta"><div class="resume-service-photo is-empty" aria-hidden="true"><span>서비스 이미지</span></div><p class="resume-period">2026.06 ~ 2026.07</p><p class="resume-role">UX/UI·서비스 기획 · 기여도 100%</p><p class="resume-tools"><b>사용 도구</b> Figma, Jira, Notion</p></aside>
-            <div class="resume-project-main">
-              <header><p class="resume-category">서비스 리뉴얼 · 운영 정책</p><h3 id="experience-title-platform">캐릭터 채팅 플랫폼 Web/App<span>웹서비스 리뉴얼 및 정책 설계</span></h3></header>
-              <dl class="resume-results" aria-label="캐릭터 채팅 플랫폼 Web/App 주요 성과"><div><dt>IA·UX/UI 리뉴얼</dt><dd>서비스 배포</dd></div><div><dt>랭킹·태그·추천 로직 구체화</dt><dd>운영 기준 정책화</dd></div></dl>
-              <p class="resume-project-intro">운영 방향 변경에 따른 웹·앱 IA 및 콘텐츠 구조 재설계, 기능별 정책 정의와 서비스 배포</p>
-              <div class="resume-responsibilities"><section aria-label="IA·UX/UI 리뉴얼"><h4>IA·UX/UI 리뉴얼</h4><ul><li>기존 서비스·사업 방향 분석을 바탕으로 원작 IP 중심 탐색 IA 재설계</li><li>Figma 주요 화면·프로토타입 제작, 화면별 기능·동작 구체화</li><li>디자인·개발팀과 구현 범위 협의 및 실제 서비스 배포</li></ul></section><section aria-label="서비스 운영 정책 구체화"><h4>서비스 운영 정책 구체화</h4><ul><li>캐릭터 메타데이터·태그 추천·랭킹 운영 기준 정립</li><li>채팅 수 표기·태그 정렬·주간 트렌드 집계·추천 Score 산식·예외 처리 기준을 개발 로직 수준으로 문서화</li><li>담당자별로 달랐던 운영 방식의 정책화, 후속 기능 개발·운영 기준 수립</li></ul></section></div>
-
+          <article class="case-preview" id="experience-koach" aria-labelledby="experience-title-koach">
+            <aside class="case-preview-visual"><div class="case-preview-image"><img src="images/projects/koach-cutout.png" alt="koach 서비스 화면" loading="lazy" decoding="async"></div><dl class="case-meta"><div><dt>기간</dt><dd>2025.09 ~ 2026.04</dd></div><div><dt>역할</dt><dd>PM · PL · 기여도 60%</dd></div><div><dt>담당 업무</dt><dd><ul><li>GA4 지표 설계·분석 · UX 설계</li><li>AI 아키텍처 설계 · WBS 관리</li><li>어드민 기획 · 데이터 적재 가이드</li></ul></dd></div></dl></aside>
+            <div class="case-preview-copy">
+              <header><h3 id="experience-title-koach">koach</h3><p>관계와 상황에 맞게 배우는 AI 한국어 회화</p></header>
+              <dl class="case-narrative">
+                <div><dt>문제</dt><dd><p>단어와 문법을 알아도, 상대와의 관계에 따라 달라지는 예의·격식과 일상 표현을 실제 대화에서 익히기는 어려웠습니다. <strong>교재에서 배운 한국어와 실제 한국인과의 대화 사이의 간극</strong>을 줄이고자 했습니다.</p></dd></div>
+                <div><dt>판단</dt><dd><p>한국어 학습자 17명의 설문에서 관계·상황에 맞는 표현과 실생활 대화에 대한 수요를 확인했습니다. <strong>한국 사회·정서 문화를 학습한 챗봇과 대화하며 배우는 방식</strong>을 기획하고, 친밀도 설정과 맥락에 맞는 교정을 연결했습니다.</p></dd></div>
+                <div><dt>실행</dt><dd><p>관계별 채팅방, 거리감 슬라이더, 교정·표현 저장 흐름을 구체화했습니다. 멀티 에이전트 구조와 데이터 흐름을 설계하고, 출시 후에는 GA4 분석을 바탕으로 온보딩·채팅 진입과 답변 품질을 개선했습니다.</p><details class="duty-home"><summary>담당 업무 자세히 보기<span class="duty-home-mark" aria-hidden="true">＋</span></summary><div class="duty-home-groups"><section><h4>사용자 행동 분석 및 서비스 개선</h4><ul><li>GA4 이벤트·서비스 지표 설계, 회원가입·채팅 진입·첫 응답 이후 이탈 흐름 분석</li><li>온보딩 개편으로 회원가입 전환율 11.2% → 16.0%, 4.8%p 개선에 기여</li><li>앱 전환 유도·리텐션 푸시 설계로 채팅 전환율 18.5% → 42.5%, 24.0%p 개선에 기여</li></ul></section><section><h4>화면·정책 설계 및 AI 품질 개선</h4><ul><li>Figma 기반 IA별 화면설계서 작성, 화면 동작·서비스 정책·예외 케이스 구체화</li><li>관계·상황별 대화 및 교정을 위한 멀티 에이전트 구조·데이터 흐름 설계와 문서화</li><li>RAG 기반 품질 개선으로 첫 응답 이탈률 62.1% → 20.0%, 42.1%p 감소에 기여</li></ul></section><section><h4>협업 및 서비스 운영</h4><ul><li>WBS 기반 작업 범위·일정 관리 및 개발·디자인 구현 우선순위 조율</li><li>리텐션·사용자 행동 분석을 위한 이벤트·지표 설계 및 데이터 적재 가이드 작성</li><li>로그 조회·문의 처리 흐름의 어드민 표준화로 반복 운영 업무 정리</li><li>서비스 기획·운영 참여 — 사전 예약 2주간 354명 모집·사용자 282명 획득</li></ul></section></div></details></dd></div>
+                <div class="case-result"><dt>결과</dt><dd><p>온보딩 개편 후 가입 전환율은 <strong>11.2% → 16.0%</strong>, 앱 전환 유도·푸시 설계 후 채팅 전환율은 <strong>18.5% → 42.5%</strong>로 높아졌습니다. RAG 기반 개선 후 첫 응답 이탈률은 <strong>62.1% → 20.0%</strong>로 줄었습니다.</p></dd></div>
+                <div><dt>회고</dt><dd><p>행동 데이터로 가설을 검증하는 방식과, 구조를 먼저 공유하는 기획의 중요성을 배웠습니다. <strong>에이전트와 데이터 흐름을 시각화</strong>하니 개발·기획 간 소통이 원활해졌습니다.</p></dd></div>
+              </dl>
+              <section class="artifact-links" aria-label="koach 작성 산출물">
+                <a class="artifact-all" href="work-02.html#deliverables" aria-label="koach 작성 산출물 전체 보기">작성 산출물 <span aria-hidden="true">→</span></a>
+                <ul><li><a href="work-02.html#doc-research">문제 정의 · 리서치<span aria-hidden="true">↗</span></a></li><li><a href="work-02.html#doc-requirements">요구사항 정의서<span aria-hidden="true">↗</span></a></li><li><a href="work-02.html#doc-policy">기능 명세서<span aria-hidden="true">↗</span></a></li><li><a href="work-02.html#doc-flow">정보구조 · 유저플로우<span aria-hidden="true">↗</span></a></li><li><a href="work-02.html#doc-wireframe">와이어프레임<span aria-hidden="true">↗</span></a></li><li><a href="work-02.html#doc-wireframes">화면 설계서<span aria-hidden="true">↗</span></a></li><li><a href="work-02.html#doc-data-guide">데이터 적재 가이드<span aria-hidden="true">↗</span></a></li><li><a href="work-02.html#doc-validation">품질 검증<span aria-hidden="true">↗</span></a></li><li><a href="work-02.html#doc-ut">사용성 테스트 기획<span aria-hidden="true">↗</span></a></li><li><a href="work-02.html#doc-backlog">백로그 관리<span aria-hidden="true">↗</span></a></li></ul>
+              </section>
             </div>
+            
           </article>
-          <article class="resume-project" id="experience-ip-chatbot" aria-labelledby="experience-title-ip-chatbot">
-            <aside class="resume-project-meta"><div class="resume-service-photo is-empty" aria-hidden="true"><span>서비스 이미지</span></div><p class="resume-period">2026.06 ~ 2026.07</p><p class="resume-role">AI/프롬프트 기획 · 기여도 100%</p><p class="resume-tools"><b>사용 도구</b> GPT, Gemini, NPM</p></aside>
-            <div class="resume-project-main">
-              <header><p class="resume-category">AI 콘텐츠 · 업무 자동화</p><h3 id="experience-title-ip-chatbot">IP 캐릭터 챗봇<span>AI 콘텐츠 기획 및 업무 자동화 도구 구축</span></h3></header>
-              <dl class="resume-results" aria-label="IP 캐릭터 챗봇 주요 성과"><div><dt>20턴 기준 이미지 매칭률</dt><dd>30% → 80%</dd></div><div><dt>프롬프트 조립·규격 문서 생성</dt><dd>자동화 파이프라인 구축</dd></div></dl>
-              <p class="resume-project-intro">생성형 AI 기반 캐릭터 콘텐츠 기획·품질 검증 및 반복 기획·문서 업무 자동화 도구 설계</p>
-              <div class="resume-responsibilities"><section aria-label="AI 콘텐츠 기획 및 품질 검증"><h4>AI 콘텐츠 기획 및 품질 검증</h4><ul><li>캐릭터 성격·말투·관계 변화의 일관성을 위한 LLM 프롬프트·관계 시스템 설계</li><li>실제 대화 결과·LLM Trace 분석을 통한 프롬프트 및 이미지 매핑 로직 개선</li><li>태그·예외 프롬프트 개선으로 20턴 기준 이미지 매칭률 30% → 80% 향상</li></ul></section><section aria-label="AI 기반 업무 자동화"><h4>AI 기반 업무 자동화</h4><ul><li>신규 콘텐츠 제작 시 동일 지시사항을 반복 입력하는 비효율 발견</li><li>기획안 입력 → 프롬프트 초안 생성 → 담당자 검토 → 최종 조립 자동화 파이프라인 구축</li><li>부서 공통 제안서 형식 구조화 및 입력 정보 기반 규격 문서 자동 생성</li><li>콘텐츠 제작부터 기획·문서 업무까지 AI 활용 범위 확장</li></ul></section></div>
-
+          <article class="case-preview" id="experience-yeonox" aria-labelledby="experience-title-yeonox">
+            <aside class="case-preview-visual"><div class="case-preview-image"><img src="images/projects/yeonox-cutout.png" alt="연OX 서비스 화면" loading="lazy" decoding="async"></div><dl class="case-meta"><div><dt>기간</dt><dd>2025.09 ~ 2025.10</dd></div><div><dt>역할</dt><dd>기획 · 디자인 · 개발 · 기여도 70%</dd></div><div><dt>담당 업무</dt><dd><ul><li>서비스 정책 · 화면 설계</li><li>AI 협업 개발 · 운영 어드민 구축</li><li>OX 추천 프롬프트 설계</li></ul></dd></div></dl></aside>
+            <div class="case-preview-copy">
+              <header><h3 id="experience-title-yeonox">연OX</h3><p>연애 고민을 나누는 익명 OX 투표 커뮤니티</p></header>
+              <dl class="case-narrative">
+                <div><dt>문제</dt><dd><p>반복되는 연애 고민을 친구에게 다시 꺼내기 부담스러워 혼자 감당하는 경우에 주목했습니다. <strong>신원을 드러내지 않고 다른 사람의 관점을 얻는 공간</strong>을 만들고자 했습니다.</p></dd></div>
+                <div><dt>판단</dt><dd><p>익명 사연과 OX 투표로 가볍게 의견을 나누도록 설계했습니다. 모바일에서의 동선은 정적인 화면만으로 확인하기 어려워, <strong>와이어프레임을 코드로 구현해 직접 조작하며 검증</strong>했습니다.</p></dd></div>
+                <div><dt>실행</dt><dd><p>투표·댓글·익명 표시 정책을 정의하고 AI와 함께 화면을 구현했습니다. 코드 구조가 일관되지 않는 문제에는 AGENTS.md로 개발 규칙을 세우고, OX 추천을 조정할 프롬프트·테스트 어드민을 만들었습니다.</p><details class="duty-home"><summary>담당 업무 자세히 보기<span class="duty-home-mark" aria-hidden="true">＋</span></summary><div class="duty-home-groups"><section><h4>요구사항 및 참여 정책 설계</h4><ul><li>초기 기능 요구사항 정의 및 사연 작성 → 투표 → 댓글 → 후기 요청 흐름 설계</li><li>한 사용자·한 글당 1회 투표, 투표 후 댓글 조회·작성 정책 정의</li><li>게시글 내 동일 작성자의 익명 번호 유지 규칙 설계</li></ul></section><section><h4>AI 기반 프로토타이핑 및 개발 규칙</h4><ul><li>React Native·Expo 프로토타입 구현, 모바일 직접 조작을 통한 화면·동선 개선</li><li>AGENTS.md 개발 규칙 작성, 화면 컴포넌트·사용자 행동·데이터 통신의 역할별 구조화</li></ul></section><section><h4>프롬프트 및 운영 도구 제작</h4><ul><li>상황별 Few-shot 예시를 활용한 사연 맥락 기반 O/X 선택지 생성 프롬프트 설계</li><li>프롬프트 수정·저장·테스트를 통합한 운영 어드민 AI 기반 제작</li><li>게시글 검수 기준·응답 형식 정의 및 마케팅 콘텐츠 준비</li></ul></section></div></details></dd></div>
+                <div class="case-result"><dt>결과</dt><dd><p>모바일 화면과 <strong>프롬프트 수정·저장·테스트용 어드민</strong>을 구현하고 마케팅 콘텐츠 5종을 제작했습니다. 현재 마케팅 준비 단계로, 실제 사용자 반응은 아직 검증 전입니다.</p></dd></div>
+                <div><dt>회고</dt><dd><p>AI에도 요구사항뿐 아니라 코드 구조와 검수 기준이 필요했습니다. 화면 구현 다음에는 <strong>실제 유입 후 참여와 재방문 가설을 검증</strong>하는 일이 남아 있습니다.</p></dd></div>
+              </dl>
+              <section class="artifact-links" aria-label="연OX 작성 산출물">
+                <a class="artifact-all" href="work-03.html#deliverables" aria-label="연OX 작성 산출물 전체 보기">작성 산출물 <span aria-hidden="true">→</span></a>
+                <ul><li><a href="work-03.html#doc-research">컨셉 · 문제 정의<span aria-hidden="true">↗</span></a></li><li><a href="work-03.html#doc-agent-rules">AGENTS.md · AI 개발 규칙<span aria-hidden="true">↗</span></a></li><li><a href="work-03.html#doc-prototype">와이어프레임 · 프로토타입<span aria-hidden="true">↗</span></a></li><li><a href="work-03.html#doc-policy">정책 설계 · 요구사항 구체화<span aria-hidden="true">↗</span></a></li><li><a href="work-03.html#doc-frontend">프론트엔드 · 모바일 UX<span aria-hidden="true">↗</span></a></li><li><a href="work-03.html#doc-data">ERD · AI 프롬프트<span aria-hidden="true">↗</span></a></li><li><a href="work-03.html#doc-api">API 명세 · Swagger<span aria-hidden="true">↗</span></a></li><li><a href="work-03.html#doc-marketing">마케팅 콘텐츠<span aria-hidden="true">↗</span></a></li></ul>
+              </section>
             </div>
-          </article>
-          <article class="resume-project" id="experience-koach" aria-labelledby="experience-title-koach">
-            <aside class="resume-project-meta"><div class="resume-service-photo"><img src="images/projects/koach-cutout.png" alt="koach 한국어 회화 서비스 화면" loading="lazy" decoding="async"></div><p class="resume-period">2025.09 ~ 2026.04</p><p class="resume-role">PM/PL · 기여도 60%</p><p class="resume-tools"><b>사용 도구</b> Figma, GA4, Notion, Spreadsheet</p><a class="resume-artifact-link" href="work-02.html" aria-label="koach 기획 산출물 보기">기획 산출물 보기 <span aria-hidden="true">↗</span></a></aside>
-            <div class="resume-project-main">
-              <header><p class="resume-category">서비스 운영 · 데이터 기반 개선</p><h3 id="experience-title-koach">koach<span>AI 한국어 회화 서비스 기획·운영</span></h3></header>
-              <dl class="resume-results" aria-label="koach 주요 성과"><div><dt>회원가입 전환율</dt><dd>11.2% → 16.0%</dd></div><div><dt>채팅 전환율</dt><dd>18.5% → 42.5%</dd></div><div><dt>첫 응답 이탈률</dt><dd>62.1% → 20.0%</dd></div></dl>
-              <p class="resume-project-intro">문화·관계·상황을 반영한 AI 한국어 회화 서비스의 상세 기획·행동 데이터 분석·UX 및 퍼널 개선·AI 품질 개선</p>
-              <div class="resume-responsibilities"><section aria-label="사용자 행동 분석 및 서비스 개선"><h4>사용자 행동 분석 및 서비스 개선</h4><ul><li>GA4 이벤트·서비스 지표 설계, 회원가입·채팅 진입·첫 응답 이후 이탈 흐름 분석</li><li>온보딩 개편으로 회원가입 전환율 11.2% → 16.0%, 4.8%p 개선에 기여</li><li>앱 전환 유도·리텐션 푸시 설계로 채팅 전환율 18.5% → 42.5%, 24.0%p 개선에 기여</li></ul></section><section aria-label="화면·정책 설계 및 AI 품질 개선"><h4>화면·정책 설계 및 AI 품질 개선</h4><ul><li>Figma 기반 IA별 화면설계서 작성, 화면 동작·서비스 정책·예외 케이스 구체화</li><li>관계·상황별 대화 및 교정을 위한 멀티 에이전트 구조·데이터 흐름 설계와 문서화</li><li>RAG 기반 품질 개선으로 첫 응답 이탈률 62.1% → 20.0%, 42.1%p 감소에 기여</li></ul></section><section aria-label="협업 및 서비스 운영"><h4>협업 및 서비스 운영</h4><ul><li>WBS 기반 작업 범위·일정 관리 및 개발·디자인 구현 우선순위 조율</li><li>리텐션·사용자 행동 분석을 위한 이벤트·지표 설계 및 데이터 적재 가이드 작성</li><li>로그 조회·문의 처리 흐름의 어드민 표준화로 반복 운영 업무 정리</li><li>서비스 기획·운영 참여 — 사전 예약 2주간 354명 모집·사용자 282명 획득</li></ul></section></div>
-            </div>
-          </article>
-          <article class="resume-project" id="experience-yeonox" aria-labelledby="experience-title-yeonox">
-            <aside class="resume-project-meta"><div class="resume-service-photo"><img src="images/projects/yeonox-cutout.png" alt="연OX 사연·투표 서비스 화면" loading="lazy" decoding="async"></div><p class="resume-period">마케팅 준비 중</p><p class="resume-role">기획·디자인·바이브 코딩 · 기여도 100%</p><p class="resume-tools"><b>사용 도구</b> Figma, 생성형 AI, React Native·Expo, Supabase, Swagger</p><a class="resume-artifact-link" href="work-03.html" aria-label="연OX 기획 산출물 보기">기획 산출물 보기 <span aria-hidden="true">↗</span></a></aside>
-            <div class="resume-project-main">
-              <header><p class="resume-category">서비스 기획 · AI 프로토타이핑</p><h3 id="experience-title-yeonox">연OX<span>AI 기반 커뮤니티 서비스 기획·구현</span></h3></header>
-              <dl class="resume-results" aria-label="연OX 주요 성과"><div><dt>AI와 페어 프로그래밍</dt><dd>서비스·어드민 구현</dd></div><div><dt>서비스 참여 이유를 전달하는 콘텐츠 제작</dt><dd>마케팅 준비 중</dd></div></dl>
-              <p class="resume-project-intro">익명 사연·OX 투표 커뮤니티의 요구사항 및 정책 설계, AI 페어 프로그래밍 기반 모바일 화면·운영 어드민 구현</p>
-              <div class="resume-responsibilities"><section aria-label="요구사항 및 참여 정책 설계"><h4>요구사항 및 참여 정책 설계</h4><ul><li>초기 기능 요구사항 정의 및 사연 작성 → 투표 → 댓글 → 후기 요청 흐름 설계</li><li>한 사용자·한 글당 1회 투표, 투표 후 댓글 조회·작성 정책 정의</li><li>게시글 내 동일 작성자의 익명 번호 유지 규칙 설계</li></ul></section><section aria-label="AI 기반 프로토타이핑 및 개발 규칙"><h4>AI 기반 프로토타이핑 및 개발 규칙</h4><ul><li>React Native·Expo 프로토타입 구현, 모바일 직접 조작을 통한 화면·동선 개선</li><li>AGENTS.md 개발 규칙 작성, 화면 컴포넌트·사용자 행동·데이터 통신의 역할별 구조화</li></ul></section><section aria-label="프롬프트 및 운영 도구 제작"><h4>프롬프트 및 운영 도구 제작</h4><ul><li>상황별 Few-shot 예시를 활용한 사연 맥락 기반 O/X 선택지 생성 프롬프트 설계</li><li>프롬프트 수정·저장·테스트를 통합한 운영 어드민 AI 기반 제작</li><li>게시글 검수 기준·응답 형식 정의 및 마케팅 콘텐츠 준비</li></ul></section></div>
-            </div>
+            
           </article>
           </div>
         </div>
@@ -164,20 +134,20 @@
 
     <div class="home-bottom wrap">
       <section class="home-analysis" aria-labelledby="home-analysis-title">
-        <header class="home-analysis-header"><h2 id="home-analysis-title">Service Analysis</h2><a href="notes.html#analysis">전체 보기 <span aria-hidden="true">→</span></a></header>
+        <header class="home-analysis-header"><h2 id="home-analysis-title">서비스 분석</h2><a href="notes.html#analysis">전체 보기 <span aria-hidden="true">→</span></a></header>
         <ul class="home-analysis-list">
-          <li><a href="analysis-naver-map.html"><span class="home-analysis-service">네이버 지도</span><span class="home-analysis-question">내가 모은 장소가 다른 사람의 탐색을 도울 때</span><span class="home-analysis-arrow" aria-hidden="true">↗</span></a></li>
-          <li><a href="analysis-29cm.html"><span class="home-analysis-service">29CM</span><span class="home-analysis-question">브랜드 이야기는 어떻게 구매할 이유가 될까?</span><span class="home-analysis-arrow" aria-hidden="true">↗</span></a></li>
-          <li><a href="analysis-zeta.html"><span class="home-analysis-service">Zeta</span><span class="home-analysis-question">캐릭터의 말투와 대화의 기억은 같은 문제일까?</span><span class="home-analysis-arrow" aria-hidden="true">↗</span></a></li>
+          <li><a href="analysis-naver-map.html"><span class="home-analysis-service">네이버 지도</span><span class="home-analysis-question">저장 리스트를 공유할 때 소유자와 팔로워의 권한을 어떻게 나눌까?</span><span class="home-analysis-arrow" aria-hidden="true">↗</span></a></li>
+          <li><a href="analysis-29cm.html"><span class="home-analysis-service">29CM</span><span class="home-analysis-question">브랜드 콘텐츠부터 구매·재방문까지, AARRR 지표를 어떻게 나눌까?</span><span class="home-analysis-arrow" aria-hidden="true">↗</span></a></li>
+          <li><a href="analysis-zeta.html"><span class="home-analysis-service">Zeta</span><span class="home-analysis-question">AI 캐릭터의 말투 유지·대화 기억·발화 순서를 어떻게 설계할까?</span><span class="home-analysis-arrow" aria-hidden="true">↗</span></a></li>
         </ul>
       </section>
     </div>
   </main>
 
   <div class="contact-ending">
-    <section class="contact-section" id="contact" aria-labelledby="contact-title"><div class="wrap contact-inner"><div class="eyebrow">CONTACT</div><div class="contact-spark" aria-hidden="true">✳</div><h2 id="contact-title">더 나은 경험을,<br>함께 만들어가고 싶습니다.</h2><p>새로운 관점과 가능성을 나누는 대화를 기다립니다.</p><div class="contact-actions"><a class="button contact-button contact-button-email" href="mailto:rsj01223@gmail.com" data-contact="email">이메일 보내기 <svg class="icon"><use href="#arrow"/></svg></a><a class="button contact-button contact-button-secondary" href="sms:01034641539" data-contact="message">메시지 보내기 <svg class="icon"><use href="#arrow"/></svg></a><button class="button contact-button contact-button-ai" type="button" data-contact="coffeechat"><span class="ai-spark" aria-hidden="true">✦</span>AI 커피챗 <svg class="icon"><use href="#arrow"/></svg></button></div><span class="contact-note"><a href="mailto:rsj01223@gmail.com">rsj01223@gmail.com</a> · <a href="sms:01034641539">010-3464-1539</a></span></div></section>
+    <section class="contact-section" id="contact" aria-labelledby="contact-title"><div class="wrap contact-inner"><div class="contact-spark" aria-hidden="true">✳</div><h2 id="contact-title">더 나은 경험을,<br>함께 만들어가고 싶습니다.</h2><div class="contact-actions"><a class="button contact-button contact-button-email" href="mailto:rsj01223@gmail.com" data-contact="email">이메일 보내기 <svg class="icon"><use href="#arrow"/></svg></a><a class="button contact-button contact-button-secondary" href="sms:01034641539" data-contact="message">메시지 보내기 <svg class="icon"><use href="#arrow"/></svg></a><button class="button contact-button contact-button-ai" type="button" data-contact="coffeechat"><span class="ai-spark" aria-hidden="true">✦</span>AI 커피챗 <svg class="icon"><use href="#arrow"/></svg></button></div><span class="contact-note"><a href="mailto:rsj01223@gmail.com">rsj01223@gmail.com</a> · <a href="sms:01034641539">010-3464-1539</a></span></div></section>
 
-  <footer class="site-footer wrap"><a class="brand" href="#page-top">seojeong<span class="brand-star">✳</span></a><span>© 2026 Yu Seojeong</span><a class="back-to-top" href="#page-top">Back to top ↑</a></footer>
+  <footer class="site-footer wrap"><a class="brand" href="#page-top">seojeong<span class="brand-star">✳</span></a><span>© 2026 유서정</span><a class="back-to-top" href="#page-top">맨 위로 ↑</a></footer>
   </div>
 
   <dialog class="coffeechat-dialog" id="info-dialog" aria-labelledby="dialog-title">
@@ -188,7 +158,7 @@
       <div class="sky-cloud sky-cloud-one"></div><div class="sky-cloud sky-cloud-two"></div>
       <canvas class="meadow-motion"></canvas>
     </div>
-    <header class="coffeechat-header"><span class="coffeechat-brand">seojeong<span aria-hidden="true">✳</span><small>AI COFFEE CHAT</small></span><button class="coffeechat-close" type="button" autofocus aria-label="AI 커피챗 닫기">닫기 <span aria-hidden="true">×</span></button></header>
+    <header class="coffeechat-header"><span class="coffeechat-brand">seojeong<span aria-hidden="true">✳</span><small>AI 커피챗</small></span><button class="coffeechat-close" type="button" autofocus aria-label="AI 커피챗 닫기">닫기 <span aria-hidden="true">×</span></button></header>
     <div class="coffeechat-content">
       <h2 id="dialog-title"><span class="coffeechat-introduction">안녕하세요,<br>유서정입니다.</span></h2>
       <div class="coffeechat-messages" role="log" aria-label="커피챗 대화" aria-live="polite" aria-relevant="additions" hidden></div>

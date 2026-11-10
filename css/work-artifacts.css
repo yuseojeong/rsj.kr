@@ -1,0 +1,355 @@
+/* Open editorial sections; only the actual documents have a reading surface. */
+@media screen{
+html body.project-page.project-page .project-tools{width:100%;margin-top:18px}
+html body.project-page.project-page .project-angle article{padding:0 24px 0 0;border:0!important;border-radius:0;background:transparent!important}
+html body.project-page.project-page .project-angle article+article{padding-left:24px;border-left:1px solid var(--wk-line)!important}
+html body.project-page.project-page #deliverables .document-stream{gap:64px}
+html body.project-page.project-page #deliverables .doc-step{border:0!important;border-radius:0;background:transparent!important;box-shadow:none!important;overflow:visible}
+html body.project-page.project-page #deliverables .doc-step .doc-step-head{margin:0;padding:24px 0 20px;border:0!important;background:transparent!important}
+html body.project-page.project-page #deliverables .doc-step>.document-canvas{padding:0;background:transparent!important}
+html body.project-page.project-page #deliverables :is(.case-copy,.case-subsection,.figma-panel,.ut-plan,.ut-checks,.ut-measure,.yx-reasoning,.yx-findings,.yx-ux-notes){background:transparent!important;border:0!important;border-radius:0;box-shadow:none!important}
+html body.project-page.project-page #deliverables :is(.case-copy,.case-subsection){padding-inline:0}
+html body.project-page.project-page #deliverables :is(.case-table-wrap,.paper-table-wrap,.document-paper,.dv-paper){color-scheme:light;background:#fff!important;border:1px solid #dfe4ea!important;border-radius:12px;overflow:auto}
+html body.project-page.project-page #deliverables :is(table,tbody,tr,td){background:#fff!important;color:#4e5968!important;border-color:#e5e8eb!important}
+html body.project-page.project-page #deliverables :is(thead,thead th){background:#f2f4f6!important;color:#191f28!important;border-color:#e5e8eb!important}
+html body.project-page.project-page #deliverables tbody th{background:#fff!important;color:#191f28!important;border-color:#e5e8eb!important}
+html body.project-page.project-page #deliverables table :is(p,li,div,dd,small,span,em,i,label,caption,code){color:#4e5968!important}
+html body.project-page.project-page #deliverables table :is(b,strong,h3,h4){color:#191f28!important}
+html body.project-page.project-page #deliverables table :is(.ssok-scope,.qa-badge){background:#e8f3ff!important;color:#1b64da!important}
+html body.project-page.project-page #deliverables table .qa-badge:is([data-status="Pass"],[data-status="완료"]){background:#edf8f1!important;color:#267448!important}
+html body.project-page.project-page #deliverables table .qa-badge:is([data-status="Fail"],[data-status="High"]){background:#fff0ef!important;color:#b33832!important}
+html body.project-page.project-page #deliverables table a{color:#1b64da!important}
+html body.project-page.project-page #deliverables tbody tr:hover :is(th,td){background:#f8fafc!important}
+html body.project-page.project-page #deliverables :is(iframe,.ssok-evidence a,.koach-wireframe){color-scheme:light;background:#fff!important;border:1px solid #dfe4ea!important;border-radius:12px}
+html body.project-page.project-page #deliverables .document-menu .document-choice{background:transparent!important}
+html body.project-page.project-page #deliverables .document-menu .document-choice.is-selected::before{background:#80b5ff}
+@media(max-width:900px){
+html body.project-page.project-page .project-angle article{padding:0 0 20px}
+html body.project-page.project-page .project-angle article+article{padding:20px 0;border-left:0!important;border-top:1px solid var(--wk-line)!important}
+}
+@media(max-width:760px){
+html body.project-page.project-page #deliverables .document-stream{gap:40px}
+html body.project-page.project-page #deliverables .document-menu{background:#111214f5!important}
+html body.project-page.project-page #deliverables .document-menu .document-choice.is-selected{background:#1d2c44!important}
+}
+}
+@media screen{
+html body.project-page.project-page #deliverables :is(.yx-details,.case-note,.paper-note){background:transparent!important;border:0!important;border-radius:0;padding-inline:0}
+html body.project-page.project-page #deliverables .yx-details>summary{margin-bottom:18px}
+html body.project-page.project-page #deliverables .doc-step{scroll-margin-top:150px}
+}
+@media screen and (min-width:761px){
+html body.project-page.project-page #deliverables .document-menu{top:max(var(--document-nav-offset,68px),calc(100dvh - var(--document-menu-height,440px) - 32px))}
+}
+@media screen and (max-width:760px){
+html body.project-page.project-page #deliverables .document-menu{top:var(--document-nav-offset,62px)}
+}
+/* Document titles use the same accent as the project header. */
+@media screen{
+html body.project-page.project-page #deliverables .doc-step .doc-step-head .deliv-num{color:var(--wk-accent,#80b5ff)!important}
+html body.project-page.project-page #deliverables .doc-step .doc-step-head h3{white-space:normal;text-wrap:pretty;word-break:keep-all;overflow-wrap:break-word;line-height:1.6}
+}
+
+/* Research: clear reading order without overlapping dark surfaces. */
+@media screen{
+html body.project-page.project-page #doc-research :is(.research-editorial,.study-meta,.study-meta>div,.research-section-label,.research-findings,.research-finding,.finding-index,.finding-index>span,.finding-evidence,.finding-ring,.ring-label,.study-source,.research-translation,.translation-heading,.translation-body,.translation-labels,.translation-row,.research-takeaway,.ssok-quote-card,.expression-samples){background:transparent!important;box-shadow:none!important}
+html body.project-page.project-page #doc-research .study-meta{display:flex;flex-wrap:wrap;gap:16px 32px;margin:0 0 36px;padding:16px 0;border-block:1px solid #30343b!important}
+html body.project-page.project-page #doc-research .study-meta>div{display:flex;flex-direction:row;align-items:baseline;gap:12px;padding:0;border:0!important;border-radius:0}
+html body.project-page.project-page #doc-research .study-meta dt{font-size:12px;color:#8b95a1!important}
+html body.project-page.project-page #doc-research .study-meta dd{font-size:12px}
+html body.project-page.project-page #doc-research .research-section-label{padding:0 0 16px;border-bottom:1px solid #30343b!important}
+html body.project-page.project-page #doc-research .research-findings{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:26px;padding:24px 0 0}
+html body.project-page.project-page #doc-research .research-finding{display:flex;flex-direction:column;min-width:0;padding:0;border:0!important}
+html body.project-page.project-page #doc-research .finding-index{display:flex;gap:8px;color:#80b5ff!important;font-size:12px}
+html body.project-page.project-page #doc-research .finding-index>span{border:0!important;width:auto;height:auto;color:#8b95a1!important;font-size:11px}
+html body.project-page.project-page #doc-research .research-finding h4{min-height:62px;margin:14px 0 0;font-size:17px;line-height:1.7;letter-spacing:-.4px}
+html body.project-page.project-page #doc-research .finding-ring{width:190px;height:210px;flex:none;margin:18px auto}
+html body.project-page.project-page #doc-research .finding-ring svg{display:block;width:100%;height:100%;overflow:visible}
+html body.project-page.project-page #doc-research .ring-track{fill:none;stroke:#2b3038;stroke-width:8;background:none!important}
+html body.project-page.project-page #doc-research .ring-value{fill:none;stroke:#3182f6;stroke-width:8;background:none!important}
+html body.project-page.project-page #doc-research .ring-label{gap:8px}
+html body.project-page.project-page #doc-research .ring-label>span{font-size:10px;color:#b0b8c1!important}
+html body.project-page.project-page #doc-research .ring-label strong{font-size:39px;letter-spacing:-1.5px}
+html body.project-page.project-page #doc-research .ring-label small{font-size:18px}
+html body.project-page.project-page #doc-research .finding-evidence{margin:0;padding:16px 0 0;min-height:0;border-top:1px solid #30343b!important;font-size:12px;line-height:1.85}
+html body.project-page.project-page #doc-research :is(.ssok-pain-bars,.ssok-quote-card,.everyday-chart){box-sizing:border-box;height:210px;min-height:210px;margin:18px 0;max-width:none;padding:0}
+html body.project-page.project-page #doc-research .ssok-pain-bars{gap:10px;align-content:center}
+html body.project-page.project-page #doc-research .ssok-pain>span{font-size:11px}
+html body.project-page.project-page #doc-research .ssok-pain b{font-size:12px}
+html body.project-page.project-page #doc-research :is(.ssok-pain-track,.everyday-bar){height:7px;background:#2b3038!important}
+html body.project-page.project-page #doc-research :is(.ssok-pain-track i,.everyday-bar i){background:#3182f6!important}
+html body.project-page.project-page #doc-research .ssok-quote-card{display:flex;flex-direction:column;justify-content:center;border:0!important;border-radius:0}
+html body.project-page.project-page #doc-research .ssok-quote-card>p{font-size:17px;margin:0 0 20px;line-height:1.7}
+html body.project-page.project-page #doc-research .expression-samples{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 18px}
+html body.project-page.project-page #doc-research .expression-samples span{padding:5px 8px;min-width:0;transform:none;border-radius:6px;font-size:11px;background:#20262f!important;color:#b0b8c1!important}
+html body.project-page.project-page #doc-research .everyday-chart>strong{font-size:39px}
+html body.project-page.project-page #doc-research .study-source{margin:18px 0 32px;padding:0;font-size:11px;color:#8b95a1!important}
+html body.project-page.project-page #doc-research .research-translation{display:block;margin-top:40px;padding:28px 0 0;border-top:1px solid #30343b!important}
+html body.project-page.project-page #doc-research .translation-heading{margin-bottom:24px}
+html body.project-page.project-page #doc-research .translation-heading>span{font-size:12px;color:#8b95a1!important}
+html body.project-page.project-page #doc-research .translation-heading h4{margin:10px 0 0;font-size:19px;line-height:1.6}
+html body.project-page.project-page #doc-research .translation-heading h4 br{display:none}
+html body.project-page.project-page #doc-research .translation-heading strong::before{content:' ';white-space:pre}
+html body.project-page.project-page #doc-research :is(.translation-labels,.translation-row){display:grid;grid-template-columns:minmax(0,1fr) 36px minmax(0,1fr);gap:20px}
+html body.project-page.project-page #doc-research .translation-labels{padding:0 0 12px;font-size:12px}
+html body.project-page.project-page #doc-research .translation-row{padding:18px 0;align-items:center;border-top:1px solid #30343b!important}
+html body.project-page.project-page #doc-research .translation-row p{font-size:13px;line-height:1.8}
+html body.project-page.project-page #doc-research .translation-row b{font-size:14px}
+html body.project-page.project-page #doc-research .translation-row small{font-size:12px}
+html body.project-page.project-page #doc-research .research-takeaway{margin:24px 0 0;padding:6px 0 6px 20px;border-left:2px solid #3182f6!important;text-align:left}
+html body.project-page.project-page #doc-research .research-takeaway>span{display:none}
+html body.project-page.project-page #doc-research .research-takeaway p{margin:0 0 8px;font-size:18px;line-height:1.75;letter-spacing:-.3px}
+html body.project-page.project-page #doc-research .research-takeaway>small{font-size:11px;color:#8b95a1!important}
+}
+@media screen and (max-width:1000px){
+html body.project-page.project-page #doc-research .research-findings{grid-template-columns:1fr;gap:28px}
+html body.project-page.project-page #doc-research .research-finding+.research-finding{padding-top:24px;border-top:1px solid #30343b!important}
+html body.project-page.project-page #doc-research .research-finding h4{min-height:0}
+html body.project-page.project-page #doc-research :is(.ssok-pain-bars,.ssok-quote-card,.everyday-chart){height:auto;min-height:0;margin:20px 0}
+html body.project-page.project-page #doc-research .ssok-pain-bars{gap:16px}
+html body.project-page.project-page #doc-research :is(.translation-labels,.translation-row){grid-template-columns:minmax(0,1fr) 18px minmax(0,1fr);gap:12px}
+html body.project-page.project-page #doc-research .translation-heading h4{font-size:17px}
+html body.project-page.project-page #doc-research .research-takeaway p{font-size:16px}
+}
+
+/* Research editorial: a question, visual evidence, then the planning decisions. */
+@media screen{
+html body.project-page.project-page #doc-research .study-meta{margin-bottom:30px;border:0!important;padding:0;gap:12px 24px}
+html body.project-page.project-page #doc-research .research-section-label{border:0!important;padding:0;font-size:12px;color:#8b95a1!important}
+html body.project-page.project-page #doc-research .research-findings{gap:20px;padding-top:18px}
+html body.project-page.project-page #doc-research .research-findings .research-finding{background:#202124!important;border:0!important;border-radius:24px;padding:24px;overflow:hidden}
+html body.project-page.project-page #doc-research .finding-index{order:0;font-size:12px;color:#b0b8c1!important}
+html body.project-page.project-page #doc-research .finding-index>span{color:#8b95a1!important}
+html body.project-page.project-page #doc-research .research-finding h4{order:2;min-height:0;margin:8px 0 14px;font-size:18px;line-height:1.55;font-weight:700;word-break:keep-all}
+html body.project-page.project-page #doc-research .finding-evidence{order:3;border:0!important;padding:0;font-size:12px;line-height:1.85;color:#b0b8c1!important}
+html body.project-page.project-page #doc-research :is(.finding-ring,.ssok-pain-bars,.ssok-quote-card,.everyday-chart){order:1;height:200px;min-height:200px;margin:24px 0 18px}
+html body.project-page.project-page #doc-research .finding-ring{width:180px;max-width:100%;align-self:center}
+html body.project-page.project-page #doc-research .ring-track{stroke:#35383f}
+html body.project-page.project-page #doc-research .ring-label strong{font-size:36px}
+html body.project-page.project-page #doc-research .ssok-pain-bars{gap:12px}
+html body.project-page.project-page #doc-research .ssok-pain>span{font-size:10px}
+html body.project-page.project-page #doc-research .ssok-pain b{font-size:11px}
+html body.project-page.project-page #doc-research :is(.ssok-pain-track,.everyday-bar){background:#35383f!important}
+html body.project-page.project-page #doc-research .ssok-quote-card>p{font-size:18px;line-height:1.65;color:#f2f4f6!important}
+html body.project-page.project-page #doc-research .expression-samples{gap:6px;margin-bottom:20px}
+html body.project-page.project-page #doc-research .expression-samples span{background:#2d3440!important;color:#bcd6ff!important;font-size:10px}
+html body.project-page.project-page #doc-research .everyday-chart{display:flex;flex-direction:column;justify-content:center}
+html body.project-page.project-page #doc-research .everyday-chart-label{font-size:10px}
+html body.project-page.project-page #doc-research .study-source{margin:16px 0 40px;line-height:1.8}
+html body.project-page.project-page #doc-research .research-translation{border:0!important;margin-top:48px;padding-top:0}
+html body.project-page.project-page #doc-research .translation-heading{margin-bottom:32px}
+html body.project-page.project-page #doc-research .translation-heading h4{font-size:23px;letter-spacing:-.6px}
+html body.project-page.project-page #doc-research .translation-body{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:28px;counter-reset:research-decision}
+html body.project-page.project-page #doc-research .translation-labels{display:none}
+html body.project-page.project-page #doc-research .translation-body .translation-row{display:flex;flex-direction:column;align-items:stretch;gap:12px;padding:0;border:0!important;counter-increment:research-decision}
+html body.project-page.project-page #doc-research .translation-row::before{content:counter(research-decision,decimal-leading-zero);display:block;font-size:26px;line-height:1.2;font-weight:700;color:#3182f6;margin-bottom:10px}
+html body.project-page.project-page #doc-research .translation-row>p:first-child{font-size:12px;line-height:1.8;min-height:44px;margin:0;color:#8b95a1!important}
+html body.project-page.project-page #doc-research .translation-row>span{display:none}
+html body.project-page.project-page #doc-research .translation-row>p:last-child{margin:0}
+html body.project-page.project-page #doc-research .translation-row b{display:block;font-size:16px;line-height:1.6;margin-bottom:8px;color:#f2f4f6!important}
+html body.project-page.project-page #doc-research .translation-row small{display:block;font-size:12px;line-height:1.8}
+html body.project-page.project-page #doc-research .research-takeaway{margin-top:36px}
+html body.project-page.project-page #doc-research .yx-research-meta{padding:0 0 4px;flex-wrap:wrap}
+html body.project-page.project-page #doc-research .yx-findings{gap:20px}
+html body.project-page.project-page #doc-research .yx-findings>article{background:#202124!important;border:0!important;border-radius:24px;padding:24px}
+html body.project-page.project-page #doc-research .yx-art{background:transparent!important;height:180px}
+html body.project-page.project-page #doc-research .yx-findings h4{font-size:18px}
+html body.project-page.project-page #doc-research .yx-findings p{font-size:12px}
+html body.project-page.project-page #doc-research .yx-findings small{color:#b0b8c1!important}
+html body.project-page.project-page #doc-research :is(.yx-bubbles span,.yx-loop span){background:#2d3440!important;color:#bcd6ff!important;box-shadow:none}
+html body.project-page.project-page #doc-research .yx-ox span{color:#3182f6!important}
+html body.project-page.project-page #doc-research .yx-ox span+span{color:#b0b8c1!important}
+html body.project-page.project-page #doc-research .yx-takeaway{background:transparent!important;border:0!important;padding:16px 0;border-radius:0}
+}
+@media screen and (max-width:1100px){
+html body.project-page.project-page #doc-research :is(.research-findings,.yx-findings){grid-template-columns:1fr}
+html body.project-page.project-page #doc-research .research-findings .research-finding{display:grid;grid-template-columns:200px minmax(0,1fr);column-gap:28px;align-content:center}
+html body.project-page.project-page #doc-research .research-finding>:is(.finding-ring,.ssok-pain-bars,.ssok-quote-card,.everyday-chart){grid-column:1;grid-row:1/4;margin:0}
+html body.project-page.project-page #doc-research .research-finding>:is(.finding-index,h4,.finding-evidence){grid-column:2}
+}
+@media screen and (max-width:600px){
+html body.project-page.project-page #doc-research .research-findings .research-finding{display:flex;padding:24px;border-radius:22px}
+html body.project-page.project-page #doc-research .research-finding>:is(.finding-ring,.ssok-pain-bars,.ssok-quote-card,.everyday-chart){margin:22px 0}
+html body.project-page.project-page #doc-research .research-finding h4{font-size:20px}
+html body.project-page.project-page #doc-research .finding-evidence{font-size:13px}
+html body.project-page.project-page #doc-research .translation-heading h4{font-size:20px}
+html body.project-page.project-page #doc-research .translation-body{grid-template-columns:1fr 1fr;gap:32px 20px}
+html body.project-page.project-page #doc-research .translation-row b{font-size:15px}
+html body.project-page.project-page #doc-research .translation-row>p:first-child{min-height:0}
+}
+
+/* Separate each document clearly and give research evidence room to breathe. */
+@media screen{
+html body.project-page.project-page .project-profile+.project-tools{margin-top:0;border-top:0!important}
+html body.project-page.project-page #deliverables .document-stream{gap:180px}
+html body.project-page.project-page #deliverables .doc-step .doc-step-head{padding:0 0 48px}
+html body.project-page.project-page #deliverables .doc-step .doc-step-head .deliv-num{margin-bottom:20px}
+html body.project-page.project-page #doc-research .study-meta{margin-bottom:40px}
+html body.project-page.project-page #doc-research .research-findings{gap:24px;padding-top:24px}
+html body.project-page.project-page #doc-research .research-findings .research-finding{padding:30px 26px 34px;border-radius:30px}
+html body.project-page.project-page #doc-research :is(.finding-ring,.ssok-pain-bars,.ssok-quote-card,.everyday-chart){height:230px;min-height:230px;margin:32px 0 30px}
+html body.project-page.project-page #doc-research .finding-ring{width:190px}
+html body.project-page.project-page #doc-research .research-finding h4{font-size:20px;line-height:1.6;margin:0 0 20px}
+html body.project-page.project-page #doc-research .finding-evidence{font-size:14px;line-height:1.9}
+html body.project-page.project-page #doc-research .finding-index{font-size:13px}
+html body.project-page.project-page #doc-research .ssok-pain>span{font-size:11px}
+html body.project-page.project-page #doc-research .ssok-pain b{font-size:12px}
+html body.project-page.project-page #doc-research .study-source{margin:24px 0 0;font-size:12px}
+html body.project-page.project-page #doc-research .research-source-detail{margin-top:20px;color:#b0b8c1;font-size:13px}
+html body.project-page.project-page #doc-research .research-source-detail summary{cursor:pointer;width:fit-content;padding:8px 0;text-underline-offset:5px}
+html body.project-page.project-page #doc-research .research-source-detail summary:hover{color:#fff;text-decoration:underline}
+html body.project-page.project-page #doc-research .research-source-detail .ssok-evidence{margin-top:24px}
+html body.project-page.project-page #doc-research .research-translation{margin-top:100px}
+html body.project-page.project-page #doc-research .translation-heading{display:grid;grid-template-columns:1.15fr 1fr;gap:64px;margin-bottom:56px}
+html body.project-page.project-page #doc-research .translation-heading span{font-size:13px;color:#8b95a1!important}
+html body.project-page.project-page #doc-research .translation-heading h4{font-size:30px;line-height:1.5;letter-spacing:-.8px;margin:18px 0 0}
+html body.project-page.project-page #doc-research .translation-heading h4 br{display:block}
+html body.project-page.project-page #doc-research .translation-heading>p{font-size:15px;line-height:1.9;margin:37px 0 0;color:#b0b8c1!important;word-break:keep-all}
+html body.project-page.project-page #doc-research .translation-body{gap:32px}
+html body.project-page.project-page #doc-research .translation-row::before{margin-bottom:18px}
+html body.project-page.project-page #doc-research .translation-row>p:first-child{font-size:13px;line-height:1.9;min-height:50px}
+html body.project-page.project-page #doc-research .translation-row small{font-size:13px;line-height:1.9}
+html body.project-page.project-page #doc-research .yx-findings{gap:24px;margin-top:22px}
+html body.project-page.project-page #doc-research .yx-findings>article{padding:30px 26px 34px;border-radius:30px}
+html body.project-page.project-page #doc-research .yx-art{height:220px;margin-bottom:32px}
+html body.project-page.project-page #doc-research .yx-findings h4{font-size:20px;line-height:1.6;margin:16px 0 20px}
+html body.project-page.project-page #doc-research .yx-findings p{font-size:14px;line-height:1.9}
+html body.project-page.project-page #doc-research .yx-takeaway{margin-top:64px;margin-bottom:40px}
+}
+@media screen and (max-width:1100px){
+html body.project-page.project-page #doc-research .translation-heading{grid-template-columns:1fr;gap:20px}
+html body.project-page.project-page #doc-research .translation-heading>p{margin:0;max-width:620px}
+html body.project-page.project-page #doc-research .research-finding>:is(.finding-ring,.ssok-pain-bars,.ssok-quote-card,.everyday-chart){margin:0}
+}
+@media screen and (max-width:760px){
+html body.project-page.project-page #deliverables .document-stream{gap:112px}
+html body.project-page.project-page #deliverables .doc-step .doc-step-head{padding-bottom:32px}
+html body.project-page.project-page #doc-research .research-findings{gap:28px}
+html body.project-page.project-page #doc-research .research-translation{margin-top:72px}
+html body.project-page.project-page #doc-research .translation-heading{margin-bottom:40px}
+html body.project-page.project-page #doc-research .translation-heading h4{font-size:26px}
+html body.project-page.project-page #doc-research .translation-body{gap:36px 24px}
+}
+@media screen and (max-width:600px){
+html body.project-page.project-page #doc-research .research-finding>:is(.finding-ring,.ssok-pain-bars,.ssok-quote-card,.everyday-chart){margin:28px 0}
+html body.project-page.project-page #doc-research .translation-body{grid-template-columns:1fr;gap:36px}
+html body.project-page.project-page #doc-research .translation-row>p:first-child{min-height:0}
+}
+
+/* A shared heading outside the artifact surface, for both tables and flows. */
+@media screen{
+html body.project-page.project-page #deliverables :is(.table-section-title,.process-kicker,.yx-section-title){background:transparent!important;box-shadow:none!important}
+html body.project-page.project-page #deliverables .artifact-heading{display:grid;grid-template-columns:1.15fr 1fr;gap:48px;align-items:start;margin:0 0 32px;padding:0;background:transparent!important;border:0!important}
+html body.project-page.project-page #deliverables .artifact-kicker{display:block;font-size:13px;line-height:1.6;font-weight:700;letter-spacing:0;background:transparent!important;color:var(--wk-accent)!important}
+html body.project-page.project-page #deliverables .artifact-heading h4{margin:14px 0 0;font-size:24px!important;line-height:1.5;letter-spacing:-.6px;color:var(--wk-ink)!important}
+html body.project-page.project-page #deliverables .artifact-heading>p{margin:34px 0 0;font-size:14px;line-height:1.9;word-break:keep-all;color:var(--wk-copy)!important}
+html body.project-page.project-page #doc-flow .case-copy{display:block;padding:0}
+html body.project-page.project-page #doc-flow .koach-process{margin:80px 0 0;padding:0;border:0!important;border-radius:0;background:transparent!important;box-shadow:none!important}
+html body.project-page.project-page #doc-flow .process-scroll{padding:28px;border:1px solid var(--wk-line)!important;border-radius:12px;background:var(--wk-surface)!important}
+html body.project-page.project-page #doc-flow .process-legend{margin:0 0 20px;gap:24px;font-size:12px;flex-wrap:wrap}
+html body.project-page.project-page #doc-flow .process-legend span:first-child i{background:var(--wk-accent)!important;border:1px solid var(--wk-accent)!important}
+html body.project-page.project-page #doc-flow .process-legend span:nth-child(2) i{background:#292d34!important;border:1px solid #7c8796!important}
+}
+@media screen and (max-width:760px){
+html body.project-page.project-page #deliverables .artifact-heading{grid-template-columns:1fr;gap:16px;margin-bottom:24px}
+html body.project-page.project-page #deliverables .artifact-heading h4{font-size:22px!important;margin-top:10px}
+html body.project-page.project-page #deliverables .artifact-heading>p{margin:0;font-size:13px}
+html body.project-page.project-page #doc-flow .koach-process{margin-top:56px}
+html body.project-page.project-page #doc-flow .process-scroll{padding:18px}
+html body.project-page.project-page #doc-flow .process-legend{gap:16px;font-size:11px}
+}
+@media screen{
+html body.project-page.project-page #doc-flow .process-scroll{background:#fff!important;border-color:#dfe4ea!important;color-scheme:light}
+html body.project-page.project-page #doc-flow .process-node rect{fill:#f2f4f6;stroke:#d1d6db}
+html body.project-page.project-page #doc-flow .process-node text{fill:#333d4b}
+html body.project-page.project-page #doc-flow .process-node.stage rect{fill:#3182f6;stroke:none}
+html body.project-page.project-page #doc-flow .process-node.stage text{fill:#fff}
+html body.project-page.project-page #doc-flow .process-node.branch rect{fill:#e8f3ff;stroke:#b8d7ff}
+html body.project-page.project-page #doc-flow .process-node.branch text{fill:#1b64da}
+html body.project-page.project-page #doc-flow .process-edges{stroke:#8b95a1}
+html body.project-page.project-page #doc-flow marker path{stroke:#8b95a1}
+html body.project-page.project-page #doc-flow .process-legend span:first-child i{background:#3182f6!important;border-color:#3182f6!important}
+html body.project-page.project-page #doc-flow .process-legend span:nth-child(2) i{background:#f2f4f6!important;border-color:#d1d6db!important}
+}
+@media screen{
+html body.project-page.project-page #doc-flow .process-diagram{background:transparent!important}
+}
+
+/* Shared project metadata, including the independent project. */
+@media screen{
+html body.project-page.project-page .project-facts{display:flex;flex-wrap:wrap;gap:14px 26px}
+html body.project-page.project-page .project-facts>div{display:flex;align-items:baseline;gap:10px}
+html body.project-page.project-page .project-facts dt{font-size:13px;line-height:1.8;margin:0}
+html body.project-page.project-page .project-facts dd{font-size:14px;line-height:1.8;margin:0}
+html body.project-page.project-page .project-heading .project-profile{width:100%;margin:20px 0 0;border-block:1px solid var(--wk-line)!important}
+html body.project-page.project-page .project-heading .project-profile+.project-tools{margin-top:0;border-top:0!important}
+html body.project-page.project-page .project-heading .project-profile>div{display:grid;grid-template-columns:76px minmax(0,1fr);gap:14px;padding:11px 0;border-bottom:1px solid var(--wk-line)!important}
+html body.project-page.project-page .project-heading .project-profile>div:last-child{border-bottom:0!important}
+html body.project-page.project-page .project-heading .project-profile dt{font-size:13px;font-weight:700;line-height:1.8}
+html body.project-page.project-page .project-heading .project-profile dd{margin:0;font-size:13px;line-height:1.8;word-break:keep-all;overflow-wrap:anywhere}
+html body.project-page.project-page #deliverables .yeonox-copy{gap:40px}
+html body.project-page.project-page #deliverables .yeonox-copy :is(.yx-section-title,.yx-takeaway,.yx-marketing-status){padding:0;border:0!important;border-radius:0;background:transparent!important}
+html body.project-page.project-page #deliverables .yx-section-title h4{font-size:20px;line-height:1.6}
+html body.project-page.project-page #deliverables .yx-section-title>span{font-size:12px;color:var(--wk-muted)!important}
+}
+
+/* Usability study: open process steps and a readable task document. */
+@media screen{
+html body.project-page.project-page #doc-ut .ut-plan{gap:40px}
+html body.project-page.project-page #doc-ut :is(.ut-process,.ut-sequence,.ut-sequence li){background:transparent!important;box-shadow:none!important;border:0!important}
+html body.project-page.project-page #doc-ut .ut-process{display:block;padding:0}
+html body.project-page.project-page #doc-ut .ut-plan h4{font-size:18px;line-height:1.6;margin-bottom:24px}
+html body.project-page.project-page #doc-ut .ut-sequence{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:24px;padding:0;margin:0;counter-reset:ut-step}
+html body.project-page.project-page #doc-ut .ut-sequence li{display:block;counter-increment:ut-step;font-size:13px;line-height:1.8;word-break:keep-all}
+html body.project-page.project-page #doc-ut .ut-sequence li::before{content:counter(ut-step,decimal-leading-zero);display:block;color:var(--wk-accent);font-size:20px;font-weight:700;margin-bottom:10px}
+html body.project-page.project-page #doc-ut .ut-sequence li::after{display:none}
+html body.project-page.project-page #doc-ut .ssok-ut-tasks{background:#fff!important;border:1px solid #dfe4ea!important;border-radius:16px;overflow:hidden;color-scheme:light}
+html body.project-page.project-page #doc-ut .ssok-ut-task{background:#fff!important;border:0!important;border-bottom:1px solid #e5e8eb!important}
+html body.project-page.project-page #doc-ut .ssok-ut-task:last-child{border-bottom:0!important}
+html body.project-page.project-page #doc-ut .ssok-ut-task summary{grid-template-columns:28px minmax(0,1fr) 22px;align-items:start;gap:16px;padding:24px 28px;background:transparent!important}
+html body.project-page.project-page #doc-ut .ssok-ut-task summary:hover{background:#f8fafc!important}
+html body.project-page.project-page #doc-ut .ssok-ut-task :is(b,dt){color:#191f28!important}
+html body.project-page.project-page #doc-ut .ssok-ut-task summary b{font-size:16px;line-height:1.6}
+html body.project-page.project-page #doc-ut .ssok-ut-task :is(.ssok-task-scenario,dd,li){color:#4e5968!important;font-size:13px;line-height:1.85}
+html body.project-page.project-page #doc-ut .ssok-task-scenario{margin-top:8px}
+html body.project-page.project-page #doc-ut :is(.ssok-task-number,.ssok-task-toggle){padding:0;align-self:start;background:transparent!important;color:#3182f6!important;line-height:26px;font-size:14px}
+html body.project-page.project-page #doc-ut .ssok-task-toggle{color:#6b7684!important}
+html body.project-page.project-page #doc-ut .ssok-task-body{padding:0 66px 30px 72px;background:transparent!important}
+html body.project-page.project-page #doc-ut .ssok-task-body dl{gap:22px}
+html body.project-page.project-page #doc-ut .ssok-task-body dl>div{grid-template-columns:86px minmax(0,1fr);gap:20px;background:transparent!important}
+html body.project-page.project-page #doc-ut .ssok-task-body small{font-size:12px;color:#6b7684!important;margin-top:4px}
+html body.project-page.project-page #doc-ut .ssok-task-body li+li{margin-top:14px}
+html body.project-page.project-page #doc-ut .ut-measure{display:block}
+html body.project-page.project-page #doc-ut .ut-measure h4{margin-bottom:14px}
+}
+@media screen and (max-width:760px){
+html body.project-page.project-page .project-heading .project-profile>div{grid-template-columns:70px minmax(0,1fr);gap:12px}
+html body.project-page.project-page .project-heading .project-profile :is(dt,dd){font-size:12px}
+html body.project-page.project-page .project-facts{gap:10px 18px}
+html body.project-page.project-page .project-facts :is(dt,dd){font-size:13px}
+html body.project-page.project-page #doc-ut .ut-sequence{grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
+html body.project-page.project-page #doc-ut .ssok-ut-task summary{padding:22px 18px;grid-template-columns:24px minmax(0,1fr) 18px;gap:10px}
+html body.project-page.project-page #doc-ut .ssok-task-body{padding:0 18px 26px}
+html body.project-page.project-page #doc-ut .ssok-task-body dl>div{grid-template-columns:1fr;gap:8px}
+html body.project-page.project-page #doc-ut .ssok-ut-task summary b{font-size:15px}
+}
+@media screen{
+html body.project-page.project-page .project-art{background:transparent!important}
+html body.project-page.project-page #deliverables .yx-folder-structure{padding:0;border:0!important;border-radius:0;background:transparent!important;gap:36px}
+html body.project-page.project-page #deliverables .yx-label{background:transparent!important;color:var(--wk-accent)!important}
+html body.project-page.project-page #deliverables :is(.yx-architecture,.yx-folder-tree,.yx-erd,.yx-api-board){background:#fff!important;border:1px solid #dfe4ea!important;border-radius:12px;color-scheme:light;box-shadow:none}
+html body.project-page.project-page #deliverables :is(.yx-architecture,.yx-folder-tree,.yx-erd,.yx-api-board) :is(p,span,b,strong,small,code,h4,pre){color:#333d4b!important}
+html body.project-page.project-page #deliverables :is(.yx-folder-tree,.yx-layers) code{background:transparent!important}
+html body.project-page.project-page #deliverables :is(.yx-code-label,.yx-api-bar){background:#f2f4f6!important;color:#191f28!important;border-bottom:1px solid #e5e8eb!important}
+html body.project-page.project-page #deliverables .yx-layers{gap:0}
+html body.project-page.project-page #deliverables .yx-layers article{border:0!important;border-radius:0;background:transparent!important}
+html body.project-page.project-page #deliverables .yx-layers article+article{border-left:1px solid #e5e8eb!important}
+html body.project-page.project-page #deliverables .yx-rule-tags span{background:#e8f3ff!important;color:#1b64da!important}
+html body.project-page.project-page #deliverables :is(.yx-erd article,.yx-api-panels section){background:#f8fafc!important;border-color:#dfe4ea!important}
+html body.project-page.project-page #deliverables .yx-api-row{border-color:#e5e8eb!important;background:transparent!important}
+html body.project-page.project-page #deliverables .yx-method{background:#e8f3ff!important;color:#1b64da!important}
+html body.project-page.project-page #deliverables .yx-api-panels code{background:#edf1f5!important}
+}
+@media screen and (max-width:700px){
+html body.project-page.project-page #deliverables .yx-layers article+article{border-left:0!important;border-top:1px solid #e5e8eb!important}
+}

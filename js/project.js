@@ -73,7 +73,78 @@ function markDocument(id) {
     if (current) link.setAttribute('aria-current', 'true');
     else link.removeAttribute('aria-current');
   });
+  const menu = document.querySelector('.document-menu');
+  const selected = menu?.querySelector('.is-selected');
+  if (menu && selected && matchMedia('(max-width:760px)').matches) {
+    const offset = selected.getBoundingClientRect().left - menu.getBoundingClientRect().left;
+    if (offset < 0 || offset + selected.offsetWidth > menu.clientWidth) {
+      menu.scrollTo({left:menu.scrollLeft + offset - 12,behavior:'instant'});
+    }
+  }
 }
+
+// Follow the reading position even inside a very long table or embedded document.
+const documentSteps = [...document.querySelectorAll('.doc-step')];
+const documentMenu = document.querySelector('.document-menu');
+if (documentMenu && documentSteps.length) {
+  const sizeMenu = () => {
+    const headerHeight = document.querySelector('.shared-header')?.offsetHeight || 0;
+    const tabsHeight = document.querySelector('.project-tabs')?.offsetHeight || 0;
+    documentMenu.style.setProperty('--document-menu-height', `${documentMenu.scrollHeight}px`);
+    documentMenu.style.setProperty('--document-nav-offset', `${headerHeight + tabsHeight}px`);
+  };
+  new ResizeObserver(sizeMenu).observe(documentMenu);
+  document.fonts.ready.then(sizeMenu);
+  let pending = false;
+  function updateReadingPosition() {
+    pending = false;
+    const readingLine = Math.max(185, innerHeight * .28);
+    let current = documentSteps[0];
+    for (const step of documentSteps) {
+      if (step.getBoundingClientRect().top <= readingLine) current = step;
+      else break;
+    }
+    markDocument(current.id.replace('doc-', ''));
+  }
+  const scheduleUpdate = () => {
+    if (!pending) { pending = true; requestAnimationFrame(updateReadingPosition); }
+  };
+  addEventListener('scroll', scheduleUpdate, {passive:true});
+  addEventListener('resize', scheduleUpdate);
+  new ResizeObserver(scheduleUpdate).observe(document.querySelector('.document-stream'));
+  scheduleUpdate();
+}
+
+// Reserve the preceding images before settling a link opened from the home page.
+// Lazy images above a document otherwise move the destination after navigation.
+async function settleInitialDocumentLink() {
+  const initialHash = location.hash;
+  if (!initialHash.startsWith('#doc-')) return;
+  const target = document.getElementById(initialHash.slice(1));
+  if (!target) return;
+  let interrupted = false;
+  const stop = () => { interrupted = true; };
+  const events = ['wheel', 'touchstart', 'pointerdown', 'keydown'];
+  events.forEach(event => window.addEventListener(event, stop, { passive: true, once: true }));
+  const images = [...document.images].filter(img =>
+    Boolean(img.compareDocumentPosition(target) & Node.DOCUMENT_POSITION_FOLLOWING)
+  );
+  await Promise.all([
+    document.fonts.ready,
+    ...images.map(img => {
+      img.loading = 'eager';
+      return img.decode().catch(() => {});
+    })
+  ]);
+  requestAnimationFrame(() => {
+    if (!interrupted && location.hash === initialHash) {
+      target.scrollIntoView({ block: 'start', behavior: 'instant' });
+      markDocument(target.id.replace('doc-', ''));
+    }
+    events.forEach(event => window.removeEventListener(event, stop));
+  });
+}
+settleInitialDocumentLink();
 
 if ('IntersectionObserver' in window) {
   const observer = new IntersectionObserver(entries => entries.forEach(entry => {
@@ -85,9 +156,4 @@ if ('IntersectionObserver' in window) {
   }), {rootMargin:'-12% 0px -55% 0px'});
   document.querySelectorAll('#overview, #deliverables, #reflection').forEach(section => observer.observe(section));
 
-  // The document whose top has passed the upper third of the viewport is the one being read.
-  const docObserver = new IntersectionObserver(entries => entries.forEach(entry => {
-    if (entry.isIntersecting) markDocument(entry.target.id.replace('doc-', ''));
-  }), {rootMargin:'-30% 0px -65% 0px'});
-  document.querySelectorAll('.doc-step').forEach(step => docObserver.observe(step));
 }

@@ -1,11 +1,10 @@
+const siteHeader = require('./site-header');
 // Independent personal-study pages; does not rebuild or modify the main projects.
 const fs = require('node:fs');
 const path = require('node:path');
 const root = path.join(__dirname, '..');
 const studyLayout = require('./study-layout');
 const serviceAnalyses = require('./service-analysis-pages');
-const iroUrl = 'https://melodic-weather-784.notion.site/2ee9b5c9498981ffb8a2c37d118812fe?pvs=73';
-const petUrl = 'https://melodic-weather-784.notion.site/2ee9b5c9498981b0ae51c49395cb9d3d?pvs=73';
 const pdfUrl = 'https://drive.google.com/file/d/1szINwHpvgSxJuSBK33ByL_w2BBQgFuZ0/view?usp=sharing';
 const link = (url, label) => `<a href="${url.replaceAll('&', '&amp;')}" target="_blank" rel="noopener noreferrer">${label} ↗</a>`;
 const table = (headers, rows, label) => `<div class="note-table-wrap"><table class="note-table" aria-label="${label}"><thead><tr>${headers.map(h=>`<th scope="col">${h}</th>`).join('')}</tr></thead><tbody>${rows.map(row=>`<tr>${row.map(c=>`<td>${c}</td>`).join('')}</tr>`).join('')}</tbody></table></div>`;
@@ -13,22 +12,12 @@ const panel = (title, text) => `<section class="note-panel"><h4>${title}</h4><p>
 const flow = items => `<ol class="note-flow">${items.map(([title, text])=>`<li><strong>${title}</strong>${text}</li>`).join('')}</ol>`;
 const step = (n, title, why, content) => `<article class="doc-step" id="step-${n}" aria-labelledby="step-title-${n}"><header class="doc-step-head"><div class="deliv-num">${String(n).padStart(2,'0')} · ${title}</div><h3 id="step-title-${n}">${why}</h3></header><div class="document-canvas note-copy">${content}</div></article>`;
 const shell = (title, description, content, detail=false) => detail ? studyLayout(title, description, content) : `<!doctype html>
-<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="${description}"><title>${title} — 유서정</title><link rel="stylesheet" href="css/style.css">${detail?'<link rel="stylesheet" href="css/project.css"><link rel="stylesheet" href="css/deliverables.css">':''}<link rel="stylesheet" href="css/home-resume.css"><link rel="stylesheet" href="css/planning-notes.css"><link rel="stylesheet" href="css/soft-ui.css"></head>
-<body id="page-top" class="resume-home notes-page${detail?' project-page notes-detail':''}"><a class="skip-link" href="#main">본문으로 건너뛰기</a><header class="site-header"><nav class="site-nav" aria-label="주 메뉴"><a class="brand" href="index.html">seojeong<span class="brand-star">✳</span></a><div class="nav-links"><a href="index.html">Home</a><a href="index.html#about">About</a><a href="index.html#work">Projects</a><a href="notes.html" aria-current="page">Study</a></div><a class="resume-contact" href="index.html#contact">Contact <span aria-hidden="true">↗</span></a></nav></header><main class="wrap" id="main">${content}</main><footer class="wrap notes-footer"><a href="${detail?'notes.html':'index.html'}">← ${detail?'Study':'이력서로'}</a><a href="#page-top">상단으로 ↑</a></footer></body></html>`;
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="${description}"><title>${title} — 유서정</title><link rel="stylesheet" href="css/style.css">${detail?'<link rel="stylesheet" href="css/project.css"><link rel="stylesheet" href="css/deliverables.css">':''}<link rel="stylesheet" href="css/home-resume.css"><link rel="stylesheet" href="css/planning-notes.css"><link rel="stylesheet" href="css/soft-ui.css"><link rel="stylesheet" href="css/notes-reading.css"><link rel="stylesheet" href="css/study-feed.css"><link rel="stylesheet" href="css/site-shell.css"><link rel="stylesheet" href="css/study-dark.css"></head>
+<body id="page-top" class="resume-home notes-page${detail?' project-page notes-detail':''}"><a class="skip-link" href="#main">본문으로 건너뛰기</a>${siteHeader('study')}<main class="wrap" id="main">${content}</main><footer class="wrap notes-footer"><a href="${detail?'notes.html':'index.html'}">← ${detail?'스터디':'이력서로'}</a><a href="#page-top">상단으로 ↑</a></footer></body></html>`;
 
-const index = shell('기획 노트', '개인 프로젝트와 서비스 분석. 불편에서 출발해 서비스의 흐름과 운영 기준을 설계한 기록.', `
-<div class="wrap">
-<header class="notes-intro"><p class="notes-kicker">Study</p><h1>직접 기획하고, 서비스를 살펴본 기록.</h1></header>
-<nav class="notes-tabs" aria-label="기획 노트 분류"><a href="#personal">Personal Projects</a><a href="#analysis">Service Analysis</a></nav>
-<section class="notes-section personal-collection" id="personal" aria-labelledby="personal-title"><div class="personal-collection-heading"><h2 id="personal-title">Personal Projects</h2><span>02 projects</span></div><div class="note-list">
-<article class="note-card"><div class="note-card-index"><span>01</span><span>2025.09</span></div><a class="note-cover" href="study-irocom.html" aria-label="이로콤 기획 산출물 보기"><img src="images/projects/irocom-cover.png" alt="이로콤 기획서 첫 페이지" width="1920" height="1080"></a><div class="note-card-body"><p class="notes-kicker">AI 서비스 · 상위 기획</p><h3>이로콤<span>중고거래 사기 신고 도우미</span></h3><p>증거 정리부터 신고 준비까지, AI의 역할과 사용자 흐름 설계</p><a class="resume-artifact-link" href="study-irocom.html">기획 산출물 보기 <span aria-hidden="true">↗</span></a></div></article>
-<article class="note-card"><div class="note-card-index"><span>02</span><span>2024.05</span></div><a class="note-cover" href="study-petfriends.html" aria-label="펫프렌즈 기획 산출물 보기"><img src="images/projects/petfriends-cover.png" alt="펫프렌즈 기획서 첫 페이지" width="1600" height="900"></a><div class="note-card-body"><p class="notes-kicker">서비스 확장 · 상위 기획</p><h3>펫프렌즈<span>쇼핑에서 동네 돌봄으로</span></h3><p>전문 시터와 이웃을 연결하는 매칭·결제·정산·보상 정책 설계</p><a class="resume-artifact-link" href="study-petfriends.html">기획 산출물 보기 <span aria-hidden="true">↗</span></a></div></article>
-</div></section>
-</div><div class="notes-analysis-background"><div class="wrap">${serviceAnalyses.list}</div></div>`)
+const index = shell('스터디', '직접 기획한 프로젝트와 서비스의 흐름을 살펴본 기록.', require('./study-index')())
   .replace('<main class="wrap" id="main">','<main id="main">')
-  .replace('<div class="notes-analysis-background">','</main><div class="notes-analysis-background">')
-  .replace('</div></div></main><footer','</div><footer')
-  .replace('</footer></body>','</footer></div></body>');
+  .replace('class="resume-home notes-page"','class="resume-home notes-page notes-index"');
 
 const iroSteps = [
 step(1,'문제 정의','피해 이후의 막막함을, 증거 정리와 신고 절차의 문제로 나눴습니다.',`
@@ -63,7 +52,7 @@ ${table(['배운 점','시행착오','다음 기획에 적용할 기준'],[
 <p>출발점은 제가 겪은 불편이었지만, 기획을 구체화할수록 중요한 질문은 달라졌습니다. ‘AI가 할 수 있을까?’에서 ‘어떤 정보를 받아, 언제 실행하고, 무엇을 다음 단계에 전달해야 할까?’로요.</p>`)
 ].join('');
 const iro = shell('이로콤 · 개인 프로젝트','사기 피해 이후 증거 수집부터 신고 문서 작성까지 돕는 AI 서비스 개인 기획안.',`
-<header class="notes-intro"><p class="notes-kicker">개인 프로젝트 · AI 서비스 기획</p><h1>이로콤<br>피해 이후의 막막함을, 다음 행동으로.</h1><p>증거 정리부터 신고 문서 생성까지 연결하는 AI 직거래 사기 신고 도우미 기획안</p><div class="notes-meta"><span>개인 기획 · 웹 서비스</span><span>문제 정의 / MVP / AI 구조 설계</span></div><div class="notes-sources">${link(iroUrl,'기획 원문')}</div></header>
+<header class="notes-intro"><p class="notes-kicker">개인 프로젝트 · AI 서비스 기획</p><h1>이로콤<br>피해 이후의 막막함을, 다음 행동으로.</h1><p>증거 정리부터 신고 문서 생성까지 연결하는 AI 직거래 사기 신고 도우미 기획안</p><div class="notes-meta"><span>개인 기획 · 웹 서비스</span><span>문제 정의 / MVP / AI 구조 설계</span></div></header>
 <nav class="notes-tabs" aria-label="페이지 목차"><a href="#deliverables">기획 산출물</a><a href="#step-6">회고</a></nav><section id="deliverables" aria-label="이로콤 기획 산출물"><div class="document-stream">${iroSteps}</div></section>`,true);
 
 const petSteps = [
@@ -99,7 +88,7 @@ ${table(['검증하고 싶은 것','기획안의 목표·관찰 지표'],[['지�
 <h4>운영까지 그려 보며 남은 질문</h4><ul><li>정책–프로세스–IA를 연결하며 ‘신뢰’를 결제·자격·리뷰·보상 기준으로 구체화</li><li>실제 결제·정산 API와 보험 연동, 운영 리스크·비용 시뮬레이션은 미검증</li><li>예약 겹침·사고 발생 등 예외와 운영자·시터·보호자 간 책임 범위는 추가 설계 필요</li><li>다음 단계: 파트너 운영·어드민·정산 자동화 흐름과 후기 기반 추천 구조 검토</li></ul>`)
 ].join('');
 const pet = shell('펫프렌즈 돌봄 서비스 · 개인 프로젝트','전문 시터와 이웃을 연결하는 지역 기반 돌봄 서비스 개인 기획안. 매칭부터 정산과 보상까지.',`
-<header class="notes-intro"><p class="notes-kicker">개인 프로젝트 · 서비스 확장 제안</p><h1>펫프렌즈<br>사는 곳에서, 믿고 맡기는 곳으로.</h1><p>반려용품 커머스에서 동네 기반 방문·위탁 돌봄으로 확장하는 서비스 기획안</p><div class="notes-meta"><span>2024.05 · 기획 / UX·UI 100%</span><span>개인 제안 · 미출시</span></div><div class="notes-sources">${link(petUrl,'기획 원문')}${link(pdfUrl,'기획서 PDF')}</div></header>
+<header class="notes-intro"><p class="notes-kicker">개인 프로젝트 · 서비스 확장 제안</p><h1>펫프렌즈<br>사는 곳에서, 믿고 맡기는 곳으로.</h1><p>반려용품 커머스에서 동네 기반 방문·위탁 돌봄으로 확장하는 서비스 기획안</p><div class="notes-meta"><span>2024.05 · 기획 / UX·UI 100%</span><span>개인 제안 · 미출시</span></div><div class="notes-sources">${link(pdfUrl,'기획서 PDF')}</div></header>
 <nav class="notes-tabs" aria-label="페이지 목차"><a href="#deliverables">기획 산출물</a><a href="#step-4">운영 정책</a><a href="#step-6">회고</a></nav><section id="deliverables" aria-label="펫프렌즈 기획 산출물"><div class="document-stream">${petSteps}</div></section>`,true);
 for (const [file, html] of [['notes.html', index], ['study-irocom.html', iro], ['study-petfriends.html', pet], ...serviceAnalyses.pages(shell)]) fs.writeFileSync(path.join(root, file), html+'\n');
 for (const [file, svg] of require('./analysis-diagrams')()) {

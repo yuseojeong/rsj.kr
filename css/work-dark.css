@@ -1,0 +1,163 @@
+/* work-dark.css — 기획 산출물(work) 페이지를 스터디 페이지와 같은 어두운 캔버스로.
+   앞선 8개 스타일시트(project/deliverables/ssok-case/toss-project …)를 덮는 테마 레이어라
+   선택자 우선순위를 의도적으로 높이고, 색 계열에는 !important 를 씁니다. */
+@media screen{
+
+/* ───────── 토큰 ───────── */
+body.project-page{
+  color-scheme:dark;
+
+  --wk-canvas:#111214;
+  --wk-surface:#1a1d22;
+  --wk-raise:#212429;
+  --wk-sunken:#0c0d0f;
+  --wk-line:#30343b;
+  --wk-line-soft:#24272c;
+  --wk-ink:#f2f4f6;
+  --wk-copy:#b0b8c1;
+  --wk-muted:#8b95a1;
+  --wk-accent:#80b5ff;
+  --wk-accent-ink:#9bc5ff;
+  --wk-accent-soft:#1d2c44;
+
+  /* 기존 테마 토큰 치환 */
+  --project-ink:var(--wk-ink);
+  --project-line:var(--wk-line);
+  --project-soft:var(--wk-accent-soft);
+  --project-accent:var(--wk-accent);
+  --g-bg:var(--wk-raise);
+  --g-line:var(--wk-line);
+  --g-text:var(--wk-copy);
+  --site-ink:var(--wk-ink);
+  --site-copy:var(--wk-copy);
+  --site-line:var(--wk-line);
+  --site-blue:var(--wk-accent);
+  --soft-ink:var(--wk-ink);
+  --soft-copy:var(--wk-copy);
+  --soft-muted:var(--wk-muted);
+  --soft-line:var(--wk-line);
+  --soft-paper:var(--wk-surface);
+  --soft-white:var(--wk-surface);
+  --soft-surface:var(--wk-canvas);
+  --soft-tint:var(--wk-raise);
+  --soft-accent:var(--wk-accent);
+  --soft-glass:#1a1d22cc;
+  --soft-glass-shadow:0 8px 28px #00000059;
+  --soft-shadow:0 8px 28px #00000047;
+  --ink:var(--wk-ink);
+  --muted:var(--wk-muted);
+  --line:var(--wk-line);
+  --purple:var(--wk-accent);
+}
+
+/* ───────── 캔버스 ───────── */
+html body.project-page.project-page{background:var(--wk-canvas)!important;color:var(--wk-copy)!important}
+html body.project-page.project-page :is(main,section,article,div,header,footer,nav,aside,ul,ol,li,dl,figure,details){background-color:transparent}
+
+/* ───────── 1단계: 색 정규화 ─────────
+   앞 시트들이 밝은 배경 전제로 찍어둔 잉크/선을 일괄로 되돌립니다. */
+html body.project-page.project-page :is(p,li,dd,td,small,figcaption,blockquote,span,em,i,label,time,caption){color:var(--wk-copy)!important}
+html body.project-page.project-page :is(h1,h2,h3,h4,h5,h6,b,strong,dt,th,summary){color:var(--wk-ink)!important}
+html body.project-page.project-page *{border-color:var(--wk-line)!important;box-shadow:none!important}
+html body.project-page.project-page :is(hr){background:var(--wk-line)!important}
+
+/* ───────── 2단계: 면 ───────── */
+html body.project-page.project-page :is(
+  .overview-cards article,.document-viewer,.doc-step,.case-table-wrap,.case-note,.case-copy,.case-subsection,
+  .research-takeaway,.research-translation,.research-finding,.finding-evidence,.translation-row,
+  .ssok-quote-card,.ssok-persona,.ssok-ut-task,.ssok-task-body,.ssok-evidence a,.ssok-lane,
+  .ut-process,.ut-plan,.ut-checks,.ut-measure,.ut-task-list,.expression-samples,
+  .koach-process,.koach-wireframe,.qa-scenario-table,
+  .yx-details,.yx-evidence,.yx-takeaway,.yx-sheet,.yx-api-panels,.yx-api-board,.yx-erd,.yx-folder-tree,
+  .yx-policy-list,.yx-reasoning,.yx-architecture,.yx-mobile-ux,.yx-ux-notes,.yx-findings,.yx-phone,
+  .yx-art,.yx-figma,.yx-scroll-area,.process-node,.process-diagram,
+  .retro-stat,.retro-original,.reflection-grid article,.result-grid article,.research-meta>div,
+  .insight-grid article,.concept-grid article,.persona-grid article,.figma-panel,.paper-note,.ia-tree,
+  .study-meta,.study-meta>div,.study-source,.analysis-empty,.project-back-top,.expression-samples>span
+){background:var(--wk-surface)!important}
+
+html body.project-page.project-page :is(
+  .ssok-pain-track,.ring-track,.everyday-bar,.process-edges,.yx-api-bar,.document-index,
+  .case-table-wrap thead,.paper-table thead,thead,th,.table-toolbar
+){background:var(--wk-raise)!important}
+
+html body.project-page.project-page .documents-section{background:var(--wk-sunken)!important;border-block:1px solid var(--wk-line-soft)!important}
+html body.project-page.project-page tbody tr:nth-child(even){background:#ffffff05!important}
+html body.project-page.project-page :is(.project-art,.service-gallery,.study-cover){background:var(--wk-surface)!important}
+
+/* ───────── 3단계: 강조색 되살리기 ───────── */
+html body.project-page.project-page :is(.eyebrow,.project-mark,.section-number,.card-num,.deliv-num,.document-choice-arrow,
+  .yx-link,.yx-ox,.feed-card-more,.study-pdf-link,.retro-stat b,.document-total b){color:var(--wk-accent)!important}
+html body.project-page.project-page :is(.document-canvas,.doc-step-head,.retro-learn) :is(b,strong){color:var(--wk-ink)!important}
+
+html body.project-page.project-page :is(.project-tags span,.ssok-persona-tag,.ssok-scope,.yx-label,.yx-code-label,
+  .yx-rule-tags span,.ssok-task-number,.finding-index,.ring-label,.ring-value,.process-kicker,
+  .research-section-label,.translation-labels,.table-section-title,.yx-section-title,
+  .analysis-status,.analysis-related,.notes-tabs a,.project-deliverables-link,.qa-badge){
+  background:var(--wk-accent-soft)!important;color:var(--wk-accent-ink)!important;border-color:transparent!important}
+
+/* ───────── 헤더 ───────── */
+html body.project-page.project-page :is(.site-header,.project-header){background:#111214ed!important;border-bottom:1px solid var(--wk-line-soft)!important;backdrop-filter:blur(18px)}
+html body.project-page.project-page :is(.brand,.site-nav .brand){color:var(--wk-ink)!important}
+html body.project-page.project-page .brand-star{color:var(--wk-accent)!important}
+html body.project-page.project-page .nav-links a{color:var(--wk-copy)!important}
+html body.project-page.project-page .nav-links a:hover{color:#fff!important;background:var(--wk-line)!important}
+html body.project-page.project-page .nav-links a:is(.active,[aria-current]){color:var(--wk-accent)!important;background:transparent!important}
+html body.project-page.project-page .resume-contact{background:#272b31!important;color:#e5e8eb!important}
+html body.project-page.project-page .resume-contact:hover{background:#343a42!important;color:#fff!important}
+html body.project-page.project-page .return-link{color:var(--wk-copy)!important}
+html body.project-page.project-page .return-link:hover{color:var(--wk-accent)!important}
+html body.project-page.project-page .skip-link{background:var(--wk-raise)!important;color:var(--wk-ink)!important}
+
+/* ───────── 좌우 이전/다음 ───────── */
+html body.project-page.project-page .project-edge-link{background:#1a1d22e6!important;color:var(--wk-copy)!important;backdrop-filter:blur(10px)}
+html body.project-page.project-page .project-edge-link:hover{background:var(--wk-raise)!important;color:var(--wk-ink)!important}
+html body.project-page.project-page .project-edge-name{background:var(--wk-raise)!important;color:var(--wk-copy)!important}
+
+/* ───────── 산출물 목차 ───────── */
+html body.project-page.project-page .document-menu-title{color:var(--wk-muted)!important}
+html body.project-page.project-page .document-total{color:var(--wk-muted)!important}
+html body.project-page.project-page .document-choice{background:transparent!important}
+html body.project-page.project-page .document-choice b{color:var(--wk-copy)!important}
+html body.project-page.project-page .document-choice small{color:var(--wk-muted)!important}
+html body.project-page.project-page .document-choice:hover{background:var(--wk-surface)!important}
+html body.project-page.project-page .document-choice:hover b{color:var(--wk-ink)!important}
+html body.project-page.project-page .document-choice:is(.is-selected,[aria-current]) b{color:var(--wk-accent)!important}
+html body.project-page.project-page .document-index{color:var(--wk-muted)!important}
+html body.project-page.project-page .document-choice:is(.is-selected,[aria-current]) .document-index{background:var(--wk-accent)!important;color:#0d1b2f!important}
+
+/* ───────── 표 ───────── */
+html body.project-page.project-page :is(table,tbody,tr){background:transparent!important}
+html body.project-page.project-page td{color:var(--wk-copy)!important}
+html body.project-page.project-page caption{color:var(--wk-muted)!important}
+
+/* ───────── 입력 ───────── */
+html body.project-page.project-page :is(input,select,textarea){background:#1e2126!important;border-color:#3b414a!important;color:var(--wk-ink)!important}
+html body.project-page.project-page :is(input,textarea)::placeholder{color:var(--wk-muted)!important}
+
+/* ───────── 임베드·이미지 ─────────
+   피그마 임베드와 산출물 이미지는 원본이 밝으므로 받침만 맞춥니다. */
+html body.project-page.project-page iframe{background:var(--wk-raise)!important;border-radius:12px}
+html body.project-page.project-page .document-canvas :is(img,iframe){border-radius:10px}
+
+/* ───────── 하단 ───────── */
+html body.project-page.project-page .site-footer{background:transparent!important;border-top:1px solid var(--wk-line-soft)!important;color:var(--wk-muted)!important}
+html body.project-page.project-page .site-footer :is(.brand,.back-to-top){color:var(--wk-ink)!important}
+html body.project-page.project-page .project-back-top{color:var(--wk-copy)!important}
+html body.project-page.project-page .project-back-top:hover{background:var(--wk-raise)!important;color:var(--wk-ink)!important}
+html body.project-page.project-page .retro-empty{color:var(--wk-muted)!important}
+
+/* ───────── 개별 잔여 요소 ───────── */
+html body.project-page.project-page :is(code,kbd,samp,pre){background:var(--wk-raise)!important;color:#d7dee6!important;border-color:var(--wk-line)!important}
+html body.project-page.project-page :is(.outcome-change,.yx-method,.yx-try,.yx-bubbles span,.yx-loop span,
+  .yx-sheet i,.process-legend span i){background:var(--wk-accent-soft)!important;color:var(--wk-accent-ink)!important;border-color:transparent!important}
+
+/* 휴대폰 목업은 기기 안팎의 톤이 어긋나지 않게 전체를 같은 어둠으로 맞춘다 */
+html body.project-page.project-page .yx-phone{background:var(--wk-surface)!important}
+html body.project-page.project-page .yx-phone :is(.yx-phone-top,.yx-keyboard,.yx-phone-input,.yx-sheet){background:var(--wk-raise)!important}
+html body.project-page.project-page .yx-phone :is(p,li,span,small,div){color:var(--wk-copy)!important}
+html body.project-page.project-page .yx-phone :is(b,strong,h3,h4){color:var(--wk-ink)!important}
+
+html body.project-page.project-page :is(a,button,input,summary):focus-visible{outline-color:var(--wk-accent)!important}
+
+}

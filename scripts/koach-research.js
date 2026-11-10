@@ -20,7 +20,7 @@ module.exports = function koachResearch() {
       </section>
     </div>
     <p class="study-source">출처: koach 1차 유저리서치 결과 요약 · 2025.09 · 17명 응답</p>
-    <div class="research-translation"><div class="translation-heading"><span>발견에서 기획으로</span><h4>그래서 기획한 경험은<br><strong>한국인과 대화하듯 배우는 한국어</strong></h4></div><div class="translation-body"><div class="translation-labels"><span>사용자 어려움</span><span></span><span>기획 방향</span></div><div class="translation-row"><p>상대와의 관계에 따라<br>예의와 격식을 판단하기 어려움</p><span aria-hidden="true">→</span><p><b>거리감 슬라이더</b><small>친밀도와 격식을 설정하는 대화</small></p></div><div class="translation-row"><p>지금 상황에 맞는<br>자연스러운 표현을 알고 싶음</p><span aria-hidden="true">→</span><p><b>대화 속 맞춤 교정</b><small>문화적 맥락에 맞는 표현과 이유 안내</small></p></div><div class="translation-row"><p>교재의 정형화된 표현만으로는<br>실제 일상 대화에 한계</p><span aria-hidden="true">→</span><p><b>한국 문화 기반 챗봇</b><small>일상 대화로 실제 쓰는 표현 학습</small></p></div></div></div>
-    <div class="research-takeaway"><span aria-hidden="true">“</span><p>한국 문화를 학습한 챗봇을 통해,<br><strong>실제 한국인과 대화하듯 배우는 한국어.</strong></p><small>koach의 기획 출발점</small></div>
+    <div class="research-translation"><div class="translation-heading"><div><span>리서치에서 설계로</span><h4>관계를 설정하고,<br>대화 속에서 배우도록.</h4></div><p>친밀도와 격식을 설정한 대화 안에서 맞춤 교정과 실생활 표현을 익히도록, 조사에서 발견한 어려움을 학습 기능으로 연결했습니다.</p></div><div class="translation-body"><div class="translation-labels"><span>사용자 어려움</span><span></span><span>기획 방향</span></div><div class="translation-row"><p>상대와의 관계에 따라<br>예의와 격식을 판단하기 어려움</p><span aria-hidden="true">→</span><p><b>거리감 슬라이더</b><small>친밀도와 격식을 설정하는 대화</small></p></div><div class="translation-row"><p>지금 상황에 맞는<br>자연스러운 표현을 알고 싶음</p><span aria-hidden="true">→</span><p><b>대화 속 맞춤 교정</b><small>문화적 맥락에 맞는 표현과 이유 안내</small></p></div><div class="translation-row"><p>교재의 정형화된 표현만으로는<br>실제 일상 대화에 한계</p><span aria-hidden="true">→</span><p><b>한국 문화 기반 챗봇</b><small>일상 대화로 실제 쓰는 표현 학습</small></p></div></div></div>
+    
   </div>`;
 };

@@ -25,15 +25,15 @@ function research() {
       </section>
     </div>
     <p class="study-source">출처: 쏙 사용자 설문 · 총 참여자 n=50 · 비율은 기존 리서치 요약 기준</p>
-    ${evidence('images/projects/ssok-doc-survey-source.png', '쏙 사용자 설문 응답 원본', '사용자 설문 응답 · n=50')}
-    <div class="research-translation"><div class="translation-heading"><span>발견에서 기획으로</span><h4>그래서 기획한 경험은<br><strong>함께 모으고, 필요할 때 쏙 찾는 링크 아카이빙</strong></h4></div><div class="translation-body"><div class="translation-labels"><span>사용자 어려움</span><span></span><span>기획 방향</span></div>
+    <details class="research-source-detail"><summary>사용자 설문 응답 원본 보기</summary>${evidence('images/projects/ssok-doc-survey-source.png', '쏙 사용자 설문 응답 원본', '사용자 설문 응답 · n=50')}</details>
+    <div class="research-translation"><div class="translation-heading"><div><span>리서치에서 설계로</span><h4>함께 저장하고,<br>쉽게 다시 찾도록.</h4></div><p>저장할 때 입력 부담을 줄이고 콘텐츠를 분류하면, 더 빠르게 저장하고 필요할 때 쉽게 찾을 수 있을 것이라는 가설을 세웠습니다.</p></div><div class="translation-body"><div class="translation-labels"><span>사용자 어려움</span><span></span><span>기획 방향</span></div>
       <div class="translation-row"><p>어디로 보냈는지 기억이 안 나고<br>여러 플랫폼에 흩어짐</p><span aria-hidden="true">→</span><p><b>개인 · 그룹 파일</b><small>한곳에 모으고 카테고리로 분류</small></p></div>
       <div class="translation-row"><p>채팅에 묻혀<br>다시 찾기 힘듦</p><span aria-hidden="true">→</span><p><b>키워드 검색 · 핀</b><small>자주 보는 링크를 빠르게 재탐색</small></p></div>
       <div class="translation-row"><p>링크 내용을 알려면<br>일일이 열어 봐야 함</p><span aria-hidden="true">→</span><p><b>썸네일 · 제목 미리보기, AI 요약</b><small>열기 전에 핵심을 식별</small></p></div>
       <div class="translation-row"><p>공유한 링크에 대해<br>따로 이야기하기 어려움</p><span aria-hidden="true">→</span><p><b>링크별 댓글</b><small>링크 단위로 의견 나누기</small></p></div>
     </div></div>
-    <div class="research-takeaway"><span aria-hidden="true">“</span><p>링크를 저장하는 것보다,<br><strong>저장한 콘텐츠를 나중에 다시 찾고 함께 활용하는 과정이 더 어렵다.</strong></p><small>핵심 문제 정의</small></div>
-    <div class="case-note"><b>핵심 가설</b><p>저장 과정의 입력 부담을 줄이고 콘텐츠를 구조화하면, 사용자는 더 빠르게 저장하고 필요할 때 쉽게 다시 찾을 수 있을 것이다.</p></div>
+    
+    
   </div>`;
 }
 

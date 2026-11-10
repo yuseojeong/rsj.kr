@@ -145,6 +145,8 @@ body.project-page.study-project .project-hero{grid-template-columns:minmax(0,.94
 /* Service studies: small, consistent reading sections and responsive diagrams. */
 .analysis-study{max-width:860px}
 .analysis-study .notes-intro .analysis-question{font-size:21px;margin-top:14px;line-height:1.6}
+.analysis-study .notes-intro .analysis-learning-purpose{font-size:14px;line-height:1.85;margin-top:18px;max-width:none}
+.analysis-learning-purpose strong{display:block;margin-bottom:4px;font-size:12px;font-weight:600;color:#3c3748}
 .analysis-status{display:inline-block;vertical-align:middle;font-size:11px;font-weight:500;letter-spacing:0;margin-left:12px;padding:3px 8px;border-radius:5px;background:#f4f0f8;color:#7952a7}
 .analysis-context{margin-bottom:20px;font-size:11px}
 .analysis-scope{font-size:12px;line-height:1.8;color:#686777;border-left:2px solid #c5b4d6;padding-left:12px;margin-bottom:20px}
@@ -222,3 +224,56 @@ body.project-page.study-project .project-hero{grid-template-columns:minmax(0,.94
 .personal-collection+.notes-section{margin-top:22px}
 @media(max-width:600px){.personal-collection .note-list{gap:18px}.personal-collection .note-card-body h3{font-size:17px}.personal-collection .note-card-body h3 span{font-size:11px}.personal-collection .note-card-body>p:not(.notes-kicker){font-size:11px}.personal-collection .resume-artifact-link{font-size:11px;white-space:normal;gap:8px}.personal-collection .note-card-body .notes-kicker{line-height:1.7}.note-card-index>span:first-child{font-size:17px}}
 @media(prefers-reduced-motion:reduce){.personal-collection .note-cover img{transition:none}}
+
+/* Original study material, presented in the shared analysis reading layout. */
+.analysis-original .analysis-section{padding:32px 0}
+.analysis-original .analysis-section>p{margin:12px 0}
+.analysis-original .analysis-subheading{margin:25px 0 12px}
+.source-columns{display:grid;grid-template-columns:repeat(var(--source-columns,2),minmax(0,1fr));gap:18px;margin:18px 0}
+.source-column{min-width:0}
+.source-figure{margin:18px 0}
+.source-column>.source-figure{margin:0 0 14px}
+.source-figure>a{position:relative;display:block;border:1px solid #ececf0;border-radius:12px;overflow:hidden;background:#fafafa;outline-offset:4px}
+.source-figure img{display:block;width:100%;height:auto;max-height:640px;object-fit:contain}
+.source-columns .source-figure img{max-height:430px}
+.source-image-open{display:block;padding:9px 13px;background:#fff;color:#655775;font-size:11px;text-align:right;border-top:1px solid #efedf2}
+.source-figure>a:hover .source-image-open,.source-figure>a:focus-visible .source-image-open{background:#222;color:#fff}
+.source-figure figcaption{font-size:12px;line-height:1.7;color:#767080;margin-top:8px}
+.source-callout{margin:20px 0;padding:18px 20px;border:1px solid #e9e6ed;border-radius:12px;background:#faf9fb}
+.source-callout>p{margin:0 0 10px}
+.source-callout>p:last-child{margin-bottom:0}
+.source-quote{margin:18px 0;padding:8px 15px;border-left:2px solid #b8adc9;color:#514958;font-size:14px;line-height:1.8}
+.source-toggle{margin:14px 0;border:1px solid #e9e6ed;border-radius:10px;padding:14px 18px}
+.source-toggle summary{cursor:pointer;font-size:14px;font-weight:600;color:#45404e}
+.source-toggle>p{margin-top:12px}
+.source-table-scroll{max-width:100%;overflow-x:auto;margin:18px 0;border:1px solid #e9e6ed;border-radius:10px}
+.source-table{border-collapse:collapse;width:100%;text-align:left;font-size:13px;line-height:1.85;color:#545b6b}
+.source-table th,.source-table td{padding:12px 16px;border-bottom:1px solid #e9e6ed;vertical-align:top;min-width:120px;overflow-wrap:anywhere}
+.source-table th{background:#f7f6f9;font-weight:600;color:#39343f}
+.source-table tbody tr:last-child td{border-bottom:0}
+.source-code{overflow-x:auto;padding:18px;background:#f6f6f8;border-radius:10px;font-size:12px;line-height:1.75}
+.analysis-original .source-reference{font-size:12px;margin:8px 0 20px}
+.source-reference a{color:#785e9e;text-decoration:underline;text-underline-offset:3px}
+@media(max-width:600px){.source-columns{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.source-columns:has(.source-column>p),.source-callout .source-columns{grid-template-columns:1fr}.source-figure img{max-height:520px}.source-callout{padding:15px}.source-table th,.source-table td{padding:10px}.analysis-original .notes-tabs{flex-wrap:wrap}.source-figure>a{border-radius:8px}}
+
+.analysis-topic{margin:26px 0 0;min-width:0}
+.analysis-topic h3{margin:0 0 9px}
+.analysis-topic>p{margin:0 0 12px}
+.analysis-topic-points{margin:0;display:grid;gap:12px}
+.analysis-topic-points>div{display:grid;grid-template-columns:115px minmax(0,1fr);gap:16px;align-items:baseline}
+.analysis-topic-points dt{font-size:13px;font-weight:600;line-height:1.85;color:#45404f}
+.analysis-topic-points dd{margin:0;font-size:14px;line-height:1.85;color:#545b6b;word-break:keep-all;overflow-wrap:anywhere}
+.analysis-evidence{display:grid;grid-template-columns:repeat(var(--evidence-columns),minmax(0,1fr));gap:18px;margin-top:16px;align-items:start}
+.analysis-evidence .source-figure{margin:0;min-width:0}
+.analysis-evidence .source-figure img{height:340px;max-height:none;object-fit:contain;background:#fafafa}
+.analysis-evidence-wide{grid-template-columns:1fr}
+.analysis-evidence-wide .source-figure img{height:auto;max-height:520px}
+.analysis-study .analysis-topic-note{font-size:12px;color:#777180;line-height:1.8;margin-top:8px}
+.analysis-study .source-table th{font-size:12px;font-weight:600}
+.analysis-study .source-table tbody th{background:#faf9fc}
+.analysis-references{margin:24px 0;font-size:12px;color:#736d7d}
+.analysis-references summary{cursor:pointer;padding:8px 0}
+.analysis-references ul{display:grid;gap:8px;margin:8px 0 0;padding-left:18px;overflow-wrap:anywhere}
+.analysis-study .notes-tabs{flex-wrap:wrap}
+.analysis-study .analysis-section{scroll-margin-top:115px}
+@media(max-width:600px){.analysis-topic{margin-top:22px}.analysis-topic-points>div{grid-template-columns:1fr;gap:3px}.analysis-topic-points dd{font-size:13px}.analysis-evidence{gap:10px}.analysis-evidence .source-figure img{height:235px}.analysis-evidence-wide .source-figure img{height:auto}.analysis-topic .source-table-comparison{min-width:460px}.analysis-topic .source-table-pair{table-layout:fixed}.source-table-pair th,.source-table-pair td{min-width:0}.source-table-pair th:first-child{width:32%}.analysis-study .analysis-section{scroll-margin-top:145px}}

@@ -1,0 +1,34 @@
+/* The study collection and reading pages share one quiet dark canvas. */
+@media screen{
+body.notes-page:not(.study-project){color-scheme:dark;background:#111214;color:#f2f4f6;--soft-ink:#f2f4f6;--soft-copy:#b0b8c1;--soft-line:#30343b;--soft-accent:#80b5ff}
+body.notes-page .shared-header.site-header{background:#111214ed;border-bottom-color:#24272c}
+body.notes-page .shared-header .site-nav .brand{color:#f2f4f6}
+body.notes-page .shared-header .site-nav .nav-links a{color:#b0b8c1}
+body.notes-page .shared-header .site-nav .nav-links a:is(.active,[aria-current]){color:#80b5ff}
+body.notes-page .shared-header .site-nav .resume-contact{color:#e5e8eb;background:#272b31}
+body.notes-page .shared-header .site-nav .nav-links a:hover{background:#30343b;color:#fff}
+body.notes-page .notes-analysis-background{background:transparent;padding-top:28px}
+body.notes-page .feed-intro{padding-bottom:48px}
+body.notes-page :is(.feed-sidebar,.feed-personal,.feed-collection.notes-section,.analysis-card,.analysis-grid,.notes-footer){border-color:#30343b}
+body.notes-page :is(.notes-intro h1,.analysis-heading h2,.feed-sidebar-heading h2,.feed-personal h3,.analysis-card h3){color:#f2f4f6}
+body.notes-page :is(.feed-intro>p:last-child,.analysis-lead,.analysis-heading>span,.analysis-category,.analysis-card p,.feed-sidebar-heading p,.feed-personal p,.feed-personal>span){color:#b0b8c1}
+body.notes-page :is(.notes-kicker,.feed-about-link,.feed-card-more){color:#80b5ff}
+body.notes-page .analysis-filters button{background:#25292f;border-color:#383e46;color:#b0b8c1}
+body.notes-page .analysis-filters button[aria-pressed="true"]{background:#e5e8eb;color:#191f28;border-color:#e5e8eb}
+body.notes-page .analysis-search input{background:#1e2126;border-color:#383e46;color:#f2f4f6}
+body.notes-page .analysis-search input::placeholder{color:#8b95a1}
+body.notes-page .analysis-card>a:hover h3{color:#80b5ff}
+body.notes-page .analysis-empty{background:#23262c;color:#b0b8c1}
+body.notes-page>.notes-footer{background:transparent;color:#b0b8c1;border-color:#30343b}
+body.notes-page .analysis-study :is(h1,h2,h3,.analysis-question,.source-toggle summary){color:#f2f4f6}
+body.notes-page .analysis-study :is(p,li,dd,.analysis-context,.analysis-scope,.source-table,.source-quote,.analysis-topic-note,figcaption){color:#b0b8c1}
+body.notes-page .analysis-study :is(.analysis-learning-purpose,.analysis-section,.analysis-features>div,.source-table-scroll,.source-toggle,.source-table th,.source-table td,.analysis-next){border-color:#30343b}
+body.notes-page .analysis-study :is(.analysis-why-what>div,.analysis-validation,.source-callout,.source-code,.source-table th){background:#202329;color:#d1d6db;border-color:#30343b}
+body.notes-page .analysis-study :is(.notes-tabs a,.analysis-related,.analysis-status){background:#252d3b;color:#9bc5ff}
+body.notes-page .analysis-study :is(dt,.analysis-learning-purpose strong,.analysis-audience strong,.analysis-next,.analysis-section h2>span){color:#80b5ff}
+}
+@media screen{
+body.notes-page .analysis-study .notes-intro .analysis-question{color:#e5e8eb}
+body.notes-page .analysis-study .notes-tabs{border-color:#30343b}
+body.notes-page .analysis-study .analysis-section h3{color:#e5e8eb}
+}

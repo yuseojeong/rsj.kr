@@ -1,0 +1,116 @@
+/* Shared project system: aligns every case study with the home visual language. */
+@media screen{
+  .project-page,
+  .project-page.theme-ssok,
+  .project-page.theme-koach,
+  .project-page.theme-yeonox{
+    --project-accent:#3182f6;
+    --project-soft:#e8f3ff;
+    --project-line:#e5e8eb;
+    --project-ink:#191f28;
+    --g-bg:#f7f9fa;
+    --g-line:#e5e8eb;
+    --g-text:#4e5968;
+    background:#fff;
+    color:#191f28;
+  }
+  .project-page .project-header{border-color:#e5e8eb;background:#ffffffed;backdrop-filter:blur(18px)}
+  .project-page .project-nav{height:64px}
+  .project-page .brand{color:#191f28;font-size:19px;font-weight:750}
+  .project-page .brand-star{color:#3182f6}
+  .project-page .return-link{color:#6b7684;font-size:12px;font-weight:600}
+  .project-page .return-link:hover{color:#3182f6}
+  .project-page .project-hero{padding-block:82px 74px;gap:74px}
+  .project-page .project-heading .eyebrow{color:#3182f6;font-size:12px;font-weight:750}
+  .project-page .project-mark{color:#3182f6}
+  .project-page .project-tags{margin-top:24px}
+  .project-page .project-tags span{padding:8px 11px;border-radius:8px;background:#f2f4f6;color:#4e5968;font-size:11px}
+  .project-page .service-name{color:#3182f6}
+  .project-page .project-heading h1{margin-top:30px;color:#191f28;font-size:clamp(42px,4vw,62px);font-weight:750;letter-spacing:-3.3px}
+  body.project-page .project-heading>p{color:#4e5968}
+  .project-page .project-facts,.project-page dl.project-facts{padding-top:24px;border-color:#e5e8eb!important}
+  body.project-page .project-facts dt{color:#8b95a1}
+  body.project-page .project-facts dd{color:#191f28}
+  .project-page .study-pdf-link{color:#3182f6}
+  .project-page .study-pdf-link>span{color:#6b7684}
+  .project-page .project-edge-link{border-color:#e5e8eb;color:#4e5968;box-shadow:none}
+  .project-page .project-profile{border-color:#e5e8eb!important}
+  .project-page .project-profile dt{color:#8b95a1!important}
+  .project-page .project-profile dd,.project-page .project-profile li{color:#4e5968!important}
+  .project-page .project-profile strong{color:#3182f6!important}
+  .project-page .service-gallery{border-color:#e5e8eb;background:#f7f9fa;box-shadow:none}
+  .project-page .service-gallery a:hover{transform:none}
+  .project-page .project-tabs{border-color:#e5e8eb;background:#ffffffed}
+  .project-page .project-tabs a{color:#6b7684;font-weight:600}
+  .project-page .project-tabs a[aria-current]{color:#3182f6}
+  .project-page .project-tabs a[aria-current]::after{background:#3182f6}
+  .project-page .project-tabs a>span{background:#e8f3ff;color:#3182f6}
+  .project-page h2,.project-page h3,.project-page h4{color:#191f28}
+  .project-page .overview-heading>p,.project-page .overview-cards p,.project-page .reflection-heading>p{color:#4e5968}
+  .project-page .overview-cards article{border-color:#e5e8eb;background:#fff;box-shadow:none}
+  .project-page .card-num,.project-page .overview-number{color:#3182f6}
+  .project-page .documents-section{border-color:#e5e8eb;background:#f7f9fa}
+  .project-page .documents-heading p,.project-page .document-total{color:#6b7684}
+  .project-page .document-menu-title,.project-page .document-choice small{color:#8b95a1}
+  .project-page .document-choice{color:#6b7684}
+  .project-page .document-choice:hover{background:#eef6ff}
+  .project-page .document-choice.is-selected{border-color:#d7e9ff;color:#3182f6;box-shadow:none}
+  .project-page .document-choice-arrow,.project-page .document-choice.is-selected .document-choice-arrow{color:#3182f6}
+  .project-page .document-viewer,#deliverables .document-stream .doc-step{border-color:#e5e8eb!important;border-radius:16px;box-shadow:none;background:#fff}
+  #deliverables .document-stream .doc-step .doc-step-head{border-color:#e5e8eb}
+  #deliverables .doc-step .doc-step-head .deliv-num,.project-page .deliv-num{color:#3182f6!important}
+  .project-page .document-canvas{background:#f7f9fa}
+  .project-page .document-paper{border-color:#e5e8eb;box-shadow:none}
+  .project-page .case-copy,.project-page .research-editorial{color:#4e5968}
+  .project-page .case-note,.project-page .paper-note{border-color:#d7e9ff!important;background:#eef6ff!important}
+  .project-page .case-note b,.project-page .paper-note b,.project-page .case-subsection h4{color:#3182f6!important}
+  .project-page .case-table-wrap,.project-page .case-table{border-color:#e5e8eb}
+  .project-page .case-table thead,.project-page .case-table tbody tr:hover{background:#f2f4f6}
+  .project-page .case-table th,.project-page .case-table td{border-color:#e5e8eb;color:#4e5968}
+  .project-page .case-table thead th,.project-page .case-table tbody th{color:#191f28}
+  .project-page .research-meta>div,.project-page .insight-grid article,.project-page .concept-grid article,.project-page .persona-grid article,.project-page .result-grid article{border-color:#e5e8eb;background:#fff;box-shadow:none}
+  .project-page .research-meta dt,.project-page .insight-grid span,.project-page .research-intro>span,.project-page .concept-strip>span{color:#3182f6}
+  .project-page .opportunity-conclusion{background:#3182f6}
+  .project-page .reflection-grid article{border-color:#e5e8eb;background:#fff}
+  .project-page .reflection-grid h3{color:#191f28}.project-page .reflection-grid p{color:#4e5968}
+  .project-page .project-bottom-nav{border-color:#e5e8eb}
+  .project-page .project-bottom-nav .project-back-top{border-color:#e5e8eb;color:#4e5968}
+  .project-page .project-bottom-nav .project-back-top:hover{border-color:#3182f6;color:#3182f6}
+  .project-page .site-footer{border-top:1px solid #e5e8eb;background:#fff;color:#6b7684}
+  .project-page .site-footer .brand,.project-page .site-footer .back-to-top{color:#191f28}
+  .project-page .site-footer .brand-star{color:#3182f6}
+}
+
+@media screen and (max-width:760px){
+  .project-page .project-hero{padding-block:44px 50px}
+  .project-page .project-art{order:0}
+  .project-page .document-canvas{padding:14px}
+}
+
+/* Named section navigation, anchored near the bottom of the reading viewport. */
+@media screen and (min-width:761px){
+body.project-page .document-workspace,
+body.project-page .document-workspace:has(.document-menu:hover),
+body.project-page .document-workspace:has(.document-menu:focus-within){grid-template-columns:190px minmax(0,1fr);gap:34px}
+body.project-page .document-menu,
+body.project-page .document-menu:hover,
+body.project-page .document-menu:focus-within{position:sticky;top:max(138px,calc(100dvh - var(--document-menu-height,440px) - 32px));width:190px;max-height:calc(100dvh - 162px);overflow:auto;padding:0;background:none;border:0;transition:none;scrollbar-width:thin}
+body.project-page .document-menu .document-choice{display:flex;align-items:center;justify-content:flex-start;gap:10px;width:100%;min-height:38px;padding:9px 0;margin:0;border:0!important;border-radius:0;background:transparent!important;box-shadow:none!important;white-space:normal;color:#8b95a1;transition:color .18s}
+body.project-page .document-menu .document-choice::before{content:'';flex:0 0 7px;width:7px;height:7px;border-radius:50%;background:transparent}
+body.project-page .document-menu .document-choice>span:nth-child(2){display:block;min-width:0}
+body.project-page .document-menu .document-choice b{font-size:13px;font-weight:600;line-height:1.6}
+body.project-page .document-menu .document-choice:is(.is-selected,:hover){color:#191f28}
+body.project-page .document-menu .document-choice.is-selected::before{background:#3182f6}
+body.project-page .document-menu :is(.document-index,.document-choice-arrow,.document-menu-title,.document-menu-note,.document-choice small){display:none!important}
+body.project-page #deliverables .document-stream .doc-step{border:0!important;border-radius:0;box-shadow:none;background:transparent}
+body.project-page #deliverables .document-stream .doc-step .doc-step-head{margin-inline:0}
+body.project-page #deliverables .document-stream .doc-step>.document-canvas{padding-inline:0}
+}
+@media screen and (max-width:760px){
+body.project-page .document-menu{position:sticky;top:116px;z-index:8;display:flex;gap:8px;overflow-x:auto;padding:10px 0;background:#fffffff2;border-bottom:1px solid #e5e8eb}
+body.project-page .document-menu .document-choice{flex:0 0 auto;padding:8px 12px;margin:0;min-height:36px;background:transparent;border:0;border-radius:20px;color:#6b7684}
+body.project-page .document-menu .document-choice.is-selected{background:#e8f3ff;color:#1b64da;box-shadow:none}
+body.project-page .document-menu :is(.document-index,.document-choice-arrow,.document-choice small){display:none}
+body.project-page .document-menu .document-choice b{font-size:12px;white-space:nowrap}
+}
+@media screen and (min-width:761px){body.project-page .document-menu .document-choice b{color:inherit}body.project-page .document-menu .document-choice.is-selected{color:#191f28;font-weight:700}}

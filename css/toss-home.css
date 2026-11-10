@@ -1,0 +1,200 @@
+/* Home refresh: clear product hierarchy inspired by Toss's spacious editorial rhythm. */
+@media screen{
+  .resume-home{
+    --toss-blue:#3182f6;
+    --toss-ink:#191f28;
+    --toss-copy:#4e5968;
+    --toss-muted:#8b95a1;
+    --toss-surface:#f2f4f6;
+    --toss-line:#e5e8eb;
+    --folio-violet:var(--toss-blue);
+    --folio-violet-hover:#1b64da;
+    --folio-violet-tint:#e8f3ff;
+    background:#fff;
+    color:var(--toss-ink);
+  }
+
+  .resume-home .wrap{max-width:1120px}
+  .resume-home .site-header{padding-top:0;background:#ffffffeb;border-bottom:1px solid #f2f4f6;backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px)}
+  .resume-home .site-nav{height:64px;background:transparent;max-width:1120px}
+  .resume-home .site-nav .brand{font-size:19px;font-weight:750;letter-spacing:-.8px}
+  .resume-home .site-nav .brand-star{color:var(--toss-blue)}
+  .resume-home .nav-links{gap:22px;padding:0;border:0;border-radius:0;background:transparent;box-shadow:none;backdrop-filter:none}
+  .resume-home .nav-links a{padding:7px 0;color:#6b7684;font-size:13px;font-weight:600}
+  .resume-home .nav-links a.active,.resume-home .nav-links a[aria-current="page"]{color:var(--toss-ink);background:transparent}
+  .resume-home .nav-links a:hover,.resume-home .nav-links a.active:hover,.resume-home .nav-links a[aria-current="page"]:hover{color:var(--toss-ink);background:transparent}
+  .resume-home .resume-contact{min-height:36px;padding:8px 14px;border:0;border-radius:9px;background:#f2f4f6;color:#4e5968;box-shadow:none;font-size:12px;font-weight:650}
+  .resume-home .resume-contact:hover{background:#e5e8eb;color:var(--toss-ink);border:0}
+
+  .home-portfolio .portfolio-cover{min-height:760px;padding:118px 24px 0;background:radial-gradient(ellipse 52% 44% at 50% 82%,#e8f3ff 0%,#f6fbff 42%,#fff 74%);border-bottom:0}
+  .portfolio-cover-heading{max-width:980px;margin:0 auto;padding:0;text-align:center}
+  .portfolio-edition{padding:0!important;border:0!important;background:transparent!important;box-shadow:none!important;color:var(--toss-blue)!important;font-size:13px!important;font-weight:750;letter-spacing:.3px!important}
+  .portfolio-cover h1{margin:22px 0 20px!important;color:var(--toss-ink)!important;font-size:clamp(50px,6.1vw,78px)!important;line-height:1.22!important;font-weight:750!important;letter-spacing:-5.2px!important}
+  .portfolio-byline{color:var(--toss-copy)!important;font-size:18px!important;line-height:1.65}
+  .portfolio-folder-stage{height:315px;max-width:1050px;margin:52px auto 0;overflow:visible}
+  .portfolio-folder-stage:after{display:none}
+  .portfolio-folders{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;width:100%;height:auto;margin:0;position:static;transform:none!important}
+  .portfolio-folder{position:relative!important;left:auto!important;bottom:auto!important;width:100%;height:230px;padding:20px;transform:none!important;filter:none!important;border-radius:20px;background:var(--folder-card,#fff);box-shadow:0 14px 30px #4d7ca417;transition:transform .2s ease,box-shadow .2s ease}
+  .portfolio-folder:hover,.portfolio-folder:focus-visible{transform:translateY(-7px)!important;box-shadow:0 20px 38px #4d7ca426;z-index:1}
+  .portfolio-folder .folder-back{display:none}
+  .portfolio-folder .folder-sheet{position:static;display:flex;height:100%;padding:0;background:transparent;border:0;border-radius:0;box-shadow:none;transform:none;color:var(--folder-copy,#4e5968)}
+  .portfolio-folder .folder-sheet:after{display:none}
+  .folder-sheet-name{font-size:21px;color:var(--folder-ink,#191f28)}
+  .folder-sheet>span:not(.folder-sheet-name){font-size:13px;line-height:1.65}
+  .folder-sheet .folder-start{margin-top:auto!important;font-size:12px!important;color:var(--folder-copy,#6b7684)}
+  .portfolio-folder .folder-front{position:absolute;left:20px;right:20px;top:auto;bottom:19px;height:46px;padding:0 14px;border:0;border-radius:12px;background:var(--folder-action,#191f28);box-shadow:none;display:flex;flex-direction:row;justify-content:space-between;transform:none}
+  .portfolio-folder .folder-front:before,.folder-year{display:none}
+  .folder-project{width:100%;font-size:12px;color:#fff!important;justify-content:space-between;gap:0}
+  .folder-project>span{font-size:15px}
+  .folder-pet{--folder-card:#fff5ec;--folder-ink:#543015;--folder-copy:#7d5736;--folder-action:#ff7b2f}
+  .folder-irocom{--folder-card:#fff9dd;--folder-ink:#4d4317;--folder-copy:#776b32;--folder-action:#d8a500}
+  .folder-koach{--folder-card:#eaf5ff;--folder-ink:#183955;--folder-copy:#46708f;--folder-action:#3182f6}
+  .folder-ssok{--folder-card:#f0efff;--folder-ink:#33266c;--folder-copy:#655c95;--folder-action:#6652f0}
+
+  .home-portfolio .about-editorial{padding:96px 0 112px;background:#fff;border:0}
+  .home-portfolio .resume-section-heading{margin-bottom:36px}
+  .home-portfolio .resume-section-heading h2{font-size:48px;color:var(--toss-ink);letter-spacing:-3px}
+  .home-portfolio .about-editorial-layout{grid-template-columns:250px minmax(0,1fr);gap:80px;margin-top:0}
+  .home-portfolio .about-portrait{border:0;border-radius:18px;background:#dde5ee;box-shadow:none}
+  .home-portfolio .about-identity h3{font-size:29px;color:var(--toss-ink)}
+  .about-profile-heading>span,.home-portfolio .about-profile-contact,.home-portfolio .about-approach p,.home-portfolio .about-skills-list dd{color:var(--toss-copy)}
+  .home-portfolio .about-story{gap:72px}
+  .about-introduction>h3,.home-portfolio .about-skills>h3{font-size:17px;color:var(--toss-ink)}
+  .about-approach h4{font-size:15px;color:var(--toss-ink)}
+  .about-approach p,.about-outlook{font-size:14px;line-height:1.85}
+  .home-portfolio .about-story .about-skills-list>div{padding-bottom:22px}
+  .home-portfolio .about-skills-list dt{color:var(--toss-blue);font-size:13px}
+  .home-portfolio .about-skills-list dd{font-size:13px;line-height:1.85}
+
+  /* About uses a simple reading order instead of several competing cards. */
+  .home-portfolio .about-editorial-layout{grid-template-columns:minmax(0,1fr) 260px;gap:96px;align-items:start}
+  .home-portfolio .about-identity{order:2;margin:0}
+  .home-portfolio .about-story{display:block;order:1}
+  .home-portfolio .about-introduction{display:grid;grid-template-columns:190px minmax(0,1fr);column-gap:36px}
+  .home-portfolio .about-introduction>h3{grid-column:1/-1;margin:0 0 28px;font-size:37px;line-height:1.28;letter-spacing:-2.4px}
+  .home-portfolio .about-approach{display:contents}
+  .home-portfolio .about-approach h4,.home-portfolio .about-approach p{margin:0;padding:18px 0;border-top:1px solid var(--toss-line)}
+  .home-portfolio .about-approach h4{font-size:14px;font-weight:750}
+  .home-portfolio .about-approach p{font-size:14px;line-height:1.8}
+  .home-portfolio .about-outlook{grid-column:1/-1;margin:24px 0 0;padding:23px 0 0;border-top:1px solid var(--toss-line);font-size:19px;line-height:1.55;font-weight:700;color:var(--toss-ink)}
+  .home-portfolio .about-skills{margin-top:52px;padding-top:34px;border-top:1px solid var(--toss-line)}
+  .home-portfolio .about-skills>h3{font-size:18px}
+  .home-portfolio .about-skills-list>div{grid-template-columns:180px minmax(0,1fr);padding:17px 0}
+
+  .home-portfolio .resume-experience{padding:112px 0 72px;background:#fff}
+  .home-portfolio .resume-project{grid-template-columns:minmax(0,1fr) 300px;gap:64px;padding:66px 0;border-color:var(--toss-line)}
+  .home-portfolio .resume-project-meta{order:2}
+  .home-portfolio .resume-project-main{order:1}
+  .home-portfolio .resume-service-photo{padding:16px}
+  .home-portfolio .resume-service-photo{border:0;border-radius:18px;background:#f7f9fa}
+  .home-portfolio .resume-project-main header h3{font-size:31px;letter-spacing:-1.6px;color:var(--toss-ink)}
+  .home-portfolio .resume-project-main header h3 span{color:#6b7684}
+  .home-portfolio .resume-category{color:var(--toss-blue);font-weight:700}
+  .home-portfolio .resume-period,.home-portfolio .resume-role,.home-portfolio .resume-tools{color:#6b7684}
+  .home-portfolio .resume-results{border:0;border-radius:14px;background:#f7f9fa;box-shadow:none;padding:20px 22px}
+  .home-portfolio .resume-results dd{color:var(--toss-blue)}
+  .home-portfolio .resume-results dt{color:#6b7684}
+  .home-portfolio .resume-project-intro,.home-portfolio .resume-responsibilities,.home-portfolio .resume-project-meta>.resume-artifact-link{display:none}
+  .home-portfolio .resume-project-summary{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:26px 0 24px}
+  .home-portfolio .resume-project-summary section{padding:15px 0;border-top:1px solid var(--toss-line)}
+  .home-portfolio .resume-project-summary span{display:block;margin-bottom:8px;color:var(--toss-blue);font-size:11px;font-weight:750}
+  .home-portfolio .resume-project-summary p{color:var(--toss-copy);font-size:13px;line-height:1.75;word-break:keep-all}
+  .home-portfolio .resume-deliverables{display:flex;align-items:center;flex-wrap:wrap;gap:8px;margin:24px 0 0;padding:0}
+  .home-portfolio .resume-deliverables b{width:100%;margin-bottom:3px;color:var(--toss-ink);font-size:13px}
+  .home-portfolio .resume-deliverables span{padding:7px 10px;border-radius:8px;background:#f2f4f6;color:#4e5968;font-size:12px;line-height:1.2}
+  .home-portfolio .resume-deliverables .resume-artifact-link{margin-left:auto;padding:10px 14px;border:0;border-radius:9px;background:var(--toss-blue);color:#fff;font-size:12px;line-height:1.2}
+  .home-portfolio .resume-deliverables .resume-artifact-link:hover{background:#1b64da;color:#fff}
+  .home-portfolio .resume-responsibilities{grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin-top:0}
+  .home-portfolio .resume-responsibilities section{min-height:150px;padding:19px 18px;border:1px solid var(--toss-line);border-radius:14px;background:#fff}
+  .home-portfolio .resume-responsibilities h4{margin-bottom:10px;color:var(--toss-ink);font-size:14px}
+  .home-portfolio .resume-responsibilities ul{padding:0;gap:0;list-style:none}
+  .home-portfolio .resume-responsibilities li{padding:0;color:#4e5968;font-size:13px;line-height:1.75}
+  .home-portfolio .resume-responsibilities li::marker{content:''}
+  .home-portfolio .resume-artifact-link{border:0;border-radius:10px;background:var(--toss-blue);color:#fff;justify-content:center}
+  .home-portfolio .resume-artifact-link:hover{background:#1b64da;border:0;color:#fff}
+
+  .home-portfolio .home-bottom{max-width:none;width:100%;padding:94px max(24px,calc((100% - 1120px) / 2));background:#fff}
+  .home-portfolio .home-analysis{max-width:1120px;margin:0 auto;border:0;border-radius:22px;background:#fff;box-shadow:none}
+  .home-portfolio .home-analysis-header{padding:28px 32px;border-color:var(--toss-line)}
+  .home-portfolio .home-analysis-header h2{font-size:27px;color:var(--toss-ink)}
+  .home-portfolio .home-analysis-list a{padding:23px 32px;border-radius:0}
+  .home-portfolio .home-analysis-list a:hover{background:#f7f9fa}
+  .home-portfolio .home-analysis-service,.home-portfolio .home-analysis-arrow{color:var(--toss-blue)}
+
+  .home-portfolio .contact-ending{margin-top:0;background:#fff}
+  .home-portfolio .contact-ending::before,.home-portfolio .contact-ending::after{display:none}
+  .home-portfolio .contact-section{padding:110px 24px 96px;background:#fff!important;border:0!important;box-shadow:none!important}
+  .home-portfolio .contact-section h2{font-size:42px;color:var(--toss-ink);letter-spacing:-2.6px}
+  .home-portfolio .contact-section p{color:var(--toss-copy)}
+  .home-portfolio .contact-actions .contact-button{border-radius:10px;box-shadow:none!important;backdrop-filter:none!important}
+  .home-portfolio .contact-actions .contact-button-email{background:var(--toss-blue);border-color:var(--toss-blue);color:#fff}
+  .home-portfolio .contact-actions .contact-button-secondary,.home-portfolio .contact-actions .contact-button-ai{background:#fff;border-color:#fff;color:var(--toss-ink)}
+  .home-portfolio .contact-actions .contact-button:is(:hover,:focus-visible){background:#1b64da;border-color:#1b64da;color:#fff}
+  .home-portfolio .site-footer{width:100%;max-width:none;padding:34px max(24px,calc((100% - 1120px) / 2));border:0;background:linear-gradient(120deg,#102d4c 0%,#1c4f83 100%);color:#bfd0e3}
+  .home-portfolio .site-footer .brand,.home-portfolio .site-footer .back-to-top{color:#fff}
+  .home-portfolio .site-footer .brand-star{color:#8fc0ff}
+}
+
+@media screen and (max-width:800px){
+  .home-portfolio .portfolio-cover{min-height:690px;padding-top:90px}
+  .portfolio-cover h1{font-size:clamp(40px,10vw,60px)!important;letter-spacing:-3.7px!important}
+  .portfolio-folder-stage{height:auto;margin-top:42px;padding-bottom:12px}
+  .portfolio-folders{grid-template-columns:1fr 1fr;gap:10px}
+  .portfolio-folder{height:184px;padding:16px;border-radius:16px}
+  .folder-sheet-name{font-size:18px}
+  .folder-sheet>span:not(.folder-sheet-name){font-size:11px}
+  .portfolio-folder .folder-front{left:16px;right:16px;bottom:15px;height:40px;border-radius:10px}
+  .home-portfolio .about-editorial,.home-portfolio .resume-experience{padding:72px 0}
+  .home-portfolio .about-editorial-layout{grid-template-columns:180px minmax(0,1fr);gap:38px}
+  .home-portfolio .about-story{gap:30px}
+  .home-portfolio .resume-project{grid-template-columns:minmax(0,1fr) 220px;gap:30px}
+}
+
+@media screen and (max-width:600px){
+  .resume-home .site-nav{width:calc(100% - 40px);grid-template-columns:1fr auto;min-height:58px}
+  .resume-home .nav-links{display:none}
+  .home-portfolio .portfolio-cover{min-height:620px;padding:78px 20px 0;background:linear-gradient(180deg,#fff 0%,#f2f8ff 100%)}
+  .portfolio-edition{font-size:11px!important}
+  .portfolio-cover h1{font-size:40px!important;letter-spacing:-3.3px!important;line-height:1.25!important}
+  .portfolio-byline{font-size:15px!important;padding:0 10px}
+  .portfolio-folder-stage{margin-top:38px}
+  .portfolio-folder{height:165px;padding:15px}
+  .folder-sheet-name{font-size:17px}
+  .folder-sheet>span:not(.folder-sheet-name){font-size:10px;line-height:1.55}
+  .folder-sheet .folder-start{font-size:10px!important}
+  .portfolio-folder .folder-front{left:15px;right:15px;bottom:14px;height:37px}
+  .folder-project{font-size:10px}
+  .home-portfolio .about-editorial,.home-portfolio .resume-experience{padding:60px 0}
+  .home-portfolio .resume-section-heading{margin-bottom:26px}
+  .home-portfolio .resume-section-heading h2{font-size:35px;letter-spacing:-2px}
+  .home-portfolio .about-editorial-layout{grid-template-columns:1fr;gap:25px}
+  .home-portfolio .about-identity{order:initial}
+  .home-portfolio .about-introduction{grid-template-columns:1fr}
+  .home-portfolio .about-introduction>h3{font-size:30px;margin-bottom:21px}
+  .home-portfolio .about-approach h4,.home-portfolio .about-approach p{padding:12px 0}
+  .home-portfolio .about-approach p{padding-top:0;font-size:13px}
+  .home-portfolio .about-outlook{font-size:17px}
+  .home-portfolio .about-identity{display:grid;grid-template-columns:106px minmax(0,1fr);gap:18px;align-items:center}
+  .home-portfolio .about-portrait{width:106px;grid-row:1}
+  .home-portfolio .about-identity figcaption{display:block;margin:0}
+  .home-portfolio .about-story{display:block}
+  .home-portfolio .about-skills{margin-top:34px!important}
+  .home-portfolio .resume-project{display:block;padding:42px 0}
+  .home-portfolio .resume-project-meta,.home-portfolio .resume-project-main{order:initial}
+  .home-portfolio .resume-project-meta{display:grid;grid-template-columns:124px minmax(0,1fr);gap:8px 18px;align-items:start}
+  .home-portfolio .resume-service-photo{grid-row:1 / span 5}
+  .home-portfolio .resume-artifact-link{grid-column:1 / -1;margin-top:10px}
+  .home-portfolio .resume-project-main{margin-top:28px}
+  .home-portfolio .resume-project-main header h3{font-size:27px}
+  .home-portfolio .resume-results{display:grid;grid-template-columns:1fr;gap:12px}
+  .home-portfolio .resume-deliverables{margin:22px 0 24px}
+  .home-portfolio .resume-project-summary{grid-template-columns:1fr;gap:0;margin:22px 0}
+  .home-portfolio .resume-project-summary section{padding:13px 0}
+  .home-portfolio .resume-deliverables .resume-artifact-link{width:100%;justify-content:center;margin:8px 0 0}
+  .home-portfolio .resume-responsibilities{grid-template-columns:1fr;gap:8px}
+  .home-portfolio .resume-responsibilities section{min-height:0;padding:16px}
+  .home-portfolio .home-bottom{padding:62px 20px}
+  .home-portfolio .home-analysis-header,.home-portfolio .home-analysis-list a{padding-inline:20px}
+  .home-portfolio .contact-section{padding:76px 20px}
+  .home-portfolio .contact-section h2{font-size:34px;letter-spacing:-2px}
+}

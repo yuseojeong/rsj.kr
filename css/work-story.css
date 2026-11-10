@@ -1,0 +1,131 @@
+/* work-story.css — work 페이지를 위에서 아래로 한 줄기로 읽히게 만드는 레이아웃.
+   프로젝트 소개를 히어로로 끌어올리고, 중간 제목을 덜어내 스크롤이 끊기지 않게 합니다. */
+@media screen{
+
+/* ───────── 히어로 ─────────
+   소개 본문이 히어로의 중심이 되도록 요약문보다 크고 밝게. */
+html body.project-page.project-page .project-overview{
+  margin:20px 0 0;
+  max-width:52ch;
+  color:var(--wk-ink)!important;
+  font-size:17px;
+  line-height:1.85;
+  letter-spacing:-.3px;
+  word-break:keep-all;
+}
+html body.project-page.project-page .project-heading>p:not(.project-overview){
+  color:var(--wk-muted)!important;
+  font-size:15px;
+}
+html body.project-page.project-page .project-facts{margin-top:30px}
+
+/* ───────── 소개 카드 ─────────
+   히어로 바로 아래에 전체 폭으로 붙여, 제목 없이 이어 읽히게 한다. */
+html body.project-page.project-page .project-angle{
+  padding:0 0 clamp(56px,7vw,88px);
+  border-bottom:1px solid var(--wk-line-soft);
+}
+html body.project-page.project-page .project-angle .overview-cards{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:16px;
+  margin:0;
+}
+html body.project-page.project-page .project-angle article{
+  padding:26px 24px;
+  border:1px solid var(--wk-line)!important;
+  border-radius:16px;
+  background:var(--wk-surface)!important;
+}
+html body.project-page.project-page .project-angle h3{
+  display:flex;align-items:baseline;gap:10px;
+  margin:0 0 12px;
+  font-size:16px;font-weight:750;letter-spacing:-.6px;
+}
+html body.project-page.project-page .project-angle .card-num{
+  font-size:11px;font-weight:700;letter-spacing:.6px;
+  color:var(--wk-accent)!important;
+}
+html body.project-page.project-page .project-angle p{
+  margin:0;font-size:14px;line-height:1.85;color:var(--wk-copy)!important;word-break:keep-all;
+}
+
+/* ───────── 기획 산출물 ─────────
+   꾸민 제목을 걷어내고 '기획 산출물 · N개의 문서' 한 줄로. */
+html body.project-page.project-page .documents-section{
+  padding-top:clamp(52px,6vw,76px);
+  border-top:0!important;
+}
+html body.project-page.project-page .documents-heading{
+  display:flex;align-items:baseline;justify-content:space-between;gap:16px;
+  margin:0 0 clamp(26px,3vw,36px);
+  padding-bottom:16px;
+  border-bottom:1px solid var(--wk-line)!important;
+}
+html body.project-page.project-page .documents-label{
+  margin:0;
+  font-size:15px;font-weight:750;letter-spacing:-.3px;
+  color:var(--wk-accent)!important;
+}
+html body.project-page.project-page .document-total{
+  font-size:12.5px;color:var(--wk-muted)!important;
+}
+
+/* ───────── 회고 ───────── */
+html body.project-page.project-page .retro-section .eyebrow{
+  font-size:15px;font-weight:750;letter-spacing:-.3px;
+}
+
+/* ───────── 섹션 간격 ─────────
+   구간 사이 여백을 줄여 하나의 흐름으로 이어지게 한다. */
+html body.project-page.project-page .project-hero{padding-bottom:clamp(40px,5vw,56px)}
+html body.project-page.project-page .retro-section{padding-top:clamp(56px,7vw,84px)}
+
+@media (max-width:900px){
+  html body.project-page.project-page .project-angle .overview-cards{grid-template-columns:1fr;gap:12px}
+  html body.project-page.project-page .project-overview{font-size:15.5px}
+}
+
+}
+
+/* ───────── 담당 업무 접기 ─────────
+   히어로는 한 줄로 요약해 두고, 펼치면 실제로 한 일을 묶음별로 보여준다. */
+@media screen{
+html body.project-page.project-page .profile-duty dd{margin:0}
+html body.project-page.project-page .duty{border:0}
+html body.project-page.project-page .duty>summary{
+  display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;
+  list-style:none;cursor:pointer;
+  color:var(--wk-copy)!important;
+}
+html body.project-page.project-page .duty>summary::-webkit-details-marker{display:none}
+html body.project-page.project-page .duty-line{flex:1 1 220px;min-width:0}
+html body.project-page.project-page .duty-more{
+  display:inline-flex;align-items:center;gap:5px;
+  flex-shrink:0;padding:3px 9px;border-radius:999px;
+  background:var(--wk-accent-soft)!important;color:var(--wk-accent-ink)!important;
+  font-size:11.5px;font-weight:700;white-space:nowrap;
+}
+html body.project-page.project-page .duty-mark{font-size:12px;line-height:1;transition:transform .18s}
+html body.project-page.project-page .duty[open] .duty-mark{transform:rotate(45deg)}
+html body.project-page.project-page .duty>summary:hover .duty-more{background:#26395a!important}
+
+html body.project-page.project-page .duty-groups{
+  display:grid;gap:18px;margin-top:16px;padding:18px 18px 20px;
+  border:1px solid var(--wk-line)!important;border-radius:14px;
+  background:var(--wk-surface)!important;
+}
+html body.project-page.project-page .duty-groups h3{
+  margin:0 0 9px;font-size:13px;font-weight:750;letter-spacing:-.3px;
+  color:var(--wk-accent)!important;
+}
+html body.project-page.project-page .duty-groups ul{display:grid;gap:7px;margin:0;padding:0;list-style:none}
+html body.project-page.project-page .duty-groups li{
+  position:relative;padding-left:13px;
+  font-size:13px;line-height:1.8;color:var(--wk-copy)!important;word-break:keep-all;
+}
+html body.project-page.project-page .duty-groups li::before{
+  content:'';position:absolute;left:0;top:.72em;
+  width:4px;height:4px;border-radius:50%;background:#5b6472;
+}
+}

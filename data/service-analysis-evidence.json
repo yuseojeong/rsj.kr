@@ -1,0 +1,1477 @@
+{
+  "ably": [
+    {
+      "section": "original",
+      "src": "images/analysis/source/ably-01.png",
+      "blockId": "31a9b5c9-4989-812d-bccc-debf28aabe76",
+      "caption": "",
+      "sourceHeading": "에이블리"
+    },
+    {
+      "section": "original",
+      "src": "images/analysis/source/ably-02.png",
+      "blockId": "31a9b5c9-4989-81a1-8ec3-fe98198cb5b0",
+      "caption": "",
+      "sourceHeading": "1️⃣ 무료배송"
+    },
+    {
+      "section": "original",
+      "src": "images/analysis/source/ably-03.png",
+      "blockId": "31a9b5c9-4989-8132-858a-fe42235aa207",
+      "caption": "",
+      "sourceHeading": "2️⃣  AI 개인화 추천 알고리즘"
+    },
+    {
+      "section": "original",
+      "src": "images/analysis/source/ably-04.png",
+      "blockId": "31a9b5c9-4989-81db-b989-eb2fceb65881",
+      "caption": "",
+      "sourceHeading": "3️⃣ 카테고리 확장"
+    },
+    {
+      "section": "original",
+      "src": "images/analysis/source/ably-05.png",
+      "blockId": "31a9b5c9-4989-81bb-b0ed-da163fe96c36",
+      "caption": "",
+      "sourceHeading": "4️⃣ 커뮤니티"
+    },
+    {
+      "section": "original",
+      "src": "images/analysis/source/ably-06.png",
+      "blockId": "31a9b5c9-4989-81d1-8b1f-c55be730e546",
+      "caption": "",
+      "sourceHeading": "4️⃣ 커뮤니티"
+    }
+  ],
+  "zigzag": [
+    {
+      "section": "original",
+      "src": "images/analysis/source/zigzag-01.png",
+      "blockId": "31a9b5c9-4989-817c-acc3-e40b218bfbe3",
+      "caption": "",
+      "sourceHeading": "1. 개인화된 상품 추천"
+    },
+    {
+      "section": "original",
+      "src": "images/analysis/source/zigzag-02.png",
+      "blockId": "31a9b5c9-4989-81c0-8eb4-e1eb8e42cb84",
+      "caption": "",
+      "sourceHeading": "1. 개인화된 상품 추천"
+    },
+    {
+      "section": "original",
+      "src": "images/analysis/source/zigzag-03.png",
+      "blockId": "31a9b5c9-4989-8169-b8ab-d35ab4953789",
+      "caption": "",
+      "sourceHeading": "1. 개인화된 상품 추천"
+    },
+    {
+      "section": "original",
+      "src": "images/analysis/source/zigzag-04.png",
+      "blockId": "31a9b5c9-4989-810f-8d7a-fe82d455d800",
+      "caption": "",
+      "sourceHeading": "2. 최신 트렌드 업데이트"
+    },
+    {
+      "section": "original",
+      "src": "images/analysis/source/zigzag-05.png",
+      "blockId": "31a9b5c9-4989-81bc-b486-ee37a3ce2418",
+      "caption": "",
+      "sourceHeading": "3. 직진 배송"
+    },
+    {
+      "section": "original",
+      "src": "images/analysis/source/zigzag-06.png",
+      "blockId": "31a9b5c9-4989-817b-8ef9-c9c4706c32a4",
+      "caption": "",
+      "sourceHeading": "3. 직진 배송"
+    },
+    {
+      "section": "original",
+      "src": "images/analysis/source/zigzag-07.png",
+      "blockId": "31a9b5c9-4989-81a4-adf3-c40d2075f2b0",
+      "caption": "",
+      "sourceHeading": "4. 소셜 커뮤니티"
+    },
+    {
+      "section": "original",
+      "src": "images/analysis/source/zigzag-08.png",
+      "blockId": "31a9b5c9-4989-81bf-8d04-dfa74f3faf73",
+      "caption": "",
+      "sourceHeading": "4. 소셜 커뮤니티"
+    },
+    {
+      "section": "original",
+      "src": "images/analysis/source/zigzag-09.png",
+      "blockId": "31a9b5c9-4989-81e7-b967-ef378be727b2",
+      "caption": "",
+      "sourceHeading": "에이블리"
+    },
+    {
+      "section": "original",
+      "src": "images/analysis/source/zigzag-10.jpg",
+      "blockId": "31a9b5c9-4989-8102-9190-cd5b99b0fa4d",
+      "caption": "",
+      "sourceHeading": "에이블리"
+    },
+    {
+      "section": "original",
+      "src": "images/analysis/source/zigzag-11.png",
+      "blockId": "31a9b5c9-4989-8132-8a59-e8c1057b6cfa",
+      "caption": "",
+      "sourceHeading": "에이블리"
+    },
+    {
+      "section": "original",
+      "src": "images/analysis/source/zigzag-12.jpg",
+      "blockId": "31a9b5c9-4989-8127-a4eb-d457a95b2dad",
+      "caption": "",
+      "sourceHeading": "에이블리"
+    },
+    {
+      "section": "original",
+      "src": "images/analysis/source/zigzag-13.jpg",
+      "blockId": "31a9b5c9-4989-81ff-8c99-e0f78b528be7",
+      "caption": "",
+      "sourceHeading": "무신사"
+    },
+    {
+      "section": "original",
+      "src": "images/analysis/source/zigzag-14.jpg",
+      "blockId": "31a9b5c9-4989-8159-a205-fb8f3cbe7abc",
+      "caption": "",
+      "sourceHeading": "무신사"
+    },
+    {
+      "section": "original",
+      "src": "images/analysis/source/zigzag-15.png",
+      "blockId": "31a9b5c9-4989-817a-b209-e4b886bb3419",
+      "caption": "",
+      "sourceHeading": "1. 홈 네비게이션 수정 : 스토어 → 톡라운지"
+    },
+    {
+      "section": "original",
+      "src": "images/analysis/source/zigzag-16.jpg",
+      "blockId": "31a9b5c9-4989-816b-8ef5-f1264b5dcd34",
+      "caption": "",
+      "sourceHeading": "1. 홈 네비게이션 수정 : 스토어 → 톡라운지"
+    },
+    {
+      "section": "original",
+      "src": "images/analysis/source/zigzag-17.jpg",
+      "blockId": "31a9b5c9-4989-813a-90d9-f93f4877f6b5",
+      "caption": "",
+      "sourceHeading": "1. 홈 네비게이션 수정 : 스토어 → 톡라운지"
+    },
+    {
+      "section": "original",
+      "src": "images/analysis/source/zigzag-18.png",
+      "blockId": "31a9b5c9-4989-8108-8735-ebe3149984a2",
+      "caption": "",
+      "sourceHeading": "2. 광고 배너 영역"
+    }
+  ],
+  "kurly": [
+    {
+      "section": "original",
+      "src": "images/analysis/source/kurly-01.png",
+      "blockId": "31a9b5c9-4989-8122-b954-c74036b3d278",
+      "caption": "",
+      "sourceHeading": "Why"
+    },
+    {
+      "section": "original",
+      "src": "images/analysis/source/kurly-02.png",
+      "blockId": "31a9b5c9-4989-814a-81bf-d42e6e5cc9fc",
+      "caption": "",
+      "sourceHeading": "What"
+    },
+    {
+      "section": "original",
+      "src": "images/analysis/source/kurly-03.png",
+      "blockId": "31a9b5c9-4989-815d-bed5-c77e400182dc",
+      "caption": "",
+      "sourceHeading": "What"
+    },
+    {
+      "section": "original",
+      "src": "images/analysis/source/kurly-04.png",
+      "blockId": "31a9b5c9-4989-817c-93e5-e11ea045edf4",
+      "caption": "",
+      "sourceHeading": "What"
+    },
+    {
+      "section": "original",
+      "src": "images/analysis/source/kurly-05.png",
+      "blockId": "31a9b5c9-4989-8183-ad1b-ed439a29c5f0",
+      "caption": "",
+      "sourceHeading": "What"
+    },
+    {
+      "section": "original",
+      "src": "images/analysis/source/kurly-06.png",
+      "blockId": "31a9b5c9-4989-8184-ba1e-f92d0f135b17",
+      "caption": "",
+      "sourceHeading": "What"
+    },
+    {
+      "section": "original",
+      "src": "images/analysis/source/kurly-07.png",
+      "blockId": "31a9b5c9-4989-81a8-866e-ca97e97aa7db",
+      "caption": "",
+      "sourceHeading": "What"
+    },
+    {
+      "section": "original",
+      "src": "images/analysis/source/kurly-08.png",
+      "blockId": "31a9b5c9-4989-81d9-ae12-d527e7b62014",
+      "caption": "",
+      "sourceHeading": "Benchmarking"
+    },
+    {
+      "section": "original",
+      "src": "images/analysis/source/kurly-09.png",
+      "blockId": "31a9b5c9-4989-816d-baa7-f3ff1e417311",
+      "caption": "",
+      "sourceHeading": "Benchmarking"
+    },
+    {
+      "section": "original",
+      "src": "images/analysis/source/kurly-10.png",
+      "blockId": "31a9b5c9-4989-816d-aa53-fccf536c1b65",
+      "caption": "",
+      "sourceHeading": "Benchmarking"
+    },
+    {
+      "section": "original",
+      "src": "images/analysis/source/kurly-11.png",
+      "blockId": "31a9b5c9-4989-8120-9b6e-fc5c4b916aac",
+      "caption": "",
+      "sourceHeading": "Benchmarking"
+    },
+    {
+      "section": "original",
+      "src": "images/analysis/source/kurly-12.png",
+      "blockId": "31a9b5c9-4989-81c9-bbcb-c1e80a53f942",
+      "caption": "",
+      "sourceHeading": "Benchmarking"
+    },
+    {
+      "section": "original",
+      "src": "images/analysis/source/kurly-13.png",
+      "blockId": "31a9b5c9-4989-813b-9d60-c14b6e55eadc",
+      "caption": "",
+      "sourceHeading": "Benchmarking"
+    },
+    {
+      "section": "original",
+      "src": "images/analysis/source/kurly-14.png",
+      "blockId": "31a9b5c9-4989-8166-b552-e8dac654bb63",
+      "caption": "",
+      "sourceHeading": "Benchmarking"
+    },
+    {
+      "section": "original",
+      "src": "images/analysis/source/kurly-15.png",
+      "blockId": "31a9b5c9-4989-8120-a5de-f28e65962e46",
+      "caption": "",
+      "sourceHeading": "Benchmarking"
+    },
+    {
+      "section": "original",
+      "src": "images/analysis/source/kurly-16.png",
+      "blockId": "31a9b5c9-4989-816f-b1de-f51850f3d90a",
+      "caption": "",
+      "sourceHeading": "Benchmarking"
+    },
+    {
+      "section": "original",
+      "src": "images/analysis/source/kurly-17.png",
+      "blockId": "31a9b5c9-4989-8198-8725-d70756e8e38f",
+      "caption": "",
+      "sourceHeading": "Benchmarking"
+    },
+    {
+      "section": "original",
+      "src": "images/analysis/source/kurly-18.png",
+      "blockId": "31a9b5c9-4989-8149-b45b-c159bb8352a1",
+      "caption": "",
+      "sourceHeading": "Benchmarking"
+    },
+    {
+      "section": "original",
+      "src": "images/analysis/source/kurly-19.png",
+      "blockId": "31a9b5c9-4989-8161-b837-d8d49c53064d",
+      "caption": "",
+      "sourceHeading": "Benchmarking"
+    },
+    {
+      "section": "original",
+      "src": "images/analysis/source/kurly-20.png",
+      "blockId": "31a9b5c9-4989-8199-8dc7-d1e235673aa2",
+      "caption": "",
+      "sourceHeading": "Benchmarking"
+    },
+    {
+      "section": "original",
+      "src": "images/analysis/source/kurly-21.png",
+      "blockId": "31a9b5c9-4989-8164-b285-da21dfdf8571",
+      "caption": "",
+      "sourceHeading": "Benchmarking"
+    },
+    {
+      "section": "original",
+      "src": "images/analysis/source/kurly-22.png",
+      "blockId": "31a9b5c9-4989-8120-8264-d3591c0dba40",
+      "caption": "",
+      "sourceHeading": "Benchmarking"
+    },
+    {
+      "section": "original",
+      "src": "images/analysis/source/kurly-23.png",
+      "blockId": "31a9b5c9-4989-811d-8e08-f4bcc6d81bd0",
+      "caption": "",
+      "sourceHeading": "Benchmarking"
+    },
+    {
+      "section": "original",
+      "src": "images/analysis/source/kurly-24.png",
+      "blockId": "31a9b5c9-4989-8131-8a81-d6cc345452a4",
+      "caption": "",
+      "sourceHeading": "Benchmarking"
+    },
+    {
+      "section": "original",
+      "src": "images/analysis/source/kurly-25.png",
+      "blockId": "31a9b5c9-4989-8185-896d-ed8a4a3c5a1a",
+      "caption": "",
+      "sourceHeading": "Benchmarking"
+    },
+    {
+      "section": "original",
+      "src": "images/analysis/source/kurly-26.png",
+      "blockId": "31a9b5c9-4989-8159-82ba-ef4c2986c6ae",
+      "caption": "",
+      "sourceHeading": "Benchmarking"
+    },
+    {
+      "section": "original",
+      "src": "images/analysis/source/kurly-27.png",
+      "blockId": "31a9b5c9-4989-81cb-a90a-d8a7ec583e31",
+      "caption": "",
+      "sourceHeading": "Benchmarking"
+    },
+    {
+      "section": "original",
+      "src": "images/analysis/source/kurly-28.png",
+      "blockId": "31a9b5c9-4989-81a0-993e-cfff1f4f4965",
+      "caption": "",
+      "sourceHeading": "Benchmarking"
+    },
+    {
+      "section": "original",
+      "src": "images/analysis/source/kurly-29.png",
+      "blockId": "31a9b5c9-4989-8128-a249-df616d19a5a2",
+      "caption": "",
+      "sourceHeading": "Benchmarking"
+    },
+    {
+      "section": "original",
+      "src": "images/analysis/source/kurly-30.png",
+      "blockId": "31a9b5c9-4989-816f-add1-d1ba700e044f",
+      "caption": "",
+      "sourceHeading": "Benchmarking"
+    },
+    {
+      "section": "original",
+      "src": "images/analysis/source/kurly-31.png",
+      "blockId": "31a9b5c9-4989-81b2-b3b8-e434f8f62a1a",
+      "caption": "",
+      "sourceHeading": "Benchmarking"
+    },
+    {
+      "section": "original",
+      "src": "images/analysis/source/kurly-32.png",
+      "blockId": "31a9b5c9-4989-8141-8197-c383eea1153a",
+      "caption": "",
+      "sourceHeading": "Benchmarking"
+    },
+    {
+      "section": "original",
+      "src": "images/analysis/source/kurly-33.png",
+      "blockId": "31a9b5c9-4989-8190-ba78-efcb23cbeef8",
+      "caption": "",
+      "sourceHeading": "Benchmarking"
+    },
+    {
+      "section": "original",
+      "src": "images/analysis/source/kurly-34.png",
+      "blockId": "31a9b5c9-4989-81f2-992a-f881b80447a3",
+      "caption": "",
+      "sourceHeading": "Benchmarking"
+    },
+    {
+      "section": "original",
+      "src": "images/analysis/source/kurly-35.png",
+      "blockId": "31a9b5c9-4989-810f-a290-f9f3117cee68",
+      "caption": "",
+      "sourceHeading": "Benchmarking"
+    },
+    {
+      "section": "original",
+      "src": "images/analysis/source/kurly-36.png",
+      "blockId": "31a9b5c9-4989-8135-bdd6-f604a4a898b8",
+      "caption": "",
+      "sourceHeading": "Benchmarking"
+    },
+    {
+      "section": "original",
+      "src": "images/analysis/source/kurly-37.png",
+      "blockId": "31a9b5c9-4989-81fe-9a70-d4c950aedbbc",
+      "caption": "",
+      "sourceHeading": "Benchmarking"
+    },
+    {
+      "section": "original",
+      "src": "images/analysis/source/kurly-38.png",
+      "blockId": "31a9b5c9-4989-811d-8fde-f5c5203d83ce",
+      "caption": "",
+      "sourceHeading": "마켓컬리 PM의 고객 경험 개선 성공 사례"
+    },
+    {
+      "section": "original",
+      "src": "images/analysis/source/kurly-39.jpg",
+      "blockId": "31a9b5c9-4989-81d1-a7dc-d7f436a7fa37",
+      "caption": "",
+      "sourceHeading": "마켓컬리 PM의 고객 경험 개선 성공 사례"
+    },
+    {
+      "section": "original",
+      "src": "images/analysis/source/kurly-40.png",
+      "blockId": "31a9b5c9-4989-8189-ba13-d9356bba4c7c",
+      "caption": "",
+      "sourceHeading": "마켓컬리 PM의 고객 경험 개선 성공 사례"
+    },
+    {
+      "section": "original",
+      "src": "images/analysis/source/kurly-41.jpg",
+      "blockId": "31a9b5c9-4989-8181-8cb0-d921fafdab18",
+      "caption": "",
+      "sourceHeading": "마켓컬리 PM의 고객 경험 개선 성공 사례"
+    },
+    {
+      "section": "original",
+      "src": "images/analysis/source/kurly-42.png",
+      "blockId": "31a9b5c9-4989-817d-a6bd-fa60e49d989b",
+      "caption": "",
+      "sourceHeading": "자사 서비스에 적용해보면 좋은 포인트"
+    },
+    {
+      "section": "original",
+      "src": "images/analysis/source/kurly-43.png",
+      "blockId": "31a9b5c9-4989-8185-a442-da7673e9b9ad",
+      "caption": "",
+      "sourceHeading": "자사 서비스에 적용해보면 좋은 포인트"
+    },
+    {
+      "section": "original",
+      "src": "images/analysis/source/kurly-44.png",
+      "blockId": "31a9b5c9-4989-81c9-8127-d35f8ad27caa",
+      "caption": "",
+      "sourceHeading": "Pain Point"
+    }
+  ],
+  "petfriends": [
+    {
+      "section": "original",
+      "src": "images/analysis/source/petfriends-01.png",
+      "blockId": "31a9b5c9-4989-81e7-ab93-c8d084d62ca9",
+      "caption": "",
+      "sourceHeading": "Why"
+    },
+    {
+      "section": "original",
+      "src": "images/analysis/source/petfriends-02.png",
+      "blockId": "31a9b5c9-4989-81b2-b750-d709e55a9b8b",
+      "caption": "",
+      "sourceHeading": "What"
+    },
+    {
+      "section": "original",
+      "src": "images/analysis/source/petfriends-03.png",
+      "blockId": "31a9b5c9-4989-814c-8694-cc9348c2a976",
+      "caption": "",
+      "sourceHeading": "What"
+    },
+    {
+      "section": "original",
+      "src": "images/analysis/source/petfriends-04.png",
+      "blockId": "31a9b5c9-4989-81dd-9c1c-d8fc33671676",
+      "caption": "",
+      "sourceHeading": "What"
+    },
+    {
+      "section": "original",
+      "src": "images/analysis/source/petfriends-05.png",
+      "blockId": "31a9b5c9-4989-8110-9154-c18375f023a8",
+      "caption": "",
+      "sourceHeading": "What"
+    },
+    {
+      "section": "original",
+      "src": "images/analysis/source/petfriends-06.png",
+      "blockId": "31a9b5c9-4989-81a9-9ca9-e86d127c2015",
+      "caption": "",
+      "sourceHeading": "What"
+    },
+    {
+      "section": "original",
+      "src": "images/analysis/source/petfriends-07.png",
+      "blockId": "31a9b5c9-4989-8111-8991-df04f4c2f304",
+      "caption": "",
+      "sourceHeading": "What"
+    },
+    {
+      "section": "original",
+      "src": "images/analysis/source/petfriends-08.png",
+      "blockId": "31a9b5c9-4989-81ca-8c9f-f37caf5e2351",
+      "caption": "",
+      "sourceHeading": "What"
+    },
+    {
+      "section": "original",
+      "src": "images/analysis/source/petfriends-09.png",
+      "blockId": "31a9b5c9-4989-81b2-ba56-d1ede35f4662",
+      "caption": "",
+      "sourceHeading": "What"
+    },
+    {
+      "section": "original",
+      "src": "images/analysis/source/petfriends-10.png",
+      "blockId": "31a9b5c9-4989-8114-b7d2-d0e9e0b05647",
+      "caption": "",
+      "sourceHeading": "What"
+    },
+    {
+      "section": "original",
+      "src": "images/analysis/source/petfriends-11.png",
+      "blockId": "31a9b5c9-4989-810f-852e-f8465ef8cf17",
+      "caption": "",
+      "sourceHeading": "How"
+    },
+    {
+      "section": "original",
+      "src": "images/analysis/source/petfriends-12.png",
+      "blockId": "31a9b5c9-4989-8161-9f22-cb7c8f39b57e",
+      "caption": "",
+      "sourceHeading": "장단점"
+    },
+    {
+      "section": "original",
+      "src": "images/analysis/source/petfriends-13.png",
+      "blockId": "31a9b5c9-4989-819c-ac5f-c98ffeb756b1",
+      "caption": "",
+      "sourceHeading": "장단점"
+    },
+    {
+      "section": "original",
+      "src": "images/analysis/source/petfriends-14.png",
+      "blockId": "31a9b5c9-4989-81ab-9cc0-c0e47e22149c",
+      "caption": "",
+      "sourceHeading": "내가 주목한 점"
+    },
+    {
+      "section": "original",
+      "src": "images/analysis/source/petfriends-15.png",
+      "blockId": "31a9b5c9-4989-8167-9947-c75915d054ef",
+      "caption": "",
+      "sourceHeading": "내가 주목한 점"
+    },
+    {
+      "section": "original",
+      "src": "images/analysis/source/petfriends-16.png",
+      "blockId": "31a9b5c9-4989-8126-ac23-f432a0d975a2",
+      "caption": "",
+      "sourceHeading": "내가 주목한 점"
+    },
+    {
+      "section": "original",
+      "src": "images/analysis/source/petfriends-17.png",
+      "blockId": "31a9b5c9-4989-8167-9f0a-d9b52884540d",
+      "caption": "",
+      "sourceHeading": "내가 주목한 점"
+    }
+  ],
+  "29cm": [],
+  "samzzam": [
+    {
+      "section": "original",
+      "src": "images/analysis/source/samzzam-01.png",
+      "blockId": "31a9b5c9-4989-819a-a0de-edbb0d3f4002",
+      "caption": "",
+      "sourceHeading": "What"
+    },
+    {
+      "section": "original",
+      "src": "images/analysis/source/samzzam-02.png",
+      "blockId": "31a9b5c9-4989-81ea-b0a1-fec43ede7aaf",
+      "caption": "",
+      "sourceHeading": "What"
+    },
+    {
+      "section": "original",
+      "src": "images/analysis/source/samzzam-03.png",
+      "blockId": "31a9b5c9-4989-8194-98fc-f0105051aeec",
+      "caption": "",
+      "sourceHeading": "What"
+    },
+    {
+      "section": "original",
+      "src": "images/analysis/source/samzzam-04.png",
+      "blockId": "31a9b5c9-4989-8187-943a-ebf500651421",
+      "caption": "",
+      "sourceHeading": "How"
+    },
+    {
+      "section": "original",
+      "src": "images/analysis/source/samzzam-05.png",
+      "blockId": "31a9b5c9-4989-8190-a592-cad56a823322",
+      "caption": "",
+      "sourceHeading": "How"
+    },
+    {
+      "section": "original",
+      "src": "images/analysis/source/samzzam-06.png",
+      "blockId": "31a9b5c9-4989-8112-9088-e607d6051905",
+      "caption": "",
+      "sourceHeading": "If"
+    },
+    {
+      "section": "original",
+      "src": "images/analysis/source/samzzam-07.png",
+      "blockId": "31a9b5c9-4989-8175-a953-c43dce972ae9",
+      "caption": "",
+      "sourceHeading": "If"
+    }
+  ],
+  "publy": [
+    {
+      "section": "original",
+      "src": "images/analysis/source/publy-01.png",
+      "blockId": "31a9b5c9-4989-81a2-994c-e267ea71780a",
+      "caption": "",
+      "sourceHeading": "WHAT"
+    },
+    {
+      "section": "original",
+      "src": "images/analysis/source/publy-02.png",
+      "blockId": "31a9b5c9-4989-8144-9c1f-df24bde0fa3d",
+      "caption": "",
+      "sourceHeading": "WHAT"
+    },
+    {
+      "section": "original",
+      "src": "images/analysis/source/publy-03.png",
+      "blockId": "31a9b5c9-4989-815f-a9bf-c56326f8e38d",
+      "caption": "",
+      "sourceHeading": "WHAT"
+    },
+    {
+      "section": "original",
+      "src": "images/analysis/source/publy-04.png",
+      "blockId": "31a9b5c9-4989-811a-9873-d9bb55e15f17",
+      "caption": "",
+      "sourceHeading": "HOW"
+    },
+    {
+      "section": "original",
+      "src": "images/analysis/source/publy-05.png",
+      "blockId": "31a9b5c9-4989-812b-8328-dd052ce6e2f7",
+      "caption": "",
+      "sourceHeading": "HOW"
+    },
+    {
+      "section": "original",
+      "src": "images/analysis/source/publy-06.png",
+      "blockId": "31a9b5c9-4989-81b6-8364-ecc9b0e494fb",
+      "caption": "",
+      "sourceHeading": "HOW"
+    },
+    {
+      "section": "original",
+      "src": "images/analysis/source/publy-07.png",
+      "blockId": "31a9b5c9-4989-8125-b8a4-e88ff98eaa92",
+      "caption": "",
+      "sourceHeading": "HOW"
+    },
+    {
+      "section": "original",
+      "src": "images/analysis/source/publy-08.png",
+      "blockId": "31a9b5c9-4989-81b1-8b5a-d0a081da57f5",
+      "caption": "",
+      "sourceHeading": "HOW"
+    },
+    {
+      "section": "original",
+      "src": "images/analysis/source/publy-09.jpg",
+      "blockId": "31a9b5c9-4989-81ee-a4c1-f2abd8738619",
+      "caption": "",
+      "sourceHeading": "HOW"
+    },
+    {
+      "section": "original",
+      "src": "images/analysis/source/publy-10.jpg",
+      "blockId": "31a9b5c9-4989-81c1-8ac7-f08d84078941",
+      "caption": "",
+      "sourceHeading": "HOW"
+    },
+    {
+      "section": "original",
+      "src": "images/analysis/source/publy-11.png",
+      "blockId": "31a9b5c9-4989-8103-a26d-f77f4e95b58e",
+      "caption": "",
+      "sourceHeading": "HOW"
+    },
+    {
+      "section": "original",
+      "src": "images/analysis/source/publy-12.png",
+      "blockId": "31a9b5c9-4989-81ec-96e2-ed5fbafede8d",
+      "caption": "",
+      "sourceHeading": "HOW"
+    },
+    {
+      "section": "original",
+      "src": "images/analysis/source/publy-13.png",
+      "blockId": "31a9b5c9-4989-81f0-a182-d7d0539829cf",
+      "caption": "",
+      "sourceHeading": "HOW"
+    },
+    {
+      "section": "original",
+      "src": "images/analysis/source/publy-14.png",
+      "blockId": "31a9b5c9-4989-8188-bcb3-c2bbe7ab6471",
+      "caption": "",
+      "sourceHeading": "HOW"
+    },
+    {
+      "section": "original",
+      "src": "images/analysis/source/publy-15.png",
+      "blockId": "31a9b5c9-4989-81f3-8fdc-fbb8443d18be",
+      "caption": "",
+      "sourceHeading": "HOW"
+    },
+    {
+      "section": "original",
+      "src": "images/analysis/source/publy-16.png",
+      "blockId": "31a9b5c9-4989-81f8-9cbc-e3a5a7d16feb",
+      "caption": "",
+      "sourceHeading": "HOW"
+    },
+    {
+      "section": "original",
+      "src": "images/analysis/source/publy-17.png",
+      "blockId": "31a9b5c9-4989-811f-97b7-cefe2c019385",
+      "caption": "",
+      "sourceHeading": "HOW"
+    },
+    {
+      "section": "original",
+      "src": "images/analysis/source/publy-18.png",
+      "blockId": "31a9b5c9-4989-81a7-818e-d5c99eb2ad15",
+      "caption": "비회원",
+      "sourceHeading": "Pain Point"
+    },
+    {
+      "section": "original",
+      "src": "images/analysis/source/publy-19.png",
+      "blockId": "31a9b5c9-4989-817f-a6a1-d9beb2718465",
+      "caption": "회원",
+      "sourceHeading": "Pain Point"
+    },
+    {
+      "section": "original",
+      "src": "images/analysis/source/publy-20.jpg",
+      "blockId": "31a9b5c9-4989-81f2-885a-c6681a7a9d3f",
+      "caption": "",
+      "sourceHeading": "내가 주목한 점"
+    }
+  ],
+  "yozm-it": [
+    {
+      "section": "original",
+      "src": "images/analysis/source/yozm-it-01.png",
+      "blockId": "31a9b5c9-4989-81b0-b0e5-c123b1d6b0f0",
+      "caption": "",
+      "sourceHeading": "✅ 비즈니스 구조"
+    },
+    {
+      "section": "original",
+      "src": "images/analysis/source/yozm-it-02.png",
+      "blockId": "31a9b5c9-4989-8192-af3e-cb59353a7891",
+      "caption": "",
+      "sourceHeading": "✅ 플랫폼 참여자"
+    },
+    {
+      "section": "original",
+      "src": "images/analysis/source/yozm-it-03.png",
+      "blockId": "31a9b5c9-4989-8190-a42d-f5549e41274d",
+      "caption": "",
+      "sourceHeading": "✅ 플랫폼 참여자"
+    },
+    {
+      "section": "original",
+      "src": "images/analysis/source/yozm-it-04.png",
+      "blockId": "31a9b5c9-4989-8184-95d5-c5b4d53380b7",
+      "caption": "",
+      "sourceHeading": "✅ 플랫폼 참여자"
+    },
+    {
+      "section": "original",
+      "src": "images/analysis/source/yozm-it-05.png",
+      "blockId": "31a9b5c9-4989-8136-ab08-c38b87b13934",
+      "caption": "",
+      "sourceHeading": "✅ 플랫폼 참여자"
+    },
+    {
+      "section": "original",
+      "src": "images/analysis/source/yozm-it-06.png",
+      "blockId": "31a9b5c9-4989-817b-a8b0-c68473cb0b1c",
+      "caption": "퍼블리",
+      "sourceHeading": "1️⃣ IT 중심 홈 큐레이션 (UX)"
+    },
+    {
+      "section": "original",
+      "src": "images/analysis/source/yozm-it-07.png",
+      "blockId": "31a9b5c9-4989-8114-b7ba-f466e27f3cf3",
+      "caption": "퍼블리",
+      "sourceHeading": "1️⃣ IT 중심 홈 큐레이션 (UX)"
+    },
+    {
+      "section": "original",
+      "src": "images/analysis/source/yozm-it-08.png",
+      "blockId": "31a9b5c9-4989-810f-99a1-d4495b947876",
+      "caption": "요즘 IT",
+      "sourceHeading": "1️⃣ IT 중심 홈 큐레이션 (UX)"
+    },
+    {
+      "section": "original",
+      "src": "images/analysis/source/yozm-it-09.png",
+      "blockId": "31a9b5c9-4989-81e0-a591-d1b4b6343d11",
+      "caption": "브런치",
+      "sourceHeading": "1️⃣ IT 중심 홈 큐레이션 (UX)"
+    },
+    {
+      "section": "original",
+      "src": "images/analysis/source/yozm-it-10.png",
+      "blockId": "31a9b5c9-4989-81db-bfd1-c95a909eb256",
+      "caption": "브런치",
+      "sourceHeading": "1️⃣ IT 중심 홈 큐레이션 (UX)"
+    },
+    {
+      "section": "original",
+      "src": "images/analysis/source/yozm-it-11.png",
+      "blockId": "31a9b5c9-4989-8135-a454-fb44dc5d3e5a",
+      "caption": "",
+      "sourceHeading": "2️⃣ 물어봐 ai 기능 (UX writing)"
+    },
+    {
+      "section": "original",
+      "src": "images/analysis/source/yozm-it-12.png",
+      "blockId": "31a9b5c9-4989-8190-828b-f3d30ee5ebb3",
+      "caption": "",
+      "sourceHeading": "2️⃣ 물어봐 ai 기능 (UX writing)"
+    },
+    {
+      "section": "original",
+      "src": "images/analysis/source/yozm-it-13.png",
+      "blockId": "31a9b5c9-4989-816e-a663-dd48aaf9cd36",
+      "caption": "회원",
+      "sourceHeading": "3️⃣ 독자 정보 제공 (회원/비회원에 따른 ux차이)"
+    },
+    {
+      "section": "original",
+      "src": "images/analysis/source/yozm-it-14.png",
+      "blockId": "31a9b5c9-4989-816d-b00d-d395ecf4cbe5",
+      "caption": "비회원",
+      "sourceHeading": "3️⃣ 독자 정보 제공 (회원/비회원에 따른 ux차이)"
+    },
+    {
+      "section": "original",
+      "src": "images/analysis/source/yozm-it-15.png",
+      "blockId": "31a9b5c9-4989-81a8-badb-fc9707d300b6",
+      "caption": "퍼블리",
+      "sourceHeading": "1️⃣ 알고 싶은 정보만 바로 캐치할 수 있는 ‘콘텐츠’"
+    },
+    {
+      "section": "original",
+      "src": "images/analysis/source/yozm-it-16.png",
+      "blockId": "31a9b5c9-4989-8148-b74f-f11506dde7f8",
+      "caption": "요즘 IT",
+      "sourceHeading": "1️⃣ 알고 싶은 정보만 바로 캐치할 수 있는 ‘콘텐츠’"
+    },
+    {
+      "section": "original",
+      "src": "images/analysis/source/yozm-it-17.png",
+      "blockId": "31a9b5c9-4989-8166-a6c7-cab9c7dbdfdd",
+      "caption": "브런치",
+      "sourceHeading": "1️⃣ 알고 싶은 정보만 바로 캐치할 수 있는 ‘콘텐츠’"
+    },
+    {
+      "section": "original",
+      "src": "images/analysis/source/yozm-it-18.png",
+      "blockId": "31a9b5c9-4989-81db-8af3-d299a682da39",
+      "caption": "",
+      "sourceHeading": "2️⃣ 기억하고 싶은 부분 ‘표시 기능’"
+    },
+    {
+      "section": "original",
+      "src": "images/analysis/source/yozm-it-19.png",
+      "blockId": "31a9b5c9-4989-81f6-bfee-cac9e67960ab",
+      "caption": "",
+      "sourceHeading": "2️⃣ 기억하고 싶은 부분 ‘표시 기능’"
+    },
+    {
+      "section": "original",
+      "src": "images/analysis/source/yozm-it-20.png",
+      "blockId": "31a9b5c9-4989-814c-8061-cc841bfefb47",
+      "caption": "",
+      "sourceHeading": "1️⃣ 로그인"
+    },
+    {
+      "section": "original",
+      "src": "images/analysis/source/yozm-it-21.png",
+      "blockId": "31a9b5c9-4989-8196-8137-e2305142f8da",
+      "caption": "",
+      "sourceHeading": "1️⃣ 로그인"
+    },
+    {
+      "section": "original",
+      "src": "images/analysis/source/yozm-it-22.png",
+      "blockId": "31a9b5c9-4989-81b8-858c-e4cfa50786d9",
+      "caption": "",
+      "sourceHeading": "1️⃣ 로그인"
+    },
+    {
+      "section": "original",
+      "src": "images/analysis/source/yozm-it-23.png",
+      "blockId": "31a9b5c9-4989-8115-b1e5-d56e163f7b95",
+      "caption": "",
+      "sourceHeading": "2️⃣ 시리즈일 경우"
+    },
+    {
+      "section": "original",
+      "src": "images/analysis/source/yozm-it-24.png",
+      "blockId": "31a9b5c9-4989-818b-a530-d1bdbd4375ad",
+      "caption": "",
+      "sourceHeading": "2️⃣ 시리즈일 경우"
+    },
+    {
+      "section": "original",
+      "src": "images/analysis/source/yozm-it-25.png",
+      "blockId": "31a9b5c9-4989-81d3-a07a-c788ba9f18c5",
+      "caption": "",
+      "sourceHeading": "👉 시리즈 파일 기능 도입"
+    },
+    {
+      "section": "original",
+      "src": "images/analysis/source/yozm-it-26.png",
+      "blockId": "31a9b5c9-4989-8111-a2e7-f108b4f58bd6",
+      "caption": "",
+      "sourceHeading": "👉 시리즈 파일 기능 도입"
+    },
+    {
+      "section": "original",
+      "src": "images/analysis/source/yozm-it-27.png",
+      "blockId": "31a9b5c9-4989-8123-8ec2-d9016c8d91f2",
+      "caption": "",
+      "sourceHeading": "3️⃣ 검색 키워드 표시 X"
+    },
+    {
+      "section": "original",
+      "src": "images/analysis/source/yozm-it-28.png",
+      "blockId": "31a9b5c9-4989-81c9-ab23-de4921696792",
+      "caption": "퍼블리",
+      "sourceHeading": "👉 표시 기능 도입"
+    },
+    {
+      "section": "original",
+      "src": "images/analysis/source/yozm-it-29.png",
+      "blockId": "31a9b5c9-4989-818f-af37-ef4ab9e31899",
+      "caption": "브런치",
+      "sourceHeading": "👉 표시 기능 도입"
+    }
+  ],
+  "youtube-music": [
+    {
+      "section": "original",
+      "src": "images/analysis/source/youtube-music-01.png",
+      "blockId": "31a9b5c9-4989-817f-b57d-c319375a5d6d",
+      "caption": "사진 출처 : 유튜브 뮤직 홈페이지",
+      "sourceHeading": "WHAT"
+    },
+    {
+      "section": "original",
+      "src": "images/analysis/source/youtube-music-02.png",
+      "blockId": "31a9b5c9-4989-8158-ab09-f5b4c5821b79",
+      "caption": "사진 출처 : 유튜브 뮤직 홈페이지",
+      "sourceHeading": "WHAT"
+    },
+    {
+      "section": "original",
+      "src": "images/analysis/source/youtube-music-03.png",
+      "blockId": "31a9b5c9-4989-81b2-818f-f1f908a8230e",
+      "caption": "",
+      "sourceHeading": "HOW"
+    },
+    {
+      "section": "original",
+      "src": "images/analysis/source/youtube-music-04.png",
+      "blockId": "31a9b5c9-4989-8122-9462-c86a3fe0a137",
+      "caption": "",
+      "sourceHeading": "HOW"
+    }
+  ],
+  "naver-map": [
+    {
+      "section": "original",
+      "src": "images/analysis/source/naver-map-01.png",
+      "blockId": "31a9b5c9-4989-815c-bfcf-d4231d565fce",
+      "caption": "",
+      "sourceHeading": "Why"
+    },
+    {
+      "section": "original",
+      "src": "images/analysis/source/naver-map-02.png",
+      "blockId": "31a9b5c9-4989-8108-9e50-fffe4f28a555",
+      "caption": "",
+      "sourceHeading": "What"
+    },
+    {
+      "section": "original",
+      "src": "images/analysis/source/naver-map-03.png",
+      "blockId": "31a9b5c9-4989-81d9-9502-e77dbe14d96e",
+      "caption": "",
+      "sourceHeading": "What"
+    },
+    {
+      "section": "original",
+      "src": "images/analysis/source/naver-map-04.png",
+      "blockId": "31a9b5c9-4989-818f-870a-f49bf65af74d",
+      "caption": "",
+      "sourceHeading": "How"
+    },
+    {
+      "section": "original",
+      "src": "images/analysis/source/naver-map-05.png",
+      "blockId": "31a9b5c9-4989-81ff-9213-d95841760953",
+      "caption": "",
+      "sourceHeading": "How"
+    },
+    {
+      "section": "original",
+      "src": "images/analysis/source/naver-map-06.png",
+      "blockId": "31a9b5c9-4989-8158-b1c4-cfd966b989ec",
+      "caption": "",
+      "sourceHeading": "How"
+    },
+    {
+      "section": "original",
+      "src": "images/analysis/source/naver-map-07.png",
+      "blockId": "31a9b5c9-4989-81da-a195-eb1831af1c93",
+      "caption": "",
+      "sourceHeading": "How"
+    },
+    {
+      "section": "original",
+      "src": "images/analysis/source/naver-map-08.png",
+      "blockId": "31a9b5c9-4989-818f-a172-fd409f3c644b",
+      "caption": "",
+      "sourceHeading": "How"
+    },
+    {
+      "section": "original",
+      "src": "images/analysis/source/naver-map-09.png",
+      "blockId": "31a9b5c9-4989-8111-bb4a-f468f2b88f8c",
+      "caption": "",
+      "sourceHeading": "How"
+    },
+    {
+      "section": "original",
+      "src": "images/analysis/source/naver-map-10.png",
+      "blockId": "31a9b5c9-4989-811c-9ef0-fa779208ff6d",
+      "caption": "",
+      "sourceHeading": "How"
+    },
+    {
+      "section": "original",
+      "src": "images/analysis/source/naver-map-11.png",
+      "blockId": "31a9b5c9-4989-8183-9d91-e83b39d00ff8",
+      "caption": "",
+      "sourceHeading": "벤치마킹"
+    }
+  ],
+  "soomgo": [
+    {
+      "section": "original",
+      "src": "images/analysis/source/soomgo-01.png",
+      "blockId": "31a9b5c9-4989-81c9-b140-d1fa4a6ef772",
+      "caption": "",
+      "sourceHeading": "Why"
+    },
+    {
+      "section": "original",
+      "src": "images/analysis/source/soomgo-02.png",
+      "blockId": "31a9b5c9-4989-8113-9ec5-cc04d9c9b38d",
+      "caption": "전자 신문",
+      "sourceHeading": "What"
+    },
+    {
+      "section": "original",
+      "src": "images/analysis/source/soomgo-03.png",
+      "blockId": "31a9b5c9-4989-819b-8cf9-d9bb0925cc41",
+      "caption": "",
+      "sourceHeading": "How"
+    }
+  ],
+  "yeogi": [
+    {
+      "section": "original",
+      "src": "images/analysis/source/yeogi-01.png",
+      "blockId": "31a9b5c9-4989-815f-8bc0-f369f1ba1a25",
+      "caption": "",
+      "sourceHeading": "Why"
+    },
+    {
+      "section": "original",
+      "src": "images/analysis/source/yeogi-02.png",
+      "blockId": "31a9b5c9-4989-81d4-ae16-faac45cd79f3",
+      "caption": "",
+      "sourceHeading": "What"
+    },
+    {
+      "section": "original",
+      "src": "images/analysis/source/yeogi-03.png",
+      "blockId": "31a9b5c9-4989-810c-8fb9-da51c47b5b81",
+      "caption": "",
+      "sourceHeading": "How"
+    },
+    {
+      "section": "original",
+      "src": "images/analysis/source/yeogi-04.png",
+      "blockId": "31a9b5c9-4989-81f7-ad86-c9e92cfd5b96",
+      "caption": "",
+      "sourceHeading": "How"
+    },
+    {
+      "section": "original",
+      "src": "images/analysis/source/yeogi-05.png",
+      "blockId": "31a9b5c9-4989-81f7-9541-c21c58203c43",
+      "caption": "",
+      "sourceHeading": "How"
+    },
+    {
+      "section": "original",
+      "src": "images/analysis/source/yeogi-06.png",
+      "blockId": "31a9b5c9-4989-814a-9e73-e39c221ea36b",
+      "caption": "",
+      "sourceHeading": "How"
+    },
+    {
+      "section": "original",
+      "src": "images/analysis/source/yeogi-07.png",
+      "blockId": "31a9b5c9-4989-81a2-8642-c9793ea47dcb",
+      "caption": "",
+      "sourceHeading": "Pain point"
+    },
+    {
+      "section": "original",
+      "src": "images/analysis/source/yeogi-08.png",
+      "blockId": "31a9b5c9-4989-81d5-8984-deb876885038",
+      "caption": "",
+      "sourceHeading": "자사에 적용해보면 좋은 포인트"
+    },
+    {
+      "section": "original",
+      "src": "images/analysis/source/yeogi-09.png",
+      "blockId": "31a9b5c9-4989-8129-8204-e5ff3d8b298b",
+      "caption": "",
+      "sourceHeading": "\nIf"
+    },
+    {
+      "section": "original",
+      "src": "images/analysis/source/yeogi-10.png",
+      "blockId": "31a9b5c9-4989-81bf-ae8e-c2b2202c0f12",
+      "caption": "",
+      "sourceHeading": "내가 주목한 점"
+    }
+  ],
+  "tabling": [
+    {
+      "section": "original",
+      "src": "images/analysis/source/tabling-01.png",
+      "blockId": "31a9b5c9-4989-817d-9af3-f74bf07f3db4",
+      "caption": "",
+      "sourceHeading": "Why"
+    },
+    {
+      "section": "original",
+      "src": "images/analysis/source/tabling-02.png",
+      "blockId": "31a9b5c9-4989-81c8-9d75-fd1ab342892b",
+      "caption": "",
+      "sourceHeading": "What"
+    },
+    {
+      "section": "original",
+      "src": "images/analysis/source/tabling-03.png",
+      "blockId": "31a9b5c9-4989-8185-8142-d7e080108e11",
+      "caption": "",
+      "sourceHeading": "How"
+    },
+    {
+      "section": "original",
+      "src": "images/analysis/source/tabling-04.png",
+      "blockId": "31a9b5c9-4989-819e-90ba-dcb2bab9916e",
+      "caption": "",
+      "sourceHeading": "벤치마킹"
+    },
+    {
+      "section": "original",
+      "src": "images/analysis/source/tabling-05.png",
+      "blockId": "31a9b5c9-4989-8102-a2fc-c0a9e34aa2cc",
+      "caption": "",
+      "sourceHeading": "벤치마킹"
+    },
+    {
+      "section": "original",
+      "src": "images/analysis/source/tabling-06.png",
+      "blockId": "31a9b5c9-4989-81c5-98a7-f09c861f5402",
+      "caption": "",
+      "sourceHeading": "Pain point"
+    },
+    {
+      "section": "original",
+      "src": "images/analysis/source/tabling-07.png",
+      "blockId": "31a9b5c9-4989-8183-a087-e7b61f76853f",
+      "caption": "",
+      "sourceHeading": "Pain point"
+    },
+    {
+      "section": "original",
+      "src": "images/analysis/source/tabling-08.png",
+      "blockId": "31a9b5c9-4989-813c-b2c4-e727c78458ae",
+      "caption": "",
+      "sourceHeading": "Pain point"
+    },
+    {
+      "section": "original",
+      "src": "images/analysis/source/tabling-09.png",
+      "blockId": "31a9b5c9-4989-81e6-804d-dd020a09fc77",
+      "caption": "",
+      "sourceHeading": "Pain point"
+    }
+  ],
+  "naver-booking": [
+    {
+      "section": "original",
+      "src": "images/analysis/source/naver-booking-01.png",
+      "blockId": "31a9b5c9-4989-81a8-a43c-c88d66cc47db",
+      "caption": "",
+      "sourceHeading": "Why"
+    },
+    {
+      "section": "original",
+      "src": "images/analysis/source/naver-booking-02.png",
+      "blockId": "31a9b5c9-4989-8157-8052-c55d2cb75279",
+      "caption": "",
+      "sourceHeading": "What"
+    },
+    {
+      "section": "original",
+      "src": "images/analysis/source/naver-booking-03.png",
+      "blockId": "31a9b5c9-4989-8137-9201-d790fbf37350",
+      "caption": "",
+      "sourceHeading": "How"
+    },
+    {
+      "section": "original",
+      "src": "images/analysis/source/naver-booking-04.png",
+      "blockId": "31a9b5c9-4989-81b2-bb1c-edc2da79262b",
+      "caption": "",
+      "sourceHeading": "How"
+    },
+    {
+      "section": "original",
+      "src": "images/analysis/source/naver-booking-05.png",
+      "blockId": "31a9b5c9-4989-81c0-bc36-e9a48c1927ce",
+      "caption": "",
+      "sourceHeading": "How"
+    },
+    {
+      "section": "original",
+      "src": "images/analysis/source/naver-booking-06.png",
+      "blockId": "31a9b5c9-4989-813b-be35-f1aeca29072d",
+      "caption": "",
+      "sourceHeading": "How"
+    },
+    {
+      "section": "original",
+      "src": "images/analysis/source/naver-booking-07.png",
+      "blockId": "31a9b5c9-4989-81ee-a173-e85c7ceea071",
+      "caption": "",
+      "sourceHeading": "How"
+    },
+    {
+      "section": "original",
+      "src": "images/analysis/source/naver-booking-08.png",
+      "blockId": "31a9b5c9-4989-818c-bd77-cdc0977c6129",
+      "caption": "",
+      "sourceHeading": "How"
+    },
+    {
+      "section": "original",
+      "src": "images/analysis/source/naver-booking-09.png",
+      "blockId": "31a9b5c9-4989-813c-93d4-fa61e63a84f9",
+      "caption": "",
+      "sourceHeading": "How"
+    },
+    {
+      "section": "original",
+      "src": "images/analysis/source/naver-booking-10.png",
+      "blockId": "31a9b5c9-4989-819d-88e4-ec2ff79b444f",
+      "caption": "",
+      "sourceHeading": "How"
+    },
+    {
+      "section": "original",
+      "src": "images/analysis/source/naver-booking-11.png",
+      "blockId": "31a9b5c9-4989-8172-8f09-d0e9b49af896",
+      "caption": "",
+      "sourceHeading": "How"
+    },
+    {
+      "section": "original",
+      "src": "images/analysis/source/naver-booking-12.png",
+      "blockId": "31a9b5c9-4989-81b4-aeb3-d6b49bf40616",
+      "caption": "",
+      "sourceHeading": "How"
+    },
+    {
+      "section": "original",
+      "src": "images/analysis/source/naver-booking-13.png",
+      "blockId": "31a9b5c9-4989-81d5-a3f9-f97e762f2ba2",
+      "caption": "",
+      "sourceHeading": "How"
+    },
+    {
+      "section": "original",
+      "src": "images/analysis/source/naver-booking-14.png",
+      "blockId": "31a9b5c9-4989-8190-9487-f0103b448fab",
+      "caption": "",
+      "sourceHeading": "How"
+    },
+    {
+      "section": "original",
+      "src": "images/analysis/source/naver-booking-15.png",
+      "blockId": "31a9b5c9-4989-8126-b539-d1a38aa8aac9",
+      "caption": "",
+      "sourceHeading": "How"
+    },
+    {
+      "section": "original",
+      "src": "images/analysis/source/naver-booking-16.png",
+      "blockId": "31a9b5c9-4989-81be-9fbc-d79c4fab3785",
+      "caption": "",
+      "sourceHeading": "How"
+    },
+    {
+      "section": "original",
+      "src": "images/analysis/source/naver-booking-17.png",
+      "blockId": "31a9b5c9-4989-8158-905b-cb739679f63a",
+      "caption": "",
+      "sourceHeading": "How"
+    }
+  ],
+  "baemin": [
+    {
+      "section": "original",
+      "src": "images/analysis/source/baemin-01.png",
+      "blockId": "31a9b5c9-4989-8117-b55d-f6a5c4648580",
+      "caption": "",
+      "sourceHeading": "What"
+    },
+    {
+      "section": "original",
+      "src": "images/analysis/source/baemin-02.png",
+      "blockId": "31a9b5c9-4989-8138-a818-d12695a136f1",
+      "caption": "",
+      "sourceHeading": "What"
+    },
+    {
+      "section": "original",
+      "src": "images/analysis/source/baemin-03.png",
+      "blockId": "31a9b5c9-4989-81c1-935b-cb37a58e0f03",
+      "caption": "",
+      "sourceHeading": "What"
+    },
+    {
+      "section": "original",
+      "src": "images/analysis/source/baemin-04.png",
+      "blockId": "31a9b5c9-4989-8142-a1db-f57d28eaa938",
+      "caption": "기존 가게 배달",
+      "sourceHeading": "What"
+    },
+    {
+      "section": "original",
+      "src": "images/analysis/source/baemin-05.png",
+      "blockId": "31a9b5c9-4989-81ce-88e7-e4eebd99ba96",
+      "caption": "알뜰 배달",
+      "sourceHeading": "What"
+    }
+  ],
+  "ohouse": [
+    {
+      "section": "original",
+      "src": "images/analysis/source/ohouse-01.png",
+      "blockId": "31a9b5c9-4989-8183-8867-dce648701d2a",
+      "caption": "",
+      "sourceHeading": "AARRR 프레임 워크"
+    },
+    {
+      "section": "original",
+      "src": "images/analysis/source/ohouse-02.png",
+      "blockId": "31a9b5c9-4989-8188-8334-db1d067939a4",
+      "caption": "",
+      "sourceHeading": "1. 유튜브 유입 전략"
+    },
+    {
+      "section": "original",
+      "src": "images/analysis/source/ohouse-03.png",
+      "blockId": "31a9b5c9-4989-81ab-9792-fd3910b03f41",
+      "caption": "",
+      "sourceHeading": "2. SNS 유입 전략"
+    },
+    {
+      "section": "original",
+      "src": "images/analysis/source/ohouse-04.png",
+      "blockId": "31a9b5c9-4989-8194-a2de-dc00752dd093",
+      "caption": "",
+      "sourceHeading": "활성화 : 고객이 처음으로 서비스의 주요 기능을 이용하는 단계"
+    }
+  ],
+  "zeta": [
+    {
+      "section": "original",
+      "src": "images/analysis/source/zeta-01.png",
+      "blockId": "35a9b5c9-4989-8047-88de-e677d60cfc8a",
+      "caption": "",
+      "sourceHeading": ""
+    },
+    {
+      "section": "original",
+      "src": "images/analysis/source/zeta-02.png",
+      "blockId": "35a9b5c9-4989-80bc-8d5a-e7b76ca22dc5",
+      "caption": "",
+      "sourceHeading": "2. 말투는 어떻게 학습시키는가?"
+    }
+  ]
+}

@@ -90,12 +90,15 @@
  .notes-page .analysis-filters button[aria-pressed="true"]{color:var(--soft-accent);background:#f1f1f5;border-color:#dddde6}
  .notes-page .analysis-filters button:hover{background:#f5f5f7}
  .notes-page .analysis-search input{border-radius:19px;background:#fff;border-color:#eae3ee;padding:10px 15px}
- .notes-page .analysis-card{border-radius:20px;background:#fff;border-color:#eae5ee;box-shadow:0 3px 12px #79668a04}
- .notes-page .analysis-card>a{border-radius:20px;padding:19px 20px;transition:background .2s}
- .notes-page .analysis-card>a:hover{background:#faf6fc}
- .notes-page .analysis-category{color:#876eaa}
- .notes-page .analysis-card h3{color:var(--soft-ink)}
- .notes-page .analysis-card p{color:var(--soft-copy)}
+ .notes-page .analysis-grid{display:block;border-top:1px solid #dedee8}
+ .notes-page .analysis-card{border:0;border-bottom:1px solid #dedee8;border-radius:0;background:transparent;box-shadow:none}
+ .notes-page .analysis-card>a{position:relative;display:grid;grid-template-columns:100px 150px minmax(0,1fr) 230px;align-items:center;gap:20px;border-radius:0;padding:26px 36px 26px 0;transition:background .2s}
+ .notes-page .analysis-card>a:hover{background:#ffffff70}
+ .notes-page .analysis-category{color:#876eaa;margin:0;font-size:11px}
+ .notes-page .analysis-card h3{color:var(--soft-ink);font-size:17px}
+ .notes-page .analysis-card h3>span{position:absolute;right:4px;top:50%;transform:translateY(-50%)}
+ .notes-page .analysis-card p{color:var(--soft-copy);margin:0;font-size:13px;line-height:1.7}
+ .notes-page .analysis-card small{margin:0;font-size:11px;line-height:1.7}
  .notes-page .analysis-study .analysis-section{border-color:var(--soft-line)}
  .notes-page .analysis-why-what>div,.notes-page .analysis-validation{border-radius:17px;background:var(--soft-surface)}
  .notes-page .analysis-diagram img{border-radius:16px;border-color:#eae3ef}
@@ -133,8 +136,14 @@
  .notes-page .notes-tabs{gap:7px}
  .notes-page .notes-tabs a{padding:7px 11px;font-size:11px}
  .notes-page .personal-collection .note-cover{padding:0;border-radius:0}
- .notes-page .analysis-card>a{padding:17px 18px}
+ .notes-page .analysis-card>a{display:block;padding:22px 28px 22px 0}
+ .notes-page .analysis-card h3{margin-top:5px}
+ .notes-page .analysis-card p{margin:9px 0 6px}
  .notes-analysis-background{margin-top:0;padding:44px 0 30px}
+}
+@media screen and (min-width:601px) and (max-width:1100px){
+ .notes-page .analysis-card>a{grid-template-columns:80px 130px minmax(0,1fr);gap:6px 16px}
+ .notes-page .analysis-card small{grid-column:3}
 }
 @media screen and (max-width:380px){
  .resume-home .site-nav{height:auto;min-height:78px;padding:10px 0;gap:8px;display:flex;flex-wrap:wrap}

@@ -1,0 +1,76 @@
+/* Open editorial layouts: policy examples, relationship diagram and prompt process. */
+@media screen {
+html body.project-page.project-page #deliverables .yx-editorial{display:grid;gap:88px}
+html body.project-page.project-page #deliverables .yx-policy-cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
+html body.project-page.project-page #deliverables .yx-policy-card{padding:30px 28px 34px;border:0!important;border-radius:30px;background:#222326!important;min-width:0}
+html body.project-page.project-page #deliverables .yx-policy-card h4{font-size:22px;line-height:1.55;letter-spacing:-.6px;margin:0 0 18px;word-break:keep-all}
+html body.project-page.project-page #deliverables .yx-policy-card p{font-size:14px;line-height:1.9;margin:0;color:#b0b8c1!important;word-break:keep-all}
+html body.project-page.project-page #deliverables .yx-policy-visual{height:205px;margin:0 0 32px;position:relative;display:flex;align-items:center;justify-content:center}
+html body.project-page.project-page #deliverables .vote-visual{gap:14px;flex-wrap:wrap;align-content:center}
+html body.project-page.project-page #deliverables .vote-choice{display:flex;align-items:center;justify-content:center;width:82px;height:82px;border-radius:26px;font-size:38px;font-weight:700;color:#95c2ff!important;background:linear-gradient(145deg,#315d96,#253c5d)!important;box-shadow:0 12px 40px #2676ec1a}
+html body.project-page.project-page #deliverables .vote-choice:nth-child(2){background:#33363d!important;color:#b0b8c1!important}
+html body.project-page.project-page #deliverables .vote-limit{width:100%;text-align:center;margin-top:10px;font-size:13px;color:#b0b8c1!important}
+html body.project-page.project-page #deliverables .access-visual{flex-direction:column}
+html body.project-page.project-page #deliverables .vote-done{padding:9px 16px;border-radius:18px;color:#a8ceff!important;background:#283e5a!important;font-size:13px}
+html body.project-page.project-page #deliverables .access-line{height:25px;width:1px;background:#58677b!important}
+html body.project-page.project-page #deliverables .comment-preview{width:100%;max-width:220px;background:#30343b!important;border-radius:16px;padding:18px}
+html body.project-page.project-page #deliverables .comment-preview span{font-size:12px;color:#e5e8eb!important}
+html body.project-page.project-page #deliverables :is(.comment-preview,.identity-visual>div) i{display:block;width:100%;height:6px;border-radius:4px;background:#526074!important;margin-top:12px}
+html body.project-page.project-page #deliverables :is(.comment-preview,.identity-visual>div) i:last-child{width:65%;margin-top:8px}
+html body.project-page.project-page #deliverables .identity-visual{flex-direction:column;gap:14px;padding:0 4px}
+html body.project-page.project-page #deliverables .identity-visual>div{padding:14px 18px;width:100%;max-width:200px;background:#30343b!important;border-radius:16px 16px 16px 4px;align-self:flex-start}
+html body.project-page.project-page #deliverables .identity-visual>div+div{align-self:flex-end;background:#293b54!important}
+html body.project-page.project-page #deliverables .identity-visual span{font-size:12px;color:#a8ceff!important;font-weight:650}
+html body.project-page.project-page #deliverables .yx-editorial-note{display:grid;grid-template-columns:1.12fr 1fr;gap:56px;align-items:start;padding:0;margin:0;border:0!important;background:transparent!important}
+html body.project-page.project-page #deliverables .yx-editorial-note h4{font-size:30px;line-height:1.5;letter-spacing:-.8px;margin:0}
+html body.project-page.project-page #deliverables .yx-editorial-note>p{font-size:15px;line-height:1.9;color:#b0b8c1!important;word-break:keep-all;margin:4px 0 0}
+html body.project-page.project-page #deliverables .yx-data-story{display:grid;gap:36px}
+html body.project-page.project-page #deliverables .yx-relation-figure{margin:0;background:transparent!important}
+html body.project-page.project-page #deliverables .yx-relation-scroll{border-radius:24px;background:#fff!important;overflow-x:auto;padding:24px 12px;color-scheme:light}
+html body.project-page.project-page #deliverables .yx-relation-diagram{display:block;width:100%;min-width:680px;height:auto;background:transparent!important;font-family:inherit}
+html body.project-page.project-page #deliverables .yx-relation-diagram text{text-anchor:middle}
+html body.project-page.project-page #deliverables .relation-paths{stroke:#c1cad6;stroke-width:1.5;fill:none}
+html body.project-page.project-page #deliverables .relation-origin{fill:#191f28;font-size:28px;font-weight:700}
+html body.project-page.project-page #deliverables .relation-entity{fill:#1b64da;font-size:26px;font-weight:700}
+html body.project-page.project-page #deliverables .relation-caption{fill:#4e5968;font-size:16px}
+html body.project-page.project-page #deliverables .relation-constraint{fill:#6b7684;font-size:12px}
+html body.project-page.project-page #deliverables .relation-join{fill:#1b64da;font-size:14px;font-weight:600}
+html body.project-page.project-page #deliverables .yx-relation-figure figcaption{font-size:12px;line-height:1.8;color:#8b95a1!important;margin-top:18px}
+html body.project-page.project-page #deliverables .yx-data-insights{display:grid;grid-template-columns:1fr 1fr;gap:48px}
+html body.project-page.project-page #deliverables .yx-data-insights article{padding:0;border:0!important;background:transparent!important}
+html body.project-page.project-page #deliverables .yx-data-insights h4{font-size:21px;line-height:1.6;margin:0 0 14px}
+html body.project-page.project-page #deliverables .yx-data-insights p{font-size:15px;line-height:1.9;color:#b0b8c1!important;margin:0}
+html body.project-page.project-page #deliverables .yx-prompt-story{display:grid;gap:48px;margin-top:48px;margin-bottom:48px}
+html body.project-page.project-page #deliverables .yx-prompt-steps{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:28px;margin:0;padding:0;list-style:none;background:transparent!important}
+html body.project-page.project-page #deliverables .yx-prompt-steps li{background:transparent!important;border:0!important;padding:0}
+html body.project-page.project-page #deliverables .yx-prompt-steps span{display:block;font-size:26px;font-weight:650;color:#80b5ff!important;margin-bottom:24px}
+html body.project-page.project-page #deliverables .yx-prompt-steps h5{font-size:17px;line-height:1.6;margin:0 0 12px}
+html body.project-page.project-page #deliverables .yx-prompt-steps p{font-size:13px;line-height:1.9;color:#b0b8c1!important;margin:0;word-break:keep-all}
+}
+@media screen and (max-width:1100px){
+html body.project-page.project-page #deliverables .yx-editorial-note{grid-template-columns:1fr;gap:24px}
+html body.project-page.project-page #deliverables .yx-policy-cards{grid-template-columns:1fr}
+html body.project-page.project-page #deliverables .yx-policy-card{display:grid;grid-template-columns:220px 1fr;column-gap:32px;align-content:center}
+html body.project-page.project-page #deliverables .yx-policy-visual{grid-row:1/3;margin:0}
+html body.project-page.project-page #deliverables .yx-policy-card h4{align-self:end}
+}
+@media screen and (max-width:760px){
+html body.project-page.project-page #deliverables .yx-editorial{gap:56px}
+html body.project-page.project-page #deliverables .yx-editorial-note h4{font-size:26px}
+html body.project-page.project-page #deliverables .yx-editorial-note>p{font-size:14px}
+html body.project-page.project-page #deliverables .yx-data-insights{grid-template-columns:1fr;gap:32px}
+html body.project-page.project-page #deliverables .yx-data-insights h4{font-size:20px}
+html body.project-page.project-page #deliverables .yx-data-insights p{font-size:14px}
+html body.project-page.project-page #deliverables .yx-prompt-story{margin:24px 0;gap:36px}
+html body.project-page.project-page #deliverables .yx-prompt-steps{grid-template-columns:1fr 1fr;gap:32px 24px}
+}
+@media screen and (max-width:600px){
+html body.project-page.project-page #deliverables .yx-policy-card{display:block;padding:28px;border-radius:26px}
+html body.project-page.project-page #deliverables .yx-policy-visual{margin-bottom:28px}
+html body.project-page.project-page #deliverables .yx-policy-card h4{font-size:23px}
+}
+@media screen{
+html body.project-page.project-page #deliverables :is(.yx-data-story,.yx-prompt-story,.yx-editorial){grid-template-columns:minmax(0,1fr);min-width:0}
+html body.project-page.project-page #deliverables :is(.yx-data-story,.yx-data-insights,.yx-prompt-story,.yx-editorial)>*{min-width:0}
+html body.project-page.project-page #deliverables .yx-relation-scroll{width:100%;min-width:0;box-sizing:border-box}
+}
